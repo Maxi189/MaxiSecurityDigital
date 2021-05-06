@@ -99,14 +99,14 @@ namespace ServicoPortaria.Presentation.Visitante
             this.txtTelefoneFixo = new System.Windows.Forms.TextBox();
             this.txtEMail = new System.Windows.Forms.TextBox();
             this.groupInsert = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.groupContato = new System.Windows.Forms.GroupBox();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.groupNome.SuspendLayout();
             this.groupDocCivil.SuspendLayout();
             this.groupInsert.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupContato.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -679,21 +679,6 @@ namespace ServicoPortaria.Presentation.Visitante
             this.groupInsert.TabStop = false;
             this.groupInsert.Text = "Cadastrar";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtEMail);
-            this.groupBox2.Controls.Add(this.txtTelefoneFixo);
-            this.groupBox2.Controls.Add(this.txtCelular);
-            this.groupBox2.Controls.Add(this.lblEMail);
-            this.groupBox2.Controls.Add(this.lblFixo);
-            this.groupBox2.Controls.Add(this.lblCelular);
-            this.groupBox2.Location = new System.Drawing.Point(485, 439);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(444, 137);
-            this.groupBox2.TabIndex = 72;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
             // btnCadastrar
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.Black;
@@ -706,11 +691,26 @@ namespace ServicoPortaria.Presentation.Visitante
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
+            // groupContato
+            // 
+            this.groupContato.Controls.Add(this.txtEMail);
+            this.groupContato.Controls.Add(this.txtTelefoneFixo);
+            this.groupContato.Controls.Add(this.txtCelular);
+            this.groupContato.Controls.Add(this.lblEMail);
+            this.groupContato.Controls.Add(this.lblFixo);
+            this.groupContato.Controls.Add(this.lblCelular);
+            this.groupContato.Location = new System.Drawing.Point(485, 439);
+            this.groupContato.Name = "groupContato";
+            this.groupContato.Size = new System.Drawing.Size(444, 137);
+            this.groupContato.TabIndex = 72;
+            this.groupContato.TabStop = false;
+            this.groupContato.Text = "Contato";
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupContato);
             this.Controls.Add(this.groupInsert);
             this.Controls.Add(this.groupDocCivil);
             this.Controls.Add(this.groupNome);
@@ -727,8 +727,8 @@ namespace ServicoPortaria.Presentation.Visitante
             this.groupDocCivil.ResumeLayout(false);
             this.groupDocCivil.PerformLayout();
             this.groupInsert.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupContato.ResumeLayout(false);
+            this.groupContato.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -806,6 +806,6 @@ namespace ServicoPortaria.Presentation.Visitante
         private System.Windows.Forms.TextBox txtEMail;
         private System.Windows.Forms.GroupBox groupInsert;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupContato;
     }
 }

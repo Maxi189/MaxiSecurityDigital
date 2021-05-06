@@ -16,5 +16,15 @@ namespace ServicoPortaria.Presentation.Apartamento
         {
             InitializeComponent();
         }
+
+        private void lblIdMorador_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblIdPredio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

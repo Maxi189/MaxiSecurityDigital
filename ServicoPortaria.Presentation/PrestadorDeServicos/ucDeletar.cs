@@ -16,5 +16,30 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         {
             InitializeComponent();
         }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHoraChegada_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblHoraDaSaida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblDataSaida_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

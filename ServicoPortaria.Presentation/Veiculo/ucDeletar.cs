@@ -16,5 +16,10 @@ namespace ServicoPortaria.Presentation.Veiculo
         {
             InitializeComponent();
         }
+
+        private void ucDeletar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

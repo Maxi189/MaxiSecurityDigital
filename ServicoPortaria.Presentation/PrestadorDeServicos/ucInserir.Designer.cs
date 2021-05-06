@@ -92,8 +92,23 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblIdPredio = new System.Windows.Forms.Label();
             this.lblIdCondominio = new System.Windows.Forms.Label();
             this.lblClose = new System.Windows.Forms.Label();
+            this.lblDataChegada = new System.Windows.Forms.Label();
+            this.lblDataSaida = new System.Windows.Forms.Label();
+            this.lblHoraChegada = new System.Windows.Forms.Label();
+            this.lblHoraDaSaida = new System.Windows.Forms.Label();
+            this.groupDocumentacao = new System.Windows.Forms.GroupBox();
+            this.groupVisita = new System.Windows.Forms.GroupBox();
+            this.groupInformacoes = new System.Windows.Forms.GroupBox();
+            this.dtpDataChegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraChegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
+            this.label2 = new System.Windows.Forms.Label();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
+            this.groupDocumentacao.SuspendLayout();
+            this.groupVisita.SuspendLayout();
+            this.groupInformacoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsPresentation
@@ -483,7 +498,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(489, 266);
+            this.lblNome.Location = new System.Drawing.Point(15, 20);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(40, 15);
             this.lblNome.TabIndex = 55;
@@ -492,7 +507,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // lblCNPJ
             // 
             this.lblCNPJ.AutoSize = true;
-            this.lblCNPJ.Location = new System.Drawing.Point(489, 306);
+            this.lblCNPJ.Location = new System.Drawing.Point(15, 60);
             this.lblCNPJ.Name = "lblCNPJ";
             this.lblCNPJ.Size = new System.Drawing.Size(34, 15);
             this.lblCNPJ.TabIndex = 56;
@@ -501,7 +516,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
-            this.lblCPF.Location = new System.Drawing.Point(489, 346);
+            this.lblCPF.Location = new System.Drawing.Point(15, 100);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(28, 15);
             this.lblCPF.TabIndex = 57;
@@ -510,7 +525,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // lblPredio
             // 
             this.lblPredio.AutoSize = true;
-            this.lblPredio.Location = new System.Drawing.Point(489, 389);
+            this.lblPredio.Location = new System.Drawing.Point(18, 26);
             this.lblPredio.Name = "lblPredio";
             this.lblPredio.Size = new System.Drawing.Size(94, 15);
             this.lblPredio.TabIndex = 58;
@@ -519,7 +534,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // lblCondominio
             // 
             this.lblCondominio.AutoSize = true;
-            this.lblCondominio.Location = new System.Drawing.Point(489, 432);
+            this.lblCondominio.Location = new System.Drawing.Point(18, 80);
             this.lblCondominio.Name = "lblCondominio";
             this.lblCondominio.Size = new System.Drawing.Size(74, 15);
             this.lblCondominio.TabIndex = 59;
@@ -527,14 +542,15 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(642, 263);
+            this.txtNome.Location = new System.Drawing.Point(132, 17);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(218, 23);
             this.txtNome.TabIndex = 60;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // mtxCNPJ
             // 
-            this.mtxCNPJ.Location = new System.Drawing.Point(642, 303);
+            this.mtxCNPJ.Location = new System.Drawing.Point(132, 57);
             this.mtxCNPJ.Mask = "00.000.000/0000-00";
             this.mtxCNPJ.Name = "mtxCNPJ";
             this.mtxCNPJ.Size = new System.Drawing.Size(218, 23);
@@ -542,22 +558,23 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // 
             // mtxCPF
             // 
-            this.mtxCPF.Location = new System.Drawing.Point(642, 343);
+            this.mtxCPF.Location = new System.Drawing.Point(132, 97);
             this.mtxCPF.Mask = "000.000.000-00";
             this.mtxCPF.Name = "mtxCPF";
             this.mtxCPF.Size = new System.Drawing.Size(218, 23);
             this.mtxCPF.TabIndex = 62;
+            this.mtxCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mtxCPF_MaskInputRejected);
             // 
             // txtNomePredio
             // 
-            this.txtNomePredio.Location = new System.Drawing.Point(642, 386);
+            this.txtNomePredio.Location = new System.Drawing.Point(132, 23);
             this.txtNomePredio.Name = "txtNomePredio";
             this.txtNomePredio.Size = new System.Drawing.Size(218, 23);
             this.txtNomePredio.TabIndex = 63;
             // 
             // txtCondominio
             // 
-            this.txtCondominio.Location = new System.Drawing.Point(642, 429);
+            this.txtCondominio.Location = new System.Drawing.Point(132, 77);
             this.txtCondominio.Name = "txtCondominio";
             this.txtCondominio.Size = new System.Drawing.Size(218, 23);
             this.txtCondominio.TabIndex = 64;
@@ -567,7 +584,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.btnCadastrar.BackColor = System.Drawing.Color.Black;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(555, 483);
+            this.btnCadastrar.Location = new System.Drawing.Point(610, 608);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(267, 69);
             this.btnCadastrar.TabIndex = 65;
@@ -577,7 +594,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // lblIdPredio
             // 
             this.lblIdPredio.AutoSize = true;
-            this.lblIdPredio.Location = new System.Drawing.Point(949, 389);
+            this.lblIdPredio.Location = new System.Drawing.Point(365, 26);
             this.lblIdPredio.Name = "lblIdPredio";
             this.lblIdPredio.Size = new System.Drawing.Size(100, 15);
             this.lblIdPredio.TabIndex = 66;
@@ -586,11 +603,12 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // lblIdCondominio
             // 
             this.lblIdCondominio.AutoSize = true;
-            this.lblIdCondominio.Location = new System.Drawing.Point(949, 432);
+            this.lblIdCondominio.Location = new System.Drawing.Point(365, 80);
             this.lblIdCondominio.Name = "lblIdCondominio";
             this.lblIdCondominio.Size = new System.Drawing.Size(133, 15);
             this.lblIdCondominio.TabIndex = 67;
             this.lblIdCondominio.Text = "Código do Condomínio";
+            this.lblIdCondominio.Click += new System.EventHandler(this.lblIdCondominio_Click);
             // 
             // lblClose
             // 
@@ -603,32 +621,155 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblClose.TabIndex = 69;
             this.lblClose.Text = "X";
             // 
+            // lblDataChegada
+            // 
+            this.lblDataChegada.AutoSize = true;
+            this.lblDataChegada.Location = new System.Drawing.Point(18, 19);
+            this.lblDataChegada.Name = "lblDataChegada";
+            this.lblDataChegada.Size = new System.Drawing.Size(97, 15);
+            this.lblDataChegada.TabIndex = 70;
+            this.lblDataChegada.Text = "Data da Chegada";
+            // 
+            // lblDataSaida
+            // 
+            this.lblDataSaida.AutoSize = true;
+            this.lblDataSaida.Location = new System.Drawing.Point(18, 53);
+            this.lblDataSaida.Name = "lblDataSaida";
+            this.lblDataSaida.Size = new System.Drawing.Size(78, 15);
+            this.lblDataSaida.TabIndex = 71;
+            this.lblDataSaida.Text = "Data da Saída";
+            this.lblDataSaida.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lblHoraChegada
+            // 
+            this.lblHoraChegada.AutoSize = true;
+            this.lblHoraChegada.Location = new System.Drawing.Point(18, 93);
+            this.lblHoraChegada.Name = "lblHoraChegada";
+            this.lblHoraChegada.Size = new System.Drawing.Size(99, 15);
+            this.lblHoraChegada.TabIndex = 72;
+            this.lblHoraChegada.Text = "Hora da Chegada";
+            // 
+            // lblHoraDaSaida
+            // 
+            this.lblHoraDaSaida.AutoSize = true;
+            this.lblHoraDaSaida.Location = new System.Drawing.Point(18, 129);
+            this.lblHoraDaSaida.Name = "lblHoraDaSaida";
+            this.lblHoraDaSaida.Size = new System.Drawing.Size(80, 15);
+            this.lblHoraDaSaida.TabIndex = 73;
+            this.lblHoraDaSaida.Text = "Hora da Saída";
+            // 
+            // groupDocumentacao
+            // 
+            this.groupDocumentacao.Controls.Add(this.mtxCPF);
+            this.groupDocumentacao.Controls.Add(this.mtxCNPJ);
+            this.groupDocumentacao.Controls.Add(this.txtNome);
+            this.groupDocumentacao.Controls.Add(this.lblCPF);
+            this.groupDocumentacao.Controls.Add(this.lblCNPJ);
+            this.groupDocumentacao.Controls.Add(this.lblNome);
+            this.groupDocumentacao.Location = new System.Drawing.Point(489, 162);
+            this.groupDocumentacao.Name = "groupDocumentacao";
+            this.groupDocumentacao.Size = new System.Drawing.Size(515, 142);
+            this.groupDocumentacao.TabIndex = 74;
+            this.groupDocumentacao.TabStop = false;
+            this.groupDocumentacao.Text = "Documentação";
+            // 
+            // groupVisita
+            // 
+            this.groupVisita.Controls.Add(this.dtpHoraSaida);
+            this.groupVisita.Controls.Add(this.dtpHoraChegada);
+            this.groupVisita.Controls.Add(this.dtpDataSaida);
+            this.groupVisita.Controls.Add(this.dtpDataChegada);
+            this.groupVisita.Controls.Add(this.lblHoraDaSaida);
+            this.groupVisita.Controls.Add(this.lblHoraChegada);
+            this.groupVisita.Controls.Add(this.lblDataSaida);
+            this.groupVisita.Controls.Add(this.lblDataChegada);
+            this.groupVisita.Location = new System.Drawing.Point(489, 310);
+            this.groupVisita.Name = "groupVisita";
+            this.groupVisita.Size = new System.Drawing.Size(515, 160);
+            this.groupVisita.TabIndex = 75;
+            this.groupVisita.TabStop = false;
+            this.groupVisita.Text = "Visita";
+            // 
+            // groupInformacoes
+            // 
+            this.groupInformacoes.Controls.Add(this.lblIdCondominio);
+            this.groupInformacoes.Controls.Add(this.lblIdPredio);
+            this.groupInformacoes.Controls.Add(this.txtNomePredio);
+            this.groupInformacoes.Controls.Add(this.lblCondominio);
+            this.groupInformacoes.Controls.Add(this.txtCondominio);
+            this.groupInformacoes.Controls.Add(this.lblPredio);
+            this.groupInformacoes.Location = new System.Drawing.Point(489, 476);
+            this.groupInformacoes.Name = "groupInformacoes";
+            this.groupInformacoes.Size = new System.Drawing.Size(515, 115);
+            this.groupInformacoes.TabIndex = 76;
+            this.groupInformacoes.TabStop = false;
+            this.groupInformacoes.Text = "Informações";
+            // 
+            // dtpDataChegada
+            // 
+            this.dtpDataChegada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataChegada.Location = new System.Drawing.Point(132, 13);
+            this.dtpDataChegada.Name = "dtpDataChegada";
+            this.dtpDataChegada.Size = new System.Drawing.Size(218, 23);
+            this.dtpDataChegada.TabIndex = 74;
+            // 
+            // dtpDataSaida
+            // 
+            this.dtpDataSaida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataSaida.Location = new System.Drawing.Point(132, 47);
+            this.dtpDataSaida.Name = "dtpDataSaida";
+            this.dtpDataSaida.Size = new System.Drawing.Size(218, 23);
+            this.dtpDataSaida.TabIndex = 75;
+            // 
+            // dtpHoraChegada
+            // 
+            this.dtpHoraChegada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraChegada.Location = new System.Drawing.Point(132, 87);
+            this.dtpHoraChegada.Name = "dtpHoraChegada";
+            this.dtpHoraChegada.Size = new System.Drawing.Size(218, 23);
+            this.dtpHoraChegada.TabIndex = 76;
+            // 
+            // dtpHoraSaida
+            // 
+            this.dtpHoraSaida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraSaida.Location = new System.Drawing.Point(132, 123);
+            this.dtpHoraSaida.Name = "dtpHoraSaida";
+            this.dtpHoraSaida.Size = new System.Drawing.Size(218, 23);
+            this.dtpHoraSaida.TabIndex = 77;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 53);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(78, 15);
+            this.label2.TabIndex = 71;
+            this.label2.Text = "Data da Saída";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupVisita);
+            this.Controls.Add(this.groupDocumentacao);
             this.Controls.Add(this.lblClose);
-            this.Controls.Add(this.lblIdCondominio);
-            this.Controls.Add(this.lblIdPredio);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.txtCondominio);
-            this.Controls.Add(this.txtNomePredio);
-            this.Controls.Add(this.mtxCPF);
-            this.Controls.Add(this.mtxCNPJ);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblCondominio);
-            this.Controls.Add(this.lblPredio);
-            this.Controls.Add(this.lblCPF);
-            this.Controls.Add(this.lblCNPJ);
-            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
+            this.Controls.Add(this.groupInformacoes);
             this.Name = "ucInserir";
             this.Size = new System.Drawing.Size(1370, 800);
             this.mnsPresentation.ResumeLayout(false);
             this.mnsPresentation.PerformLayout();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
+            this.groupDocumentacao.ResumeLayout(false);
+            this.groupDocumentacao.PerformLayout();
+            this.groupVisita.ResumeLayout(false);
+            this.groupVisita.PerformLayout();
+            this.groupInformacoes.ResumeLayout(false);
+            this.groupInformacoes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -698,5 +839,17 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         private System.Windows.Forms.Label lblIdPredio;
         private System.Windows.Forms.Label lblIdCondominio;
         private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.Label lblDataChegada;
+        private System.Windows.Forms.Label lblDataSaida;
+        private System.Windows.Forms.Label lblHoraChegada;
+        private System.Windows.Forms.Label lblHoraDaSaida;
+        private System.Windows.Forms.GroupBox groupDocumentacao;
+        private System.Windows.Forms.GroupBox groupVisita;
+        private System.Windows.Forms.GroupBox groupInformacoes;
+        private System.Windows.Forms.DateTimePicker dtpHoraSaida;
+        private System.Windows.Forms.DateTimePicker dtpHoraChegada;
+        private System.Windows.Forms.DateTimePicker dtpDataSaida;
+        private System.Windows.Forms.DateTimePicker dtpDataChegada;
+        private System.Windows.Forms.Label label2;
     }
 }

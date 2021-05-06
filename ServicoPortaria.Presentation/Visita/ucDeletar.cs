@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ServicoPortaria.Presentation.Sindico
+namespace ServicoPortaria.Presentation.Visita
 {
     public partial class ucDeletar : UserControl
     {
         public ucDeletar()
         {
             InitializeComponent();
-        }
-
-        private void lblCelular_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

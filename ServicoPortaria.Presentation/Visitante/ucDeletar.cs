@@ -16,5 +16,20 @@ namespace ServicoPortaria.Presentation.Visitante
         {
             InitializeComponent();
         }
+
+        private void lblEMail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCelular_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSexo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

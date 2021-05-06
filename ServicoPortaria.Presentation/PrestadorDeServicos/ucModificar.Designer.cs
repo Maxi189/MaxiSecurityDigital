@@ -88,15 +88,31 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblCNPJ = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.groupCadastro = new System.Windows.Forms.GroupBox();
-            this.groupConsulta = new System.Windows.Forms.GroupBox();
-            this.lblCodPredio = new System.Windows.Forms.Label();
             this.lblCodCondominio = new System.Windows.Forms.Label();
+            this.lblCodPredio = new System.Windows.Forms.Label();
+            this.groupConsulta = new System.Windows.Forms.GroupBox();
+            this.btnConsulta = new System.Windows.Forms.Button();
+            this.lblCodPrestador = new System.Windows.Forms.Label();
             this.mtxConsultaCPF = new System.Windows.Forms.MaskedTextBox();
             this.mtxConsultaCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblCodPrestador = new System.Windows.Forms.Label();
-            this.btnConsulta = new System.Windows.Forms.Button();
+            this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
+            this.dtpHoraChegada = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataChegada = new System.Windows.Forms.DateTimePicker();
+            this.lblHoraDaSaida = new System.Windows.Forms.Label();
+            this.lblHoraChegada = new System.Windows.Forms.Label();
+            this.lblDataSaida = new System.Windows.Forms.Label();
+            this.lblDataChegada = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.groupCadastro.SuspendLayout();
@@ -478,11 +494,11 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.btnCadastrar.BackColor = System.Drawing.Color.Black;
             this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(99, 313);
+            this.btnCadastrar.Location = new System.Drawing.Point(103, 496);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(267, 69);
             this.btnCadastrar.TabIndex = 93;
-            this.btnCadastrar.Text = "Cadastrar Prestador";
+            this.btnCadastrar.Text = "Modificar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
             // txtCondominio
@@ -569,6 +585,14 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // 
             // groupCadastro
             // 
+            this.groupCadastro.Controls.Add(this.dtpHoraSaida);
+            this.groupCadastro.Controls.Add(this.dtpHoraChegada);
+            this.groupCadastro.Controls.Add(this.dtpDataSaida);
+            this.groupCadastro.Controls.Add(this.dtpDataChegada);
+            this.groupCadastro.Controls.Add(this.lblHoraDaSaida);
+            this.groupCadastro.Controls.Add(this.lblHoraChegada);
+            this.groupCadastro.Controls.Add(this.lblDataSaida);
+            this.groupCadastro.Controls.Add(this.lblDataChegada);
             this.groupCadastro.Controls.Add(this.lblCodCondominio);
             this.groupCadastro.Controls.Add(this.lblCodPredio);
             this.groupCadastro.Controls.Add(this.btnCadastrar);
@@ -582,27 +606,21 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.groupCadastro.Controls.Add(this.lblCPF);
             this.groupCadastro.Controls.Add(this.lblCNPJ);
             this.groupCadastro.Controls.Add(this.lblNome);
-            this.groupCadastro.Location = new System.Drawing.Point(306, 229);
+            this.groupCadastro.Location = new System.Drawing.Point(306, 144);
             this.groupCadastro.Name = "groupCadastro";
-            this.groupCadastro.Size = new System.Drawing.Size(479, 397);
+            this.groupCadastro.Size = new System.Drawing.Size(479, 583);
             this.groupCadastro.TabIndex = 94;
             this.groupCadastro.TabStop = false;
             this.groupCadastro.Text = "Atualização de Dados";
             // 
-            // groupConsulta
+            // lblCodCondominio
             // 
-            this.groupConsulta.Controls.Add(this.btnConsulta);
-            this.groupConsulta.Controls.Add(this.lblCodPrestador);
-            this.groupConsulta.Controls.Add(this.mtxConsultaCPF);
-            this.groupConsulta.Controls.Add(this.mtxConsultaCNPJ);
-            this.groupConsulta.Controls.Add(this.label1);
-            this.groupConsulta.Controls.Add(this.label2);
-            this.groupConsulta.Location = new System.Drawing.Point(804, 229);
-            this.groupConsulta.Name = "groupConsulta";
-            this.groupConsulta.Size = new System.Drawing.Size(428, 397);
-            this.groupConsulta.TabIndex = 95;
-            this.groupConsulta.TabStop = false;
-            this.groupConsulta.Text = "Consulta";
+            this.lblCodCondominio.AutoSize = true;
+            this.lblCodCondominio.Location = new System.Drawing.Point(162, 276);
+            this.lblCodCondominio.Name = "lblCodCondominio";
+            this.lblCodCondominio.Size = new System.Drawing.Size(133, 15);
+            this.lblCodCondominio.TabIndex = 95;
+            this.lblCodCondominio.Text = "Código do Condomínio";
             // 
             // lblCodPredio
             // 
@@ -613,14 +631,49 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblCodPredio.TabIndex = 94;
             this.lblCodPredio.Text = "Código do Prédio";
             // 
-            // lblCodCondominio
+            // groupConsulta
             // 
-            this.lblCodCondominio.AutoSize = true;
-            this.lblCodCondominio.Location = new System.Drawing.Point(162, 276);
-            this.lblCodCondominio.Name = "lblCodCondominio";
-            this.lblCodCondominio.Size = new System.Drawing.Size(133, 15);
-            this.lblCodCondominio.TabIndex = 95;
-            this.lblCodCondominio.Text = "Código do Condomínio";
+            this.groupConsulta.Controls.Add(this.label3);
+            this.groupConsulta.Controls.Add(this.dateTimePicker4);
+            this.groupConsulta.Controls.Add(this.label4);
+            this.groupConsulta.Controls.Add(this.dateTimePicker3);
+            this.groupConsulta.Controls.Add(this.label5);
+            this.groupConsulta.Controls.Add(this.dateTimePicker2);
+            this.groupConsulta.Controls.Add(this.label6);
+            this.groupConsulta.Controls.Add(this.dateTimePicker1);
+            this.groupConsulta.Controls.Add(this.btnConsulta);
+            this.groupConsulta.Controls.Add(this.lblCodPrestador);
+            this.groupConsulta.Controls.Add(this.mtxConsultaCPF);
+            this.groupConsulta.Controls.Add(this.mtxConsultaCNPJ);
+            this.groupConsulta.Controls.Add(this.label1);
+            this.groupConsulta.Controls.Add(this.label2);
+            this.groupConsulta.Location = new System.Drawing.Point(804, 144);
+            this.groupConsulta.Name = "groupConsulta";
+            this.groupConsulta.Size = new System.Drawing.Size(428, 583);
+            this.groupConsulta.TabIndex = 95;
+            this.groupConsulta.TabStop = false;
+            this.groupConsulta.Text = "Consulta";
+            // 
+            // btnConsulta
+            // 
+            this.btnConsulta.BackColor = System.Drawing.Color.Black;
+            this.btnConsulta.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConsulta.ForeColor = System.Drawing.Color.White;
+            this.btnConsulta.Location = new System.Drawing.Point(59, 496);
+            this.btnConsulta.Name = "btnConsulta";
+            this.btnConsulta.Size = new System.Drawing.Size(319, 69);
+            this.btnConsulta.TabIndex = 96;
+            this.btnConsulta.Text = "Consultar";
+            this.btnConsulta.UseVisualStyleBackColor = false;
+            // 
+            // lblCodPrestador
+            // 
+            this.lblCodPrestador.AutoSize = true;
+            this.lblCodPrestador.Location = new System.Drawing.Point(160, 148);
+            this.lblCodPrestador.Name = "lblCodPrestador";
+            this.lblCodPrestador.Size = new System.Drawing.Size(116, 15);
+            this.lblCodPrestador.TabIndex = 95;
+            this.lblCodPrestador.Text = "Código do Prestador";
             // 
             // mtxConsultaCPF
             // 
@@ -656,36 +709,151 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.label2.TabIndex = 91;
             this.label2.Text = "CNPJ";
             // 
-            // lblCodPrestador
+            // dtpHoraSaida
             // 
-            this.lblCodPrestador.AutoSize = true;
-            this.lblCodPrestador.Location = new System.Drawing.Point(160, 234);
-            this.lblCodPrestador.Name = "lblCodPrestador";
-            this.lblCodPrestador.Size = new System.Drawing.Size(116, 15);
-            this.lblCodPrestador.TabIndex = 95;
-            this.lblCodPrestador.Text = "Código do Prestador";
+            this.dtpHoraSaida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraSaida.Location = new System.Drawing.Point(137, 459);
+            this.dtpHoraSaida.Name = "dtpHoraSaida";
+            this.dtpHoraSaida.Size = new System.Drawing.Size(218, 23);
+            this.dtpHoraSaida.TabIndex = 103;
             // 
-            // btnConsulta
+            // dtpHoraChegada
             // 
-            this.btnConsulta.BackColor = System.Drawing.Color.Black;
-            this.btnConsulta.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConsulta.ForeColor = System.Drawing.Color.White;
-            this.btnConsulta.Location = new System.Drawing.Point(58, 313);
-            this.btnConsulta.Name = "btnConsulta";
-            this.btnConsulta.Size = new System.Drawing.Size(319, 69);
-            this.btnConsulta.TabIndex = 96;
-            this.btnConsulta.Text = "Consultar";
-            this.btnConsulta.UseVisualStyleBackColor = false;
+            this.dtpHoraChegada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpHoraChegada.Location = new System.Drawing.Point(137, 407);
+            this.dtpHoraChegada.Name = "dtpHoraChegada";
+            this.dtpHoraChegada.Size = new System.Drawing.Size(218, 23);
+            this.dtpHoraChegada.TabIndex = 102;
+            // 
+            // dtpDataSaida
+            // 
+            this.dtpDataSaida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataSaida.Location = new System.Drawing.Point(137, 353);
+            this.dtpDataSaida.Name = "dtpDataSaida";
+            this.dtpDataSaida.Size = new System.Drawing.Size(218, 23);
+            this.dtpDataSaida.TabIndex = 101;
+            // 
+            // dtpDataChegada
+            // 
+            this.dtpDataChegada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataChegada.Location = new System.Drawing.Point(137, 299);
+            this.dtpDataChegada.Name = "dtpDataChegada";
+            this.dtpDataChegada.Size = new System.Drawing.Size(218, 23);
+            this.dtpDataChegada.TabIndex = 100;
+            // 
+            // lblHoraDaSaida
+            // 
+            this.lblHoraDaSaida.AutoSize = true;
+            this.lblHoraDaSaida.Location = new System.Drawing.Point(15, 465);
+            this.lblHoraDaSaida.Name = "lblHoraDaSaida";
+            this.lblHoraDaSaida.Size = new System.Drawing.Size(80, 15);
+            this.lblHoraDaSaida.TabIndex = 99;
+            this.lblHoraDaSaida.Text = "Hora da Saída";
+            // 
+            // lblHoraChegada
+            // 
+            this.lblHoraChegada.AutoSize = true;
+            this.lblHoraChegada.Location = new System.Drawing.Point(15, 413);
+            this.lblHoraChegada.Name = "lblHoraChegada";
+            this.lblHoraChegada.Size = new System.Drawing.Size(99, 15);
+            this.lblHoraChegada.TabIndex = 98;
+            this.lblHoraChegada.Text = "Hora da Chegada";
+            // 
+            // lblDataSaida
+            // 
+            this.lblDataSaida.AutoSize = true;
+            this.lblDataSaida.Location = new System.Drawing.Point(15, 359);
+            this.lblDataSaida.Name = "lblDataSaida";
+            this.lblDataSaida.Size = new System.Drawing.Size(78, 15);
+            this.lblDataSaida.TabIndex = 97;
+            this.lblDataSaida.Text = "Data da Saída";
+            // 
+            // lblDataChegada
+            // 
+            this.lblDataChegada.AutoSize = true;
+            this.lblDataChegada.Location = new System.Drawing.Point(15, 305);
+            this.lblDataChegada.Name = "lblDataChegada";
+            this.lblDataChegada.Size = new System.Drawing.Size(97, 15);
+            this.lblDataChegada.TabIndex = 96;
+            this.lblDataChegada.Text = "Data da Chegada";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker1.Location = new System.Drawing.Point(160, 407);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(218, 23);
+            this.dateTimePicker1.TabIndex = 111;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dateTimePicker2.Location = new System.Drawing.Point(160, 353);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(218, 23);
+            this.dateTimePicker2.TabIndex = 110;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker3.Location = new System.Drawing.Point(160, 299);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(218, 23);
+            this.dateTimePicker3.TabIndex = 109;
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker4.Location = new System.Drawing.Point(160, 234);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(218, 23);
+            this.dateTimePicker4.TabIndex = 108;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 413);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(80, 15);
+            this.label3.TabIndex = 107;
+            this.label3.Text = "Hora da Saída";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(0, 359);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 15);
+            this.label4.TabIndex = 106;
+            this.label4.Text = "Hora da Chegada";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 305);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(78, 15);
+            this.label5.TabIndex = 105;
+            this.label5.Text = "Data da Saída";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 240);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(97, 15);
+            this.label6.TabIndex = 104;
+            this.label6.Text = "Data da Chegada";
             // 
             // ucModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupConsulta);
-            this.Controls.Add(this.groupCadastro);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.mnsPresentation);
+            this.Controls.Add(this.groupCadastro);
             this.Name = "ucModificar";
             this.Size = new System.Drawing.Size(1370, 800);
             this.mnsPresentation.ResumeLayout(false);
@@ -770,5 +938,21 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         private System.Windows.Forms.MaskedTextBox mtxConsultaCNPJ;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpHoraSaida;
+        private System.Windows.Forms.DateTimePicker dtpHoraChegada;
+        private System.Windows.Forms.DateTimePicker dtpDataSaida;
+        private System.Windows.Forms.DateTimePicker dtpDataChegada;
+        private System.Windows.Forms.Label lblHoraDaSaida;
+        private System.Windows.Forms.Label lblHoraChegada;
+        private System.Windows.Forms.Label lblDataSaida;
+        private System.Windows.Forms.Label lblDataChegada;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
