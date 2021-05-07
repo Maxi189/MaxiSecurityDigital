@@ -617,6 +617,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmVisitante.Name = "tsmVisitante";
             this.tsmVisitante.Size = new System.Drawing.Size(64, 20);
             this.tsmVisitante.Text = "Visitante";
+            this.tsmVisitante.Click += new System.EventHandler(this.tsmVisitante_Click);
             // 
             // tsmGaragem
             // 
@@ -624,6 +625,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmGaragem.Name = "tsmGaragem";
             this.tsmGaragem.Size = new System.Drawing.Size(67, 20);
             this.tsmGaragem.Text = "Garagem";
+            this.tsmGaragem.Click += new System.EventHandler(this.tsmGaragem_Click);
             // 
             // tsmVeiculo
             // 
@@ -631,6 +633,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmVeiculo.Name = "tsmVeiculo";
             this.tsmVeiculo.Size = new System.Drawing.Size(57, 20);
             this.tsmVeiculo.Text = "Veículo";
+            this.tsmVeiculo.Click += new System.EventHandler(this.tsmVeiculo_Click);
             // 
             // tsmPrestadorDeServicos
             // 
@@ -638,6 +641,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmPrestadorDeServicos.Name = "tsmPrestadorDeServicos";
             this.tsmPrestadorDeServicos.Size = new System.Drawing.Size(131, 20);
             this.tsmPrestadorDeServicos.Text = "Prestador de Serviços";
+            this.tsmPrestadorDeServicos.Click += new System.EventHandler(this.tsmPrestadorDeServicos_Click);
             // 
             // tsmSindico
             // 
@@ -645,6 +649,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmSindico.Name = "tsmSindico";
             this.tsmSindico.Size = new System.Drawing.Size(58, 20);
             this.tsmSindico.Text = "Síndico";
+            this.tsmSindico.Click += new System.EventHandler(this.tsmSindico_Click);
             // 
             // tsmHomePage
             // 
@@ -652,6 +657,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmHomePage.Name = "tsmHomePage";
             this.tsmHomePage.Size = new System.Drawing.Size(81, 20);
             this.tsmHomePage.Text = "Home Page";
+            this.tsmHomePage.Click += new System.EventHandler(this.tsmHomePage_Click);
             // 
             // tsmVisita
             // 
@@ -659,6 +665,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmVisita.Name = "tsmVisita";
             this.tsmVisita.Size = new System.Drawing.Size(47, 20);
             this.tsmVisita.Text = "Visita";
+            this.tsmVisita.Click += new System.EventHandler(this.tsmVisita_Click);
             // 
             // lblClose
             // 
