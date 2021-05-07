@@ -2,6 +2,7 @@
 using ServicoPortaria.Domain.Entities;
 using ServicoPortaria.Domain.Interfaces;
 using System.Collections.Generic;
+using System;
 
 namespace ServicoPortaria.Infra.Data.Repositories
 {
@@ -30,6 +31,26 @@ namespace ServicoPortaria.Infra.Data.Repositories
         public IEnumerable<PrestadorSevicos> ConsultarPorPredio(int id)
         {
             return Db.PrestadorServico.Where(t => t.IdPredio == id);
+        }
+
+        IEnumerable<PrestadorSevicos> IPrestadorRepository.ConsultarPorDataChegada(DateTime data)
+        {
+            return Db.PrestadorServico.Where(t => t.DataChegada == data);
+        }
+
+        IEnumerable<PrestadorSevicos> IPrestadorRepository.ConsultarPorDataSaida(DateTime data)
+        {
+            return Db.PrestadorServico.Where(t => t.DataSaida == data);
+        }
+
+        IEnumerable<PrestadorSevicos> IPrestadorRepository.ConsultarPorHoraChegada(TimeSpan hora)
+        {
+            return Db.PrestadorServico.Where(t => t.HoraChegada == hora);
+        }
+
+        IEnumerable<PrestadorSevicos> IPrestadorRepository.ConsultarPorHoraSaida(TimeSpan hora)
+        {
+            return Db.PrestadorServico.Where(t => t.HoraSaida == hora);
         }
     }
 }

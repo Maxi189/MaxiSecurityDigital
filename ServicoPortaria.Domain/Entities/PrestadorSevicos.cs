@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Domain.Entities
@@ -20,6 +21,10 @@ namespace ServicoPortaria.Domain.Entities
         [MinLength(1, ErrorMessage = "CPF Inválido!")]
         [MaxLength(14, ErrorMessage = "CPF Inválido!")]
         public string CPF { get; set; }
+        public DateTime DataChegada { get; set; }
+        public DateTime DataSaida { get; set; }
+        public TimeSpan HoraChegada { get; set; }
+        public TimeSpan HoraSaida { get; set; }
         [DisplayName("Código do Prédio")]
         public int IdPredio { get; set; }
         [DisplayName("Código do Condomínio")]

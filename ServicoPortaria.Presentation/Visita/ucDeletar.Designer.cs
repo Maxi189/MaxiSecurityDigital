@@ -51,7 +51,11 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblHoraChegada = new System.Windows.Forms.Label();
             this.lblDataSaida = new System.Windows.Forms.Label();
             this.lblDataChegada = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupVisita = new System.Windows.Forms.GroupBox();
+            this.mtxCPFMorador = new System.Windows.Forms.MaskedTextBox();
+            this.lblMorador = new System.Windows.Forms.Label();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.lblCPFVisitante = new System.Windows.Forms.Label();
             this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpDataChegada = new System.Windows.Forms.DateTimePicker();
@@ -60,12 +64,9 @@ namespace ServicoPortaria.Presentation.Visita
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.lblCPFVisitante = new System.Windows.Forms.Label();
-            this.mtxCPFMorador = new System.Windows.Forms.MaskedTextBox();
-            this.lblMorador = new System.Windows.Forms.Label();
+            this.btnDeletarDados = new System.Windows.Forms.Button();
             this.mnsCondominio.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupVisita.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnsCondominio
@@ -258,26 +259,60 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblDataChegada.TabIndex = 103;
             this.lblDataChegada.Text = "Data De Chegada";
             // 
-            // groupBox1
+            // groupVisita
             // 
-            this.groupBox1.Controls.Add(this.mtxCPFMorador);
-            this.groupBox1.Controls.Add(this.lblMorador);
-            this.groupBox1.Controls.Add(this.maskedTextBox2);
-            this.groupBox1.Controls.Add(this.lblCPFVisitante);
-            this.groupBox1.Controls.Add(this.dtpHoraSaida);
-            this.groupBox1.Controls.Add(this.dtpDataSaida);
-            this.groupBox1.Controls.Add(this.dtpDataChegada);
-            this.groupBox1.Controls.Add(this.dtpHoraChegada);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Location = new System.Drawing.Point(497, 43);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(445, 255);
-            this.groupBox1.TabIndex = 107;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Data da Visita";
+            this.groupVisita.Controls.Add(this.mtxCPFMorador);
+            this.groupVisita.Controls.Add(this.lblMorador);
+            this.groupVisita.Controls.Add(this.maskedTextBox2);
+            this.groupVisita.Controls.Add(this.lblCPFVisitante);
+            this.groupVisita.Controls.Add(this.dtpHoraSaida);
+            this.groupVisita.Controls.Add(this.dtpDataSaida);
+            this.groupVisita.Controls.Add(this.dtpDataChegada);
+            this.groupVisita.Controls.Add(this.dtpHoraChegada);
+            this.groupVisita.Controls.Add(this.label1);
+            this.groupVisita.Controls.Add(this.label2);
+            this.groupVisita.Controls.Add(this.label3);
+            this.groupVisita.Controls.Add(this.label4);
+            this.groupVisita.Location = new System.Drawing.Point(506, 91);
+            this.groupVisita.Name = "groupVisita";
+            this.groupVisita.Size = new System.Drawing.Size(445, 255);
+            this.groupVisita.TabIndex = 107;
+            this.groupVisita.TabStop = false;
+            this.groupVisita.Text = "Visita";
+            // 
+            // mtxCPFMorador
+            // 
+            this.mtxCPFMorador.Location = new System.Drawing.Point(230, 211);
+            this.mtxCPFMorador.Mask = "000.000.000-00";
+            this.mtxCPFMorador.Name = "mtxCPFMorador";
+            this.mtxCPFMorador.Size = new System.Drawing.Size(190, 23);
+            this.mtxCPFMorador.TabIndex = 82;
+            // 
+            // lblMorador
+            // 
+            this.lblMorador.AutoSize = true;
+            this.lblMorador.Location = new System.Drawing.Point(0, 172);
+            this.lblMorador.Name = "lblMorador";
+            this.lblMorador.Size = new System.Drawing.Size(94, 15);
+            this.lblMorador.TabIndex = 81;
+            this.lblMorador.Text = "CPF do Morador";
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(230, 169);
+            this.maskedTextBox2.Mask = "000.000.000-00";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(190, 23);
+            this.maskedTextBox2.TabIndex = 80;
+            // 
+            // lblCPFVisitante
+            // 
+            this.lblCPFVisitante.AutoSize = true;
+            this.lblCPFVisitante.Location = new System.Drawing.Point(1, 214);
+            this.lblCPFVisitante.Name = "lblCPFVisitante";
+            this.lblCPFVisitante.Size = new System.Drawing.Size(93, 15);
+            this.lblCPFVisitante.TabIndex = 79;
+            this.lblCPFVisitante.Text = "CPF do Visitante";
             // 
             // dtpHoraSaida
             // 
@@ -347,45 +382,24 @@ namespace ServicoPortaria.Presentation.Visita
             this.label4.TabIndex = 71;
             this.label4.Text = "Data De Chegada";
             // 
-            // maskedTextBox2
+            // btnDeletarDados
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(242, 116);
-            this.maskedTextBox2.Mask = "000.000.000-00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(190, 23);
-            this.maskedTextBox2.TabIndex = 80;
-            // 
-            // lblCPFVisitante
-            // 
-            this.lblCPFVisitante.AutoSize = true;
-            this.lblCPFVisitante.Location = new System.Drawing.Point(12, 119);
-            this.lblCPFVisitante.Name = "lblCPFVisitante";
-            this.lblCPFVisitante.Size = new System.Drawing.Size(93, 15);
-            this.lblCPFVisitante.TabIndex = 79;
-            this.lblCPFVisitante.Text = "CPF do Visitante";
-            // 
-            // mtxCPFMorador
-            // 
-            this.mtxCPFMorador.Location = new System.Drawing.Point(250, 124);
-            this.mtxCPFMorador.Mask = "000.000.000-00";
-            this.mtxCPFMorador.Name = "mtxCPFMorador";
-            this.mtxCPFMorador.Size = new System.Drawing.Size(190, 23);
-            this.mtxCPFMorador.TabIndex = 82;
-            // 
-            // lblMorador
-            // 
-            this.lblMorador.AutoSize = true;
-            this.lblMorador.Location = new System.Drawing.Point(20, 127);
-            this.lblMorador.Name = "lblMorador";
-            this.lblMorador.Size = new System.Drawing.Size(94, 15);
-            this.lblMorador.TabIndex = 81;
-            this.lblMorador.Text = "CPF do Morador";
+            this.btnDeletarDados.BackColor = System.Drawing.Color.Black;
+            this.btnDeletarDados.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeletarDados.ForeColor = System.Drawing.Color.White;
+            this.btnDeletarDados.Location = new System.Drawing.Point(985, 168);
+            this.btnDeletarDados.Name = "btnDeletarDados";
+            this.btnDeletarDados.Size = new System.Drawing.Size(125, 114);
+            this.btnDeletarDados.TabIndex = 108;
+            this.btnDeletarDados.Text = "Deletar Dados";
+            this.btnDeletarDados.UseVisualStyleBackColor = false;
             // 
             // ucDeletar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnDeletarDados);
+            this.Controls.Add(this.groupVisita);
             this.Controls.Add(this.lblHoraSaida);
             this.Controls.Add(this.lblHoraChegada);
             this.Controls.Add(this.lblDataSaida);
@@ -401,8 +415,8 @@ namespace ServicoPortaria.Presentation.Visita
             this.Size = new System.Drawing.Size(1370, 800);
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupVisita.ResumeLayout(false);
+            this.groupVisita.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,7 +446,7 @@ namespace ServicoPortaria.Presentation.Visita
         private System.Windows.Forms.Label lblHoraChegada;
         private System.Windows.Forms.Label lblDataSaida;
         private System.Windows.Forms.Label lblDataChegada;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupVisita;
         private System.Windows.Forms.DateTimePicker dtpHoraSaida;
         private System.Windows.Forms.DateTimePicker dtpDataSaida;
         private System.Windows.Forms.DateTimePicker dtpDataChegada;
@@ -445,5 +459,6 @@ namespace ServicoPortaria.Presentation.Visita
         private System.Windows.Forms.Label lblCPFVisitante;
         private System.Windows.Forms.MaskedTextBox mtxCPFMorador;
         private System.Windows.Forms.Label lblMorador;
+        private System.Windows.Forms.Button btnDeletarDados;
     }
 }
