@@ -101,7 +101,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.txtCodPostal.Name = "txtCodPostal";
             this.txtCodPostal.Size = new System.Drawing.Size(243, 23);
             this.txtCodPostal.TabIndex = 28;
-            this.txtCodPostal.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // txtNome
             // 

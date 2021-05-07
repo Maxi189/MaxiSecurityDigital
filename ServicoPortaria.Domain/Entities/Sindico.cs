@@ -25,7 +25,6 @@ namespace ServicoPortaria.Domain.Entities
         [MinLength(12, ErrorMessage = "RG Inválido!")]
         [MaxLength(12, ErrorMessage = "RG Inválido!")]
         public string RG { get; set; }
-        [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "Documento Civil Inválido!")]
         [MaxLength(20, ErrorMessage = "Documento Civil Inválido!")]
         [DisplayName("Documento Civil")]

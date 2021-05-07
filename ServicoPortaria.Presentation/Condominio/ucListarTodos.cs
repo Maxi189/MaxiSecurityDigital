@@ -20,7 +20,6 @@ namespace ServicoPortaria.Presentation.Condominio
 
         private void ucListarTodos_Load(object sender, EventArgs e)
         {
-            PortariaContext context = new PortariaContext();
             CondominioRepository repository = new CondominioRepository();
 
             dgvData.DataSource = repository.ConsultarTodos();
@@ -30,47 +29,66 @@ namespace ServicoPortaria.Presentation.Condominio
         {
             Application.Exit();
         }
-
-        private void tsmInserir_Click(object sender, EventArgs e)
+        private void tsmCondominio_Click(object sender, EventArgs e)
         {
-            frmInserir form = new frmInserir();
+            frmInserir form = new();
+            form.Show();
+        }
+        private void tsmPredio_Click(object sender, EventArgs e)
+        {
+            Predio.Forms.frmInserir form = new Predio.Forms.frmInserir();
             form.Show();
         }
 
-        private void tsmConsultar_Click(object sender, EventArgs e)
+        private void tsmMorador_Click(object sender, EventArgs e)
         {
-            frmConsultar form = new frmConsultar();
+            Morador.Forms.frmInserir form = new();
             form.Show();
-
-            frmConsultarTodos tela = new frmConsultarTodos();
-            tela.Close();
+        }
+        private void tsmApartamento_Click(object sender, EventArgs e)
+        {
+            Apartamento.Forms.frmInserir form = new();
+            form.Show();
+        }
+        private void tsmGaragem_Click(object sender, EventArgs e)
+        {
+            Garagem.Forms.frmInserir form = new Garagem.Forms.frmInserir();
+            form.Show();
+        }
+        private void tsmVisitante_Click(object sender, EventArgs e)
+        {
+            Visitante.Forms.frmInserir form = new Visitante.Forms.frmInserir();
+            form.Show();
+        }
+        private void tsmVeiculo_Click(object sender, EventArgs e)
+        {
+            Veiculo.Forms.frmInserir form = new Veiculo.Forms.frmInserir();
+            form.Show();
+        }
+        private void tsmSindico_Click(object sender, EventArgs e)
+        {
+            Sindico.Forms.frmInserir form = new();
+            form.Show();
+        }
+        private void tsmPrestadorDeServicos_Click(object sender, EventArgs e)
+        {
+            PrestadorDeServicos.Forms.frmInserir form = new PrestadorDeServicos.Forms.frmInserir();
+            form.Show();
+        }
+        private void tsmHomePage_Click(object sender, EventArgs e)
+        {
+            Login.Forms.frmLogin form = new Login.Forms.frmLogin();
+            form.Show();
+        }
+        private void tsmVisita_Click(object sender, EventArgs e)
+        {
+            Visita.Forms.frmInserir form = new Visita.Forms.frmInserir();
+            form.Show();
         }
 
-        private void tsmRemove_Click(object sender, EventArgs e)
+        private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmDeletar form = new frmDeletar();
-            form.Show();
 
-            frmConsultarTodos tela = new frmConsultarTodos();
-            tela.Close();
-        }
-
-        private void tsmUpdate_Click(object sender, EventArgs e)
-        {
-            frmModificar form = new frmModificar();
-            form.Show();
-
-            frmConsultarTodos tela = new frmConsultarTodos();
-            tela.Close();
-        }
-
-        private void tsmConsultarComId_Click(object sender, EventArgs e)
-        {
-            frmConsultarPorId form = new frmConsultarPorId();
-            form.Show();
-
-            frmConsultarTodos tela = new frmConsultarTodos();
-            tela.Close();
         }
     }
 }

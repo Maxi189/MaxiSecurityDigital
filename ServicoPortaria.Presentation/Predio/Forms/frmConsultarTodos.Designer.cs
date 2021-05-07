@@ -1,5 +1,5 @@
 ﻿
-namespace ServicoPortaria.Presentation.Morador.Forms
+namespace ServicoPortaria.Presentation.Predio.Forms
 {
     partial class frmConsultarTodos
     {
@@ -29,29 +29,31 @@ namespace ServicoPortaria.Presentation.Morador.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.ListarTodos = new Presentation.Morador.ucListarTodos();
+            this.ListarTodos = new ucListarTodos();
             this.SuspendLayout();
             //
-            // ucListarTodos
+            // ucConsultarTodos
             //
             this.ListarTodos.BackColor = System.Drawing.Color.White;
-            this.ListarTodos.Location = new System.Drawing.Point(0, 0);
-            this.ListarTodos.Name = "ListarTodos";
+            this.ListarTodos.Location = new System.Drawing.Point(1, 1);
+            this.ListarTodos.Name = "ucInserir";
             this.ListarTodos.Size = new System.Drawing.Size(1370, 800);
             this.ListarTodos.TabIndex = 0;
-            //
-            // frmListarTodos
-            //
-            this.components = new System.ComponentModel.Container();
+            // 
+            // frmConsultarTodos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1370, 788);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Controls.Add(ListarTodos);
-            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Name = "frmConsultarTodos";
             this.Text = "frmConsultarTodos";
+            this.ResumeLayout(false);
         }
 
         #endregion
 
-        private Presentation.Morador.ucListarTodos ListarTodos;
+        private ucListarTodos ListarTodos;
     }
 }

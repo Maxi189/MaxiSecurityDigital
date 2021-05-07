@@ -14,7 +14,7 @@ namespace ServicoPortaria.Infra.Data.Repositories
 
         public IEnumerable<Veiculo> ConsultarPorPredio(int id)
         {
-            return Db.Veiculo.Where(t => t.IdPredio == id);
+            return Db.Veiculo.Where(t => t.PredioId == id);
         }
 
         IEnumerable<Veiculo> IVeiculoRepository.ConsultarPorMarca(string marca)
