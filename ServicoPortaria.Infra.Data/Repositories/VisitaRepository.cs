@@ -20,7 +20,7 @@ namespace ServicoPortaria.Infra.Data.Repositories
 
         public IEnumerable<Visita> BuscarPorEntrada(TimeSpan time)
         {
-            return Db.Visita.Where(t => t.Chegada == time);
+            return Db.Visita.Where(t => t.HoraChegada == time);
         }
 
         public IEnumerable<Visita> BuscarPorPredio(int id)
@@ -30,7 +30,7 @@ namespace ServicoPortaria.Infra.Data.Repositories
 
         public IEnumerable<Visita> BuscarPorSaida(TimeSpan time)
         {
-            return Db.Visita.Where(t => t.Saida == time);
+            return Db.Visita.Where(t => t.HoraSaida == time);
         }
 
         public IEnumerable<Visita> BuscarPorVisitante(int id)
@@ -40,7 +40,7 @@ namespace ServicoPortaria.Infra.Data.Repositories
 
         IEnumerable<Visita> IVisitaRepository.BuscarPorDataChegada(DateTime date)
         {
-            return Db.Visita.Where(t => t.DataDaChegada == date.Date);
+            return Db.Visita.Where(t => t.DataChegada == date.Date);
         }
 
         IEnumerable<Visita> IVisitaRepository.BuscarPorDataSaida(DateTime date)

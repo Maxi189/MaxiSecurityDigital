@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Domain.Entities
@@ -32,7 +33,8 @@ namespace ServicoPortaria.Domain.Entities
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "Número Inválido!")]
         [MaxLength(20, ErrorMessage = "Número Inválido!")]
-        public string Telefone { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string Celular { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "E-Mail Inválido!")]
         [MaxLength(255, ErrorMessage = "E-Mail Inválido!")]

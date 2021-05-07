@@ -13,11 +13,11 @@ namespace ServicoPortaria.Domain.Entities
         public int IdVisitante { get; set; }
         [DisplayName("Código do Morador")]
         public int IdMorador { get; set; }
-        public DateTime DataDaChegada { get; set; }
+        public DateTime DataChegada { get; set; }
         [Timestamp]
-        public TimeSpan Chegada { get; set; }
+        public TimeSpan HoraChegada { get; set; }
         [Timestamp]
-        public TimeSpan Saida { get; set; }
+        public TimeSpan HoraSaida { get; set; }
         public DateTime DataSaida { get; set; }
         [DisplayName("Código do Condomínio")]
         public int IdCondominio { get; set; }

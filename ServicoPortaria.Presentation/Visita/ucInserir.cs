@@ -16,10 +16,75 @@ namespace ServicoPortaria.Presentation.Visita
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void btnCadastrarVisita_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Domain.Entities.Visita visita = new();
+                visita.IdVisitante = ConsultarIdVisitante(mtxCPFVisitante.Text);
+                visita.IdMorador = ConsultarIdMorador(mtxCPFMorador.Text);
+                visita.DataChegada = dtpDataChegada.Value.Date;
+                visita.HoraChegada = dtpHoraChegada.Value.TimeOfDay;
+                visita.HoraSaida = dtpHoraSaida.Value.TimeOfDay;
+                visita.DataSaida = dtpDataSaida.Value.Date;
+                visita.IdCondominio = ConsultarIdCondominio(txtCondominio.Text);
+                visita.IdPredio = ConsultarIdPredio(txtPredio.Text);
 
+                Infra.Data.Repositories.VisitaRepository repository = new();
+                repository.Inserir(visita);
+
+                MessageBox.Show("Visita Cadastrada Com Sucesso!",
+                    "Cadastrar Visita",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Cadastrar Visita",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+        static int ConsultarIdMorador(string cpf)
+        {
+            Infra.Data.Contexto.PortariaContext Db = new();
+
+            Domain.Entities.Morador morador = Db.Morador.FirstOrDefault(t => t.CPF.Contains(cpf));
+
+            return morador.Id;
+        }
+        static int ConsultarIdVisitante(string cpf)
+        {
+            Infra.Data.Contexto.PortariaContext Db = new();
+
+            Domain.Entities.Visitante visitante = Db.Visitante.FirstOrDefault(t => t.CPF.Contains(cpf));
+
+            return visitante.Id;
+        }
+        static int ConsultarIdPredio(string nome)
+        {
+            Infra.Data.Contexto.PortariaContext Db = new();
+
+            Domain.Entities.Predio predio = Db.Predio.FirstOrDefault(t => t.Nome.Contains(nome));
+
+            return predio.Id;
+        }
+        static int ConsultarIdCondominio(string nome)
+        {
+            Infra.Data.Contexto.PortariaContext Db = new();
+
+            Domain.Entities.Condominio condominio = Db.Condominio.FirstOrDefault(t => t.Nome.Contains(nome));
+
+            return condominio.Id;
+        }
+        static int ConsultarIdApartamento(int numero)
+        {
+            Infra.Data.Contexto.PortariaContext Db = new();
+
+            Domain.Entities.Apartamento apartamento = Db.Apartamento.FirstOrDefault(t => t.Numero == numero);
+
+            return apartamento.Id;
         }
     }
 }
