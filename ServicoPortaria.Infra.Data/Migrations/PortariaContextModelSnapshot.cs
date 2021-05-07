@@ -169,6 +169,9 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Property<int?>("CondominioId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("Data de Nascimento")
+                        .HasColumnType("date");
+
                     b.Property<string>("DocCivil")
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
@@ -266,20 +269,27 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CNPJ")
-                        .IsRequired()
                         .HasMaxLength(18)
                         .HasColumnType("nvarchar(18)");
 
                     b.Property<string>("CPF")
-                        .IsRequired()
                         .HasMaxLength(14)
-                        .HasColumnType("nvarchar(14)");
+                        .HasColumnType("nvarchar(14)");                    
 
                     b.Property<int?>("CondominioId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdCondominio")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("DataChegada")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("DataSaida")
+                        .HasColumnType("date");
+
+                    b.Property<TimeSpan>("HoraChegada")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("HoraSaida")
+                        .HasColumnType("time");
 
                     b.Property<int>("IdPredio")
                         .HasColumnType("int");
@@ -425,29 +435,26 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CondominioId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Marca")
                         .HasColumnType("nvarchar(25)");
 
                     b.Property<string>("Modelo")
                         .HasColumnType("nvarchar(60)");
 
-                    b.Property<int>("IdCondominio")
+                    b.Property<int>("CondominioId")
                         .HasColumnType("int");
 
                     b.Property<int>("IdMorador")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdPredio")
+                    b.Property<int?>("PredioId")
                         .HasColumnType("int");
 
                     b.Property<int?>("MoradorId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("PredioId")
-                        .HasColumnType("int");
+                    b.Property<string>("Placa")
+                        .HasColumnType("nvarchar(8)");
 
                     b.HasKey("Id");
 
@@ -535,10 +542,17 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("date");
+
                     b.Property<string>("EMail")
                         .IsRequired()
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Foto")
+                        .IsRequired()
+                        .HasColumnType("image");
 
                     b.Property<string>("Fixo")
                         .IsRequired()

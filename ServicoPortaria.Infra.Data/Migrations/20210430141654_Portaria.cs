@@ -54,10 +54,12 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: true),
                     RG = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: true),
                     DocCivil = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
+                    DataNascimento = table.Column<DateTime>(type: "date", nullable: false),
                     Sexo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Celular = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Fixo = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
-                    EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
+                    EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    Foto = table.Column<string>(type: "image", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -88,7 +90,8 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     Fixo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
-                    Foto = table.Column<byte[]>(type: "image", nullable: true),
+                    Foto = table.Column<string>(type: "image", nullable: true),
+                    DataNascimento = table.Column<DateTime>(type: "date", nullable: false),
                     CondominioId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -220,8 +223,12 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(45)", maxLength: 45, nullable: false),
-                    CNPJ = table.Column<string>(type: "nvarchar(18)", maxLength: 18, nullable: false),
-                    CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: false),
+                    CNPJ = table.Column<string>(type: "nvarchar(18)", maxLength: 18, nullable: true),
+                    CPF = table.Column<string>(type: "nvarchar(14)", maxLength: 14, nullable: true),
+                    DataChegada = table.Column<DateTime>(type: "date", nullable: false),
+                    DataSaida = table.Column<DateTime>(type: "date", nullable: false),
+                    HoraChegada = table.Column<TimeSpan>(type: "time", nullable: false),
+                    HoraSaida = table.Column<TimeSpan>(type: "time", nullable: false),
                     IdPredio = table.Column<int>(type: "int", nullable: false),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
                     PredioId = table.Column<int>(type: "int", nullable: true),
@@ -288,11 +295,10 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     Marca = table.Column<string>(type: "nvarchar(25)", nullable: false),
                     Modelo = table.Column<string>(type: "nvarchar(60)", nullable: false),
                     IdMorador = table.Column<int>(type: "int", nullable: false),
-                    IdPredio = table.Column<int>(type: "int", nullable: false),
-                    IdCondominio = table.Column<int>(type: "int", nullable: false),
+                    PredioId = table.Column<int>(type: "int", nullable: false),
+                    CondominioId = table.Column<int>(type: "int", nullable: false),
                     MoradorId = table.Column<int>(type: "int", nullable: true),
-                    PredioId = table.Column<int>(type: "int", nullable: true),
-                    CondominioId = table.Column<int>(type: "int", nullable: true)
+                    Placa = table.Column<string>(type: "nvarchar(8)", nullable: true)
                 },
                 constraints: table =>
                 {

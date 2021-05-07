@@ -9,7 +9,7 @@ namespace ServicoPortaria.Presentation.Morador
 {
     public partial class ucInserir : UserControl
     {
-        private ServicoPortaria.Presentation.Capture _camera;
+        private Capture _camera;
         public ucInserir()
         {
             InitializeComponent();

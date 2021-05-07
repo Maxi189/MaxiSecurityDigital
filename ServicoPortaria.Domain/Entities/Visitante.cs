@@ -45,5 +45,7 @@ namespace ServicoPortaria.Domain.Entities
         [EmailAddress(ErrorMessage = "E-Mail Inválido!")]
         [DisplayName("E-Mail")]
         public string EMail { get; set; }
+        [DataType("image")]
+        public string Foto { get; set; }
     }
 }
