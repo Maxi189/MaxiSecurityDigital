@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "hjA1GXpV4kn41/jwiy1spms9MG1NvvB4oK2ktKC11YSlmQz8Pkkc7GUXaGfPrIZZ6lEVMdUM/lTyVfOwiBSPuA==",
+  "dgSpecHash": "g+SoKKEBsiH+WX7UbJuDhZT+kN1vsyxBDEZdX4oNXtPQOHCPJ2D9oYvbDZcD0bRbNVk5aeQLkbiWj5Hf6S/qEw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Maxi4\\source\\repos\\CriacaoCondominio\\ServicoPortaria.Presentation\\ServicoPortaria.Presentation.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Maxi4\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\Maxi4\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
-    "C:\\Users\\Maxi4\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
@@ -132,38 +129,7 @@
     "C:\\Users\\Maxi4\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Maxi4\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Maxi4\\.nuget\\packages\\visioforge.dotnet.core.trial\\14.0.40\\visioforge.dotnet.core.trial.14.0.40.nupkg.sha512"
+    "C:\\Users\\Maxi4\\.nuget\\packages\\visioforge.dotnet.core.trial\\14.0.42\\visioforge.dotnet.core.trial.14.0.42.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'AForge 2.2.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "AForge",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'AForge.Video 2.2.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "AForge.Video",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'AForge.Video.DirectShow 2.2.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "AForge.Video.DirectShow",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

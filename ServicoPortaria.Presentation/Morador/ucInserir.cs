@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Drawing;
 using System.Windows.Forms;
-using AForge.Video.DirectShow;
 using ServicoPortaria.Infra.Data.Contexto;
 
 namespace ServicoPortaria.Presentation.Morador

@@ -2,39 +2,6 @@
   "version": 3,
   "targets": {
     "net5.0-windows7.0": {
-      "AForge/2.2.5": {
-        "type": "package",
-        "compile": {
-          "lib/AForge.dll": {}
-        },
-        "runtime": {
-          "lib/AForge.dll": {}
-        }
-      },
-      "AForge.Video/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "AForge": "2.2.5"
-        },
-        "compile": {
-          "lib/AForge.Video.dll": {}
-        },
-        "runtime": {
-          "lib/AForge.Video.dll": {}
-        }
-      },
-      "AForge.Video.DirectShow/2.2.5": {
-        "type": "package",
-        "dependencies": {
-          "AForge.Video": "2.2.5"
-        },
-        "compile": {
-          "lib/AForge.Video.DirectShow.dll": {}
-        },
-        "runtime": {
-          "lib/AForge.Video.DirectShow.dll": {}
-        }
-      },
       "AutoMapper/10.1.1": {
         "type": "package",
         "dependencies": {
@@ -1900,7 +1867,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "VisioForge.DotNet.Core.TRIAL/14.0.40": {
+      "VisioForge.DotNet.Core.TRIAL/14.0.42": {
         "type": "package",
         "dependencies": {
           "System.ServiceModel.Http": "4.8.1",
@@ -1964,45 +1931,6 @@
     }
   },
   "libraries": {
-    "AForge/2.2.5": {
-      "sha512": "clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
-      "type": "package",
-      "path": "aforge/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aforge.2.2.5.nupkg.sha512",
-        "aforge.nuspec",
-        "lib/AForge.dll",
-        "lib/AForge.xml"
-      ]
-    },
-    "AForge.Video/2.2.5": {
-      "sha512": "XqzcOXtBUagEPRqg/00oayxlCPmxP4284SdM62mVotsNoD03fs19BrzdMBfhUOOYPyd0B/IXH7tEWnSDmc2gxA==",
-      "type": "package",
-      "path": "aforge.video/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aforge.video.2.2.5.nupkg.sha512",
-        "aforge.video.nuspec",
-        "lib/AForge.Video.dll",
-        "lib/AForge.Video.xml"
-      ]
-    },
-    "AForge.Video.DirectShow/2.2.5": {
-      "sha512": "pEch6felU/RGAbl0A7yjaQjsGxwiRFU9R+qBqR92wQo++XhzPLeQaZHnAPIBYaG7MfoqtjgCDkK4z3Tra4VQ3w==",
-      "type": "package",
-      "path": "aforge.video.directshow/2.2.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aforge.video.directshow.2.2.5.nupkg.sha512",
-        "aforge.video.directshow.nuspec",
-        "lib/AForge.Video.DirectShow.dll",
-        "lib/AForge.Video.DirectShow.xml"
-      ]
-    },
     "AutoMapper/10.1.1": {
       "sha512": "uMgbqOdu9ZG5cIOty0C85hzzayBH2i9BthnS5FlMqKtMSHDv4ts81a2jS1VFaDBVhlBeIqJ/kQKjQY95BZde9w==",
       "type": "package",
@@ -7178,10 +7106,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "VisioForge.DotNet.Core.TRIAL/14.0.40": {
-      "sha512": "Ewv+TxNidnrC1o4P5gOJvaP50JXvk/OXPg+aoKkQK2KFov46sy6Wgl87uLeuZLWy17tVRlcQ4GqWi7nf40OqnQ==",
+    "VisioForge.DotNet.Core.TRIAL/14.0.42": {
+      "sha512": "fL0sexlrL6qKFhExYp+kYpLQMPAES1xGqnY8TwNHKMHp/nU3oeHi9bVIFhCjcgEejKThvuCjYYcuwVRtSGI3Vw==",
       "type": "package",
-      "path": "visioforge.dotnet.core.trial/14.0.40",
+      "path": "visioforge.dotnet.core.trial/14.0.42",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -7209,7 +7137,7 @@
         "lib/netcoreapp3.1/VisioForge.Types.dll",
         "readme.txt",
         "tools/VisualStudioToolsManifest.xml",
-        "visioforge.dotnet.core.trial.14.0.40.nupkg.sha512",
+        "visioforge.dotnet.core.trial.14.0.42.nupkg.sha512",
         "visioforge.dotnet.core.trial.nuspec"
       ]
     },
@@ -7226,7 +7154,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0-windows7.0": [
-      "AForge.Video.DirectShow >= 2.2.5",
       "AutoMapper >= 10.1.1",
       "EntityFramework >= 6.4.4",
       "Microsoft.EntityFrameworkCore >= 5.0.5",
@@ -7236,7 +7163,7 @@
       "Pomelo.EntityFrameworkCore.MySql >= 5.0.0",
       "ServicoPortaria.Domain >= 1.0.0",
       "ServicoPortaria.Infra.Data >= 1.0.0",
-      "VisioForge.DotNet.Core.TRIAL >= 14.0.40"
+      "VisioForge.DotNet.Core.TRIAL >= 14.0.42"
     ]
   },
   "packageFolders": {
@@ -7290,10 +7217,6 @@
       "net5.0-windows7.0": {
         "targetAlias": "net5.0-windows",
         "dependencies": {
-          "AForge.Video.DirectShow": {
-            "target": "Package",
-            "version": "[2.2.5, )"
-          },
           "AutoMapper": {
             "target": "Package",
             "version": "[10.1.1, )"
@@ -7326,7 +7249,7 @@
           },
           "VisioForge.DotNet.Core.TRIAL": {
             "target": "Package",
-            "version": "[14.0.40, )"
+            "version": "[14.0.42, )"
           }
         },
         "imports": [
@@ -7350,37 +7273,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'AForge 2.2.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "AForge",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'AForge.Video 2.2.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "AForge.Video",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "O pacote 'AForge.Video.DirectShow 2.2.5' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
-      "libraryId": "AForge.Video.DirectShow",
-      "targetGraphs": [
-        "net5.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }
