@@ -189,10 +189,10 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.tsmSindico.Size = new System.Drawing.Size(124, 19);
             this.tsmSindico.Text = "Síndico";
             // 
-            // tsmInicio
+            // tsmHomePage
             // 
             this.tsmInicio.ForeColor = System.Drawing.Color.White;
-            this.tsmInicio.Name = "tsmInicio";
+            this.tsmInicio.Name = "tsmHomePage";
             this.tsmInicio.Size = new System.Drawing.Size(124, 19);
             this.tsmInicio.Text = "Home Page";
             // 
@@ -459,11 +459,11 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.tsmModuloVisitante.Size = new System.Drawing.Size(125, 20);
             this.tsmModuloVisitante.Text = "Módulo de Visitante";
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 27);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(77, 15);
             this.label1.TabIndex = 59;
             this.label1.Text = "CPF Morador";

@@ -51,17 +51,16 @@ namespace ServicoPortaria.Presentation.Condominio
             this.cmbEstado = new System.Windows.Forms.ComboBox();
             this.groupInserir = new System.Windows.Forms.GroupBox();
             this.groupFunções = new System.Windows.Forms.GroupBox();
-            this.lllConsultar = new System.Windows.Forms.LinkLabel();
-            this.lllConsultarTodos = new System.Windows.Forms.LinkLabel();
-            this.lllModificarDados = new System.Windows.Forms.LinkLabel();
             this.lllDeletarDados = new System.Windows.Forms.LinkLabel();
+            this.lllModificarDados = new System.Windows.Forms.LinkLabel();
+            this.lllConsultarTodos = new System.Windows.Forms.LinkLabel();
+            this.lllConsultar = new System.Windows.Forms.LinkLabel();
             this.mnsCondominio = new System.Windows.Forms.MenuStrip();
             this.tsmCondomínio = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmPredio = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGaragem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVeiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmPrestadorDeServicos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSindico = new System.Windows.Forms.ToolStripMenuItem();
@@ -319,27 +318,16 @@ namespace ServicoPortaria.Presentation.Condominio
             this.groupFunções.TabStop = false;
             this.groupFunções.Text = "Funções";
             // 
-            // lllConsultar
+            // lllDeletarDados
             // 
-            this.lllConsultar.AutoSize = true;
-            this.lllConsultar.Location = new System.Drawing.Point(61, 41);
-            this.lllConsultar.Name = "lllConsultar";
-            this.lllConsultar.Size = new System.Drawing.Size(58, 15);
-            this.lllConsultar.TabIndex = 0;
-            this.lllConsultar.TabStop = true;
-            this.lllConsultar.Text = "Consultar";
-            this.lllConsultar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultar_LinkClicked);
-            // 
-            // lllConsultarTodos
-            // 
-            this.lllConsultarTodos.AutoSize = true;
-            this.lllConsultarTodos.Location = new System.Drawing.Point(61, 71);
-            this.lllConsultarTodos.Name = "lllConsultarTodos";
-            this.lllConsultarTodos.Size = new System.Drawing.Size(92, 15);
-            this.lllConsultarTodos.TabIndex = 1;
-            this.lllConsultarTodos.TabStop = true;
-            this.lllConsultarTodos.Text = "Consultar Todos";
-            this.lllConsultarTodos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultarTodos_LinkClicked);
+            this.lllDeletarDados.AutoSize = true;
+            this.lllDeletarDados.Location = new System.Drawing.Point(61, 139);
+            this.lllDeletarDados.Name = "lllDeletarDados";
+            this.lllDeletarDados.Size = new System.Drawing.Size(80, 15);
+            this.lllDeletarDados.TabIndex = 3;
+            this.lllDeletarDados.TabStop = true;
+            this.lllDeletarDados.Text = "Deletar Dados";
+            this.lllDeletarDados.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllDeletarDados_LinkClicked);
             // 
             // lllModificarDados
             // 
@@ -352,16 +340,27 @@ namespace ServicoPortaria.Presentation.Condominio
             this.lllModificarDados.Text = "Modificar Dados";
             this.lllModificarDados.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllModificarDados_LinkClicked);
             // 
-            // lllDeletarDados
+            // lllConsultarTodos
             // 
-            this.lllDeletarDados.AutoSize = true;
-            this.lllDeletarDados.Location = new System.Drawing.Point(61, 139);
-            this.lllDeletarDados.Name = "lllDeletarDados";
-            this.lllDeletarDados.Size = new System.Drawing.Size(80, 15);
-            this.lllDeletarDados.TabIndex = 3;
-            this.lllDeletarDados.TabStop = true;
-            this.lllDeletarDados.Text = "Deletar Dados";
-            this.lllDeletarDados.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllDeletarDados_LinkClicked);
+            this.lllConsultarTodos.AutoSize = true;
+            this.lllConsultarTodos.Location = new System.Drawing.Point(61, 71);
+            this.lllConsultarTodos.Name = "lllConsultarTodos";
+            this.lllConsultarTodos.Size = new System.Drawing.Size(92, 15);
+            this.lllConsultarTodos.TabIndex = 1;
+            this.lllConsultarTodos.TabStop = true;
+            this.lllConsultarTodos.Text = "Consultar Todos";
+            this.lllConsultarTodos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultarTodos_LinkClicked);
+            // 
+            // lllConsultar
+            // 
+            this.lllConsultar.AutoSize = true;
+            this.lllConsultar.Location = new System.Drawing.Point(61, 41);
+            this.lllConsultar.Name = "lllConsultar";
+            this.lllConsultar.Size = new System.Drawing.Size(58, 15);
+            this.lllConsultar.TabIndex = 0;
+            this.lllConsultar.TabStop = true;
+            this.lllConsultar.Text = "Consultar";
+            this.lllConsultar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultar_LinkClicked);
             // 
             // mnsCondominio
             // 
@@ -372,7 +371,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmMorador,
             this.tsmApartamento,
             this.tsmVisitante,
-            this.tsmGaragem,
             this.tsmVeiculo,
             this.tsmPrestadorDeServicos,
             this.tsmSindico,
@@ -424,14 +422,6 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmVisitante.Text = "Visitante";
             this.tsmVisitante.Click += new System.EventHandler(this.tsmVisitante_Click);
             // 
-            // tsmGaragem
-            // 
-            this.tsmGaragem.ForeColor = System.Drawing.Color.White;
-            this.tsmGaragem.Name = "tsmGaragem";
-            this.tsmGaragem.Size = new System.Drawing.Size(67, 20);
-            this.tsmGaragem.Text = "Garagem";
-            this.tsmGaragem.Click += new System.EventHandler(this.tsmGaragem_Click);
-            // 
             // tsmVeiculo
             // 
             this.tsmVeiculo.ForeColor = System.Drawing.Color.White;
@@ -472,13 +462,13 @@ namespace ServicoPortaria.Presentation.Condominio
             this.tsmVisita.Text = "Visita";
             this.tsmVisita.Click += new System.EventHandler(this.tsmVisita_Click);
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(1345, 0);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(25, 25);
             this.label1.TabIndex = 87;
             this.label1.Text = "X";
@@ -541,7 +531,6 @@ namespace ServicoPortaria.Presentation.Condominio
         private System.Windows.Forms.ToolStripMenuItem tsmMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmApartamento;
         private System.Windows.Forms.ToolStripMenuItem tsmVisitante;
-        private System.Windows.Forms.ToolStripMenuItem tsmGaragem;
         private System.Windows.Forms.ToolStripMenuItem tsmVeiculo;
         private System.Windows.Forms.ToolStripMenuItem tsmPrestadorDeServicos;
         private System.Windows.Forms.ToolStripMenuItem tsmSindico;

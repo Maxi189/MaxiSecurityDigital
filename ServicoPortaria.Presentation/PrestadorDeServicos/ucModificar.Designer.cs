@@ -208,10 +208,10 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.tsmSindico.Size = new System.Drawing.Size(124, 19);
             this.tsmSindico.Text = "Síndico";
             // 
-            // tsmInicio
+            // tsmHomePage
             // 
             this.tsmInicio.ForeColor = System.Drawing.Color.White;
-            this.tsmInicio.Name = "tsmInicio";
+            this.tsmInicio.Name = "tsmHomePage";
             this.tsmInicio.Size = new System.Drawing.Size(124, 19);
             this.tsmInicio.Text = "Home Page";
             // 
@@ -691,11 +691,11 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.mtxConsultaCNPJ.Size = new System.Drawing.Size(218, 23);
             this.mtxConsultaCNPJ.TabIndex = 93;
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(38, 114);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(28, 15);
             this.label1.TabIndex = 92;
             this.label1.Text = "CPF";

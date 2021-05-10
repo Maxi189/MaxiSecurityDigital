@@ -217,10 +217,10 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.tsmSindico.Size = new System.Drawing.Size(124, 19);
             this.tsmSindico.Text = "Síndico";
             // 
-            // tsmInicio
+            // tsmHomePage
             // 
             this.tsmInicio.ForeColor = System.Drawing.Color.White;
-            this.tsmInicio.Name = "tsmInicio";
+            this.tsmInicio.Name = "tsmHomePage";
             this.tsmInicio.Size = new System.Drawing.Size(124, 19);
             this.tsmInicio.Text = "Home Page";
             // 
@@ -707,11 +707,11 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.textBox1.Size = new System.Drawing.Size(251, 23);
             this.textBox1.TabIndex = 68;
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 89);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(35, 15);
             this.label1.TabIndex = 67;
             this.label1.Text = "Placa";

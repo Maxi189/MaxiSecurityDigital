@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ServicoPortaria.Infra.Data.Repositories;
+using ServicoPortaria.Presentation.Condominio.Forms;
 
 namespace ServicoPortaria.Presentation.Condominio
 {
@@ -17,12 +18,6 @@ namespace ServicoPortaria.Presentation.Condominio
         {
             InitializeComponent();
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
@@ -73,6 +68,62 @@ namespace ServicoPortaria.Presentation.Condominio
 
             CondominioRepository repository = new CondominioRepository();
             dgvData.DataSource = repository.BuscarComTodosOsFiltros(nome, cep, codPostal, numero, cidade);
+        }
+
+        private void mnsCondominio_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            Application.Exit();
+        }
+        private void tsmPredio_Click(object sender, EventArgs e)
+        {
+            Predio.Forms.frmInserir inserir = new Predio.Forms.frmInserir();
+            inserir.Show();
+        }
+        private void tsmMorador_Click(object sender, EventArgs e)
+        {
+            Morador.Forms.frmInserir form = new Morador.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmApartamento_Click(object sender, EventArgs e)
+        {
+            Apartamento.Forms.frmInserir form = new Apartamento.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmVisitante_Click(object sender, EventArgs e)
+        {
+            Visitante.Forms.frmInserir form = new Visitante.Forms.frmInserir();
+            form.Show();
+        }
+        private void tsmVeiculo_Click(object sender, EventArgs e)
+        {
+            Veiculo.Forms.frmInserir form = new Veiculo.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmPrestadorDeServicos_Click(object sender, EventArgs e)
+        {
+            PrestadorDeServicos.Forms.frmInserir form = new PrestadorDeServicos.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmSindico_Click(object sender, EventArgs e)
+        {
+            Sindico.Forms.frmInserir form = new Sindico.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void tsmHomePage_Click(object sender, EventArgs e)
+        {
+            Login.Forms.frmLogin form = new Login.Forms.frmLogin();
+            form.Show();
+        }
+
+        private void tsmVisita_Click(object sender, EventArgs e)
+        {
+            Visita.Forms.frmInserir form = new Visita.Forms.frmInserir();
+            form.Show();
         }
     }
 }

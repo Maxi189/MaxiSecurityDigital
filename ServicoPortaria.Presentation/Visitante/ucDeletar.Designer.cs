@@ -308,11 +308,11 @@ namespace ServicoPortaria.Presentation.Visitante
             this.mtxCPF.Size = new System.Drawing.Size(232, 23);
             this.mtxCPF.TabIndex = 60;
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 151);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(32, 15);
             this.label1.TabIndex = 59;
             this.label1.Text = "Sexo";

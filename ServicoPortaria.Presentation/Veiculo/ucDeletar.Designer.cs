@@ -221,11 +221,11 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.lblPlaca.TabIndex = 99;
             this.lblPlaca.Text = "Placa";
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 77);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(40, 15);
             this.label1.TabIndex = 101;
             this.label1.Text = "Marca";

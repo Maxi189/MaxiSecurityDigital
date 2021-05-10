@@ -49,10 +49,6 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucDeletar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucListarTodos.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Condominio.ucModificar.resources
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Garagem.ucConsultar.resources
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Garagem.ucDeletar.resources
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Garagem.ucInserir.resources
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Garagem.ucListarTodos.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Login.Forms.frmLogin.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Login.ucLogin.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Morador.ucConsultar.resources
@@ -155,7 +151,6 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Predio.Forms.frmInserir.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visita.ucModificar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Apartamento.Forms.frmInserir.resources
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Garagem.Forms.frmInserir.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Morador.Forms.frmConsultar.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Morador.Forms.frmConsultarTodos.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Morador.Forms.frmDeletar.resources
@@ -167,3 +162,9 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visitante.Forms.frmInserir.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visita.Forms.frmInserir.resources
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visita.ucDeletar.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Apartamento.Forms.frmConsultarTodos.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Predio.Forms.frmConsultarTodos.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.PrestadorDeServicos.Forms.frmListarTodos.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Sindico.Forms.frmListarTodos.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Veiculo.Forms.frmListarTodos.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visitante.Forms.frmListarTodos.resources

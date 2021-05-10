@@ -98,14 +98,14 @@ namespace ServicoPortaria.Presentation.Login
             this.txtUser.Size = new System.Drawing.Size(148, 23);
             this.txtUser.TabIndex = 5;
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(495, -43);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(24, 25);
             this.label1.TabIndex = 39;
             this.label1.Text = "X";
@@ -187,7 +187,6 @@ namespace ServicoPortaria.Presentation.Login
             this.tsmGaragem.Name = "tsmGaragem";
             this.tsmGaragem.Size = new System.Drawing.Size(67, 20);
             this.tsmGaragem.Text = "Garagem";
-            this.tsmGaragem.Click += new System.EventHandler(this.tsmGaragem_Click);
             // 
             // tsmVeiculo
             // 

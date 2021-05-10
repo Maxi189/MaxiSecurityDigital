@@ -235,10 +235,10 @@ namespace ServicoPortaria.Presentation.Morador
             this.tsmSindico.Size = new System.Drawing.Size(124, 19);
             this.tsmSindico.Text = "Síndico";
             // 
-            // tsmInicio
+            // tsmHomePage
             // 
             this.tsmInicio.ForeColor = System.Drawing.Color.White;
-            this.tsmInicio.Name = "tsmInicio";
+            this.tsmInicio.Name = "tsmHomePage";
             this.tsmInicio.Size = new System.Drawing.Size(124, 19);
             this.tsmInicio.Text = "Home Page";
             // 

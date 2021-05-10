@@ -303,11 +303,11 @@ namespace ServicoPortaria.Presentation.Apartamento
             this.nudNumero.Size = new System.Drawing.Size(283, 23);
             this.nudNumero.TabIndex = 53;
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(8, 92);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(37, 15);
             this.label1.TabIndex = 52;
             this.label1.Text = "Bloco";

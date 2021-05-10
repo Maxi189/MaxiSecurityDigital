@@ -182,11 +182,11 @@ namespace ServicoPortaria.Presentation.Morador
             this.lblCelular.TabIndex = 120;
             this.lblCelular.Text = "Celular";
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 88);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(96, 15);
             this.label1.TabIndex = 117;
             this.label1.Text = "Documento Civil";

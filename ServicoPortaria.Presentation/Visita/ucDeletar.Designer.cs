@@ -346,11 +346,11 @@ namespace ServicoPortaria.Presentation.Visita
             this.dtpHoraChegada.Size = new System.Drawing.Size(190, 23);
             this.dtpHoraChegada.TabIndex = 75;
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(0, 146);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(80, 15);
             this.label1.TabIndex = 74;
             this.label1.Text = "Hora de Saída";

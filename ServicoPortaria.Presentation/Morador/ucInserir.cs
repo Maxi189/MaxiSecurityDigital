@@ -143,5 +143,29 @@ namespace ServicoPortaria.Presentation.Morador
             Visita.Forms.frmInserir form = new Visita.Forms.frmInserir();
             form.Show();
         }
+
+        private void lllConsultar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmConsultar form = new();
+            form.Show();
+        }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmConsultarTodos form = new();
+            form.Show();
+        }
+
+        private void lllModificarDados_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmModificarDados form = new();
+            form.Show();
+        }
+
+        private void lllDeletarDados_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmDeletar form = new();
+            form.Show();
+        }
     }
 }

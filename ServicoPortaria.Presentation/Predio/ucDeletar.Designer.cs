@@ -243,11 +243,11 @@ namespace ServicoPortaria.Presentation.Predio
             this.btnCadastrar.Text = "Cadastrar Prédio";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(43, 220);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(119, 15);
             this.label1.TabIndex = 55;
             this.label1.Text = "Cód. do Condomínio";

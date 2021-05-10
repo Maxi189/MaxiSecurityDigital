@@ -244,11 +244,11 @@ namespace ServicoPortaria.Presentation.Condominio
             this.lblCidade.TabIndex = 139;
             this.lblCidade.Text = "Cidade";
             // 
-            // label1
+            // lblPredio
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 120);
-            this.label1.Name = "label1";
+            this.label1.Name = "lblPredio";
             this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 149;
             this.label1.Text = "Rua";
