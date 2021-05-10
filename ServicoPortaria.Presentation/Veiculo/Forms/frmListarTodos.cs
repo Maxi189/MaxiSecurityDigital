@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ServicoPortaria.Presentation.Garagem.Forms
+namespace ServicoPortaria.Presentation.Veiculo.Forms
 {
-    public partial class frmInserir : Form
+    public partial class frmListarTodos : Form
     {
-        public frmInserir()
+        public frmListarTodos()
         {
             InitializeComponent();
         }

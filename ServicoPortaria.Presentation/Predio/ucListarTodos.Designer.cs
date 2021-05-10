@@ -36,7 +36,6 @@ namespace ServicoPortaria.Presentation.Predio
             this.tsmMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGaragem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVeiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmPrestadorDeServicos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSindico = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +69,6 @@ namespace ServicoPortaria.Presentation.Predio
             this.tsmMorador,
             this.tsmApartamento,
             this.tsmVisitante,
-            this.tsmGaragem,
             this.tsmVeiculo,
             this.tsmPrestadorDeServicos,
             this.tsmSindico,
@@ -121,14 +119,6 @@ namespace ServicoPortaria.Presentation.Predio
             this.tsmVisitante.Size = new System.Drawing.Size(64, 20);
             this.tsmVisitante.Text = "Visitante";
             this.tsmVisitante.Click += new System.EventHandler(this.tsmVisitante_Click);
-            // 
-            // tsmGaragem
-            // 
-            this.tsmGaragem.ForeColor = System.Drawing.Color.White;
-            this.tsmGaragem.Name = "tsmGaragem";
-            this.tsmGaragem.Size = new System.Drawing.Size(67, 20);
-            this.tsmGaragem.Text = "Garagem";
-            this.tsmGaragem.Click += new System.EventHandler(this.tsmGaragem_Click);
             // 
             // tsmVeiculo
             // 
@@ -220,7 +210,6 @@ namespace ServicoPortaria.Presentation.Predio
         private System.Windows.Forms.ToolStripMenuItem tsmMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmApartamento;
         private System.Windows.Forms.ToolStripMenuItem tsmVisitante;
-        private System.Windows.Forms.ToolStripMenuItem tsmGaragem;
         private System.Windows.Forms.ToolStripMenuItem tsmVeiculo;
         private System.Windows.Forms.ToolStripMenuItem tsmPrestadorDeServicos;
         private System.Windows.Forms.ToolStripMenuItem tsmSindico;

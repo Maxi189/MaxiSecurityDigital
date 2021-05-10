@@ -118,13 +118,6 @@ namespace ServicoPortaria.Presentation.Morador
             Visitante.Forms.frmInserir form = new Visitante.Forms.frmInserir();
             form.Show();
         }
-
-        private void tsmGaragem_Click(object sender, EventArgs e)
-        {
-            Garagem.Forms.frmInserir form = new Garagem.Forms.frmInserir();
-            form.Show();
-        }
-
         private void tsmVeiculo_Click(object sender, EventArgs e)
         {
             Veiculo.Forms.frmInserir form = new Veiculo.Forms.frmInserir();

@@ -70,12 +70,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             Apartamento.Forms.frmInserir form = new();
             form.Show();
         }
-        private void tsmGaragem_Click(object sender, EventArgs e)
-        {
-            Garagem.Forms.frmInserir form = new Garagem.Forms.frmInserir();
-            form.Show();
-        }
-
         private void tsmVisitante_Click(object sender, EventArgs e)
         {
             Visitante.Forms.frmInserir form = new Visitante.Forms.frmInserir();
@@ -120,6 +114,11 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             Domain.Entities.Condominio condominio = Db.Condominio.FirstOrDefault(t => t.Nome.Contains(nome));
 
             return condominio.Id;
+        }
+
+        private void ucInserir_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

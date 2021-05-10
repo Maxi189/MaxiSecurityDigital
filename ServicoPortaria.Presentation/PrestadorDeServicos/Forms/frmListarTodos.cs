@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ServicoPortaria.Presentation.Garagem
+namespace ServicoPortaria.Presentation.PrestadorDeServicos.Forms
 {
-    public partial class ucListarTodos : UserControl
+    public partial class frmListarTodos : Form
     {
-        public ucListarTodos()
+        public frmListarTodos()
         {
             InitializeComponent();
         }

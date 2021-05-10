@@ -29,12 +29,28 @@ namespace ServicoPortaria.Presentation.Apartamento.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.ListarTodos = new ucListarTodos();
             this.components = new System.ComponentModel.Container();
+            //
+            // ucListarTodos
+            //
+            this.ListarTodos.BackColor = System.Drawing.Color.White;
+            this.ListarTodos.Location = new System.Drawing.Point(0, 0);
+            this.ListarTodos.Name = "ListarTodos";
+            this.ListarTodos.Size = new System.Drawing.Size(1370, 800);
+            this.ListarTodos.TabIndex = 0;
+            //
+            // frmListarTodos
+            //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Controls.Add(ListarTodos);
             this.Text = "frmConsultarTodos";
         }
 
         #endregion
+
+        private ucListarTodos ListarTodos;
     }
 }

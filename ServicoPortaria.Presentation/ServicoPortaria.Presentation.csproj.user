@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="Apartamento\Forms\frmConsultarTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Apartamento\Forms\frmInserir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,21 +58,6 @@
     <Compile Update="Condominio\ucModificar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Garagem\Forms\frmInserir.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Garagem\ucConsultar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="Garagem\ucDeletar.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="Garagem\ucInserir.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Update="Garagem\ucListarTodos.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="Login\Forms\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +94,9 @@
     <Compile Update="Morador\ucModificar.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="Predio\Forms\frmConsultarTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Predio\Forms\frmInserir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +116,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="PrestadorDeServicos\Forms\frmInserir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PrestadorDeServicos\Forms\frmListarTodos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PrestadorDeServicos\ucConsultar.cs">
@@ -148,6 +142,9 @@
     <Compile Update="Sindico\Forms\frmInserir.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Sindico\Forms\frmListarTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Sindico\ucConsultar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +163,9 @@
     <Compile Update="Veiculo\Forms\frmInserir.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Veiculo\Forms\frmListarTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Veiculo\ucConsultar.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -182,6 +182,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Visitante\Forms\frmInserir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Visitante\Forms\frmListarTodos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Visitante\ucConsultar.cs">

@@ -61,7 +61,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.tsmMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGaragem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVeiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmPrestadorDeServicos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSindico = new System.Windows.Forms.ToolStripMenuItem();
@@ -331,7 +330,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.tsmMorador,
             this.tsmApartamento,
             this.tsmVisitante,
-            this.tsmGaragem,
             this.tsmVeiculo,
             this.tsmPrestadorDeServicos,
             this.tsmSindico,
@@ -382,14 +380,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.tsmVisitante.Size = new System.Drawing.Size(64, 20);
             this.tsmVisitante.Text = "Visitante";
             this.tsmVisitante.Click += new System.EventHandler(this.tsmVisitante_Click);
-            // 
-            // tsmGaragem
-            // 
-            this.tsmGaragem.ForeColor = System.Drawing.Color.White;
-            this.tsmGaragem.Name = "tsmGaragem";
-            this.tsmGaragem.Size = new System.Drawing.Size(67, 20);
-            this.tsmGaragem.Text = "Garagem";
-            this.tsmGaragem.Click += new System.EventHandler(this.tsmGaragem_Click);
             // 
             // tsmVeiculo
             // 
@@ -443,6 +433,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.Controls.Add(this.mnsCondominio);
             this.Name = "ucInserir";
             this.Size = new System.Drawing.Size(1370, 800);
+            this.Load += new System.EventHandler(this.ucInserir_Load);
             this.groupDocumentacao.ResumeLayout(false);
             this.groupDocumentacao.PerformLayout();
             this.groupVisita.ResumeLayout(false);
@@ -489,7 +480,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         private System.Windows.Forms.ToolStripMenuItem tsmMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmApartamento;
         private System.Windows.Forms.ToolStripMenuItem tsmVisitante;
-        private System.Windows.Forms.ToolStripMenuItem tsmGaragem;
         private System.Windows.Forms.ToolStripMenuItem tsmVeiculo;
         private System.Windows.Forms.ToolStripMenuItem tsmPrestadorDeServicos;
         private System.Windows.Forms.ToolStripMenuItem tsmSindico;

@@ -60,7 +60,6 @@ namespace ServicoPortaria.Presentation.Visitante
             this.tsmMorador = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGaragem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVeiculo = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmPrestadorDeServicos = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSindico = new System.Windows.Forms.ToolStripMenuItem();
@@ -323,7 +322,6 @@ namespace ServicoPortaria.Presentation.Visitante
             this.tsmMorador,
             this.tsmApartamento,
             this.tsmVisitante,
-            this.tsmGaragem,
             this.tsmVeiculo,
             this.tsmPrestadorDeServicos,
             this.tsmSindico,
@@ -369,19 +367,11 @@ namespace ServicoPortaria.Presentation.Visitante
             // 
             // tsmVisitante
             // 
+            this.tsmVisitante.Enabled = false;
             this.tsmVisitante.ForeColor = System.Drawing.Color.White;
             this.tsmVisitante.Name = "tsmVisitante";
             this.tsmVisitante.Size = new System.Drawing.Size(64, 20);
             this.tsmVisitante.Text = "Visitante";
-            this.tsmVisitante.Enabled = false;
-            // 
-            // tsmGaragem
-            // 
-            this.tsmGaragem.ForeColor = System.Drawing.Color.White;
-            this.tsmGaragem.Name = "tsmGaragem";
-            this.tsmGaragem.Size = new System.Drawing.Size(67, 20);
-            this.tsmGaragem.Text = "Garagem";
-            this.tsmGaragem.Click += new System.EventHandler(tsmGaragem_Click);
             // 
             // tsmVeiculo
             // 
@@ -389,7 +379,7 @@ namespace ServicoPortaria.Presentation.Visitante
             this.tsmVeiculo.Name = "tsmVeiculo";
             this.tsmVeiculo.Size = new System.Drawing.Size(57, 20);
             this.tsmVeiculo.Text = "Veículo";
-            this.tsmVeiculo.Click += new System.EventHandler(tsmVeiculo_Click);
+            this.tsmVeiculo.Click += new System.EventHandler(this.tsmVeiculo_Click);
             // 
             // tsmPrestadorDeServicos
             // 
@@ -397,7 +387,7 @@ namespace ServicoPortaria.Presentation.Visitante
             this.tsmPrestadorDeServicos.Name = "tsmPrestadorDeServicos";
             this.tsmPrestadorDeServicos.Size = new System.Drawing.Size(131, 20);
             this.tsmPrestadorDeServicos.Text = "Prestador de Serviços";
-            this.tsmPrestadorDeServicos.Click += new System.EventHandler(tsmPrestadorDeServicos_Click);
+            this.tsmPrestadorDeServicos.Click += new System.EventHandler(this.tsmPrestadorDeServicos_Click);
             // 
             // tsmSindico
             // 
@@ -405,7 +395,7 @@ namespace ServicoPortaria.Presentation.Visitante
             this.tsmSindico.Name = "tsmSindico";
             this.tsmSindico.Size = new System.Drawing.Size(58, 20);
             this.tsmSindico.Text = "Síndico";
-            this.tsmSindico.Click += new System.EventHandler(tsmSindico_Click);
+            this.tsmSindico.Click += new System.EventHandler(this.tsmSindico_Click);
             // 
             // tsmHomePage
             // 
@@ -413,7 +403,7 @@ namespace ServicoPortaria.Presentation.Visitante
             this.tsmHomePage.Name = "tsmHomePage";
             this.tsmHomePage.Size = new System.Drawing.Size(81, 20);
             this.tsmHomePage.Text = "Home Page";
-            this.tsmHomePage.Click += new System.EventHandler(tsmHomePage_Click);
+            this.tsmHomePage.Click += new System.EventHandler(this.tsmHomePage_Click);
             // 
             // tsmVisita
             // 
@@ -421,7 +411,7 @@ namespace ServicoPortaria.Presentation.Visitante
             this.tsmVisita.Name = "tsmVisita";
             this.tsmVisita.Size = new System.Drawing.Size(47, 20);
             this.tsmVisita.Text = "Visita";
-            this.tsmVisita.Click += new System.EventHandler(tsmVisita_Click);
+            this.tsmVisita.Click += new System.EventHandler(this.tsmVisita_Click);
             // 
             // lblClose
             // 
@@ -433,7 +423,7 @@ namespace ServicoPortaria.Presentation.Visitante
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 91;
             this.lblClose.Text = "X";
-            this.lblClose.Click += new System.EventHandler(lblClose_Click);
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // groupOutrasFuncoes
             // 
@@ -552,7 +542,6 @@ namespace ServicoPortaria.Presentation.Visitante
         private System.Windows.Forms.ToolStripMenuItem tsmMorador;
         private System.Windows.Forms.ToolStripMenuItem tsmApartamento;
         private System.Windows.Forms.ToolStripMenuItem tsmVisitante;
-        private System.Windows.Forms.ToolStripMenuItem tsmGaragem;
         private System.Windows.Forms.ToolStripMenuItem tsmVeiculo;
         private System.Windows.Forms.ToolStripMenuItem tsmPrestadorDeServicos;
         private System.Windows.Forms.ToolStripMenuItem tsmSindico;

@@ -1,7 +1,7 @@
 ﻿
 namespace ServicoPortaria.Presentation.Visitante.Forms
 {
-    partial class frmInserir
+    partial class frmListarTodos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,28 @@ namespace ServicoPortaria.Presentation.Visitante.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.Inserir = new();
+            this.ListarTodos = new ucListarTodos();
             this.components = new System.ComponentModel.Container();
             //
             // ucListarTodos
             //
-            this.Inserir.BackColor = System.Drawing.Color.White;
-            this.Inserir.Location = new System.Drawing.Point(0, 0);
-            this.Inserir.Name = "Inserir";
-            this.Inserir.Size = new System.Drawing.Size(1370, 800);
-            this.Inserir.TabIndex = 0;
-            //
+            this.ListarTodos.BackColor = System.Drawing.Color.White;
+            this.ListarTodos.Location = new System.Drawing.Point(0, 0);
+            this.ListarTodos.Name = "ListarTodos";
+            this.ListarTodos.Size = new System.Drawing.Size(1370, 800);
+            this.ListarTodos.TabIndex = 0;
+            // 
             // frmListarTodos
             //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmInserir";
-            this.Controls.Add(Inserir);
+            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Text = "frmListarTodos";
+            this.Controls.Add(ListarTodos);
         }
 
         #endregion
 
-        private ucInserir Inserir;
+        private ucListarTodos ListarTodos;
     }
 }

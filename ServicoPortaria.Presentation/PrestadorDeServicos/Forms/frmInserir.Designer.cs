@@ -29,12 +29,28 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.Inserir = new PrestadorDeServicos.ucInserir();
             this.components = new System.ComponentModel.Container();
+            //
+            // ucInserir
+            //
+            this.Inserir.BackColor = System.Drawing.Color.White;
+            this.Inserir.Location = new System.Drawing.Point(0, 0);
+            this.Inserir.Name = "ListarTodos";
+            this.Inserir.Size = new System.Drawing.Size(1370, 800);
+            this.Inserir.TabIndex = 0;
+            //
+            // frmInserir
+            //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(Inserir);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "frmInserir";
         }
 
         #endregion
+
+        private PrestadorDeServicos.ucInserir Inserir;
     }
 }

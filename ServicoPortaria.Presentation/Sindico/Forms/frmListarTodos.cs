@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ServicoPortaria.Presentation.Garagem
+namespace ServicoPortaria.Presentation.Sindico.Forms
 {
-    public partial class ucDeletar : UserControl
+    public partial class frmListarTodos : Form
     {
-        public ucDeletar()
+        public frmListarTodos()
         {
             InitializeComponent();
         }

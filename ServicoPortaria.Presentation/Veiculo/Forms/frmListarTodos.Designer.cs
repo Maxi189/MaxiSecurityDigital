@@ -1,7 +1,7 @@
 ﻿
-namespace ServicoPortaria.Presentation.Garagem.Forms
+namespace ServicoPortaria.Presentation.Veiculo.Forms
 {
-    partial class frmInserir
+    partial class frmListarTodos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,28 @@ namespace ServicoPortaria.Presentation.Garagem.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.ListarTodos = new ucListarTodos();
             this.components = new System.ComponentModel.Container();
+            //
+            // ucListarTodos
+            //
+            this.ListarTodos.BackColor = System.Drawing.Color.White;
+            this.ListarTodos.Location = new System.Drawing.Point(0, 0);
+            this.ListarTodos.Name = "ListarTodos";
+            this.ListarTodos.Size = new System.Drawing.Size(1370, 800);
+            this.ListarTodos.TabIndex = 0;
+            //
+            // frmListarTodos
+            //
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmInserir";
+            this.Controls.Add(ListarTodos);
+            this.Text = "frmListarTodos";
         }
 
         #endregion
+
+        private ucListarTodos ListarTodos;
     }
 }
