@@ -15,7 +15,7 @@ namespace ServicoPortaria.Infra.Data.Contexto
         public DbSet<Visitante> Visitante { get; set; }
         public DbSet<Garagem> Garagem { get; set; }
         public DbSet<Veiculo> Veiculo { get; set; }
-        public DbSet<PrestadorSevicos> PrestadorServico { get; set; }
+        public DbSet<PrestadorServicos> PrestadorServico { get; set; }
         public DbSet<Sindico> Sindico { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
         public DbSet<RecuperacaoSenha> RecuperacaoSenha { get; set; }
@@ -33,7 +33,7 @@ namespace ServicoPortaria.Infra.Data.Contexto
             builder.Entity<Visitante>().ToTable("Visitante");
             builder.Entity<Garagem>().ToTable("Garagem");
             builder.Entity<Veiculo>().ToTable("Veiculo");
-            builder.Entity<PrestadorSevicos>().ToTable("PrestadorServicos");
+            builder.Entity<PrestadorServicos>().ToTable("PrestadorServicos");
             builder.Entity<Sindico>().ToTable("Sindico");
             builder.Entity<Usuario>().ToTable("Usuario");
             builder.Entity<RecuperacaoSenha>().ToTable("RecuperacaoSenha");

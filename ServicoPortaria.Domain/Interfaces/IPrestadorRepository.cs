@@ -4,16 +4,25 @@ using ServicoPortaria.Domain.Entities;
 
 namespace ServicoPortaria.Domain.Interfaces
 {
-    public interface IPrestadorRepository : IRepositoryBase<PrestadorSevicos>
+    public interface IPrestadorRepository : IRepositoryBase<PrestadorServicos>
     {
-        IEnumerable<PrestadorSevicos> ConsultarPorNome(string nome);
-        IEnumerable<PrestadorSevicos> ConsultarPorCPF(string cpf);
-        IEnumerable<PrestadorSevicos> ConsultarPorCNPJ(string cnpj);
-        IEnumerable<PrestadorSevicos> ConsultarPorDataChegada(DateTime data);
-        IEnumerable<PrestadorSevicos> ConsultarPorDataSaida(DateTime data);
-        IEnumerable<PrestadorSevicos> ConsultarPorHoraChegada(TimeSpan hora);
-        IEnumerable<PrestadorSevicos> ConsultarPorHoraSaida(TimeSpan hora);
-        IEnumerable<PrestadorSevicos> ConsultarPorPredio(int id);
-        IEnumerable<PrestadorSevicos> ConsultarPorCondominio(int id);
+        IEnumerable<PrestadorServicos> ConsultarPorNome(string nome);
+        IEnumerable<PrestadorServicos> ConsultarPorCPF(string cpf);
+        IEnumerable<PrestadorServicos> ConsultarPorCNPJ(string cnpj);
+        IEnumerable<PrestadorServicos> ConsultarPorDataChegada(DateTime data);
+        IEnumerable<PrestadorServicos> ConsultarPorDataSaida(DateTime data);
+        IEnumerable<PrestadorServicos> ConsultarPorHoraChegada(TimeSpan hora);
+        IEnumerable<PrestadorServicos> ConsultarPorHoraSaida(TimeSpan hora);
+        IEnumerable<PrestadorServicos> ConsultarPorPredio(int id);
+        IEnumerable<PrestadorServicos> ConsultarPorCondominio(int id);
+        IEnumerable<PrestadorServicos> ConsultarComTodosOsFiltros(string nome,
+                                                                  string cpf,
+                                                                  string cnpj,
+                                                                  DateTime dataChegada,
+                                                                  DateTime dataSaida,
+                                                                  TimeSpan horaChegada,
+                                                                  TimeSpan horaSaida,
+                                                                  int idPredio,
+                                                                  int idCondominio);
     }
 }

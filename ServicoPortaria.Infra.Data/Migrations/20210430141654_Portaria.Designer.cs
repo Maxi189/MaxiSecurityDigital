@@ -251,7 +251,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.ToTable("Predio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Entities.PrestadorSevicos", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.PrestadorServicos", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -607,7 +607,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Navigation("Condominio");
                 });
 
-            modelBuilder.Entity("ServicoPortaria.Domain.Entities.PrestadorSevicos", b =>
+            modelBuilder.Entity("ServicoPortaria.Domain.Entities.PrestadorServicos", b =>
                 {
                     b.HasOne("ServicoPortaria.Domain.Entities.Condominio", "Condominio")
                         .WithMany()

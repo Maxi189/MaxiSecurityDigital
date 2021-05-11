@@ -17,19 +17,28 @@ namespace ServicoPortaria.Infra.Data.Repositories
             return Db.Veiculo.Where(t => t.PredioId == id);
         }
 
-        IEnumerable<Veiculo> IVeiculoRepository.ConsultarPorMarca(string marca)
+        public IEnumerable<Veiculo> ConsultarPorMarca(string marca)
         {
             return Db.Veiculo.Where(t => t.Marca.Contains(marca));
         }
 
-        IEnumerable<Veiculo> IVeiculoRepository.ConsultarPorModelo(string modelo)
+        public IEnumerable<Veiculo> ConsultarPorModelo(string modelo)
         {
             return Db.Veiculo.Where(t => t.Modelo.Contains(modelo));
         }
 
-        IEnumerable<Veiculo> IVeiculoRepository.ConsultarPorPlaca(string placa)
+        public IEnumerable <Veiculo> ConsultarPorPlaca(string placa)
         {
             return Db.Veiculo.Where(t => t.Placa.Contains(placa));
+        }
+
+        public IEnumerable<Veiculo> ConsultarComTodosOsFiltros(int idMorador, int idPredio, string modelo, string marca, string placa)
+        {
+            return Db.Veiculo.Where(t => t.IdMorador == idMorador
+                                    || t.PredioId == idPredio
+                                    || t.Modelo.Contains(modelo)
+                                    || t.Marca.Contains(marca)
+                                    || t.Placa.Contains(placa));
         }
     }
 }

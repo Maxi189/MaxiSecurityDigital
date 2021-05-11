@@ -31,5 +31,14 @@ namespace ServicoPortaria.Infra.Data.Repositories
         {
             return Db.Visitante.Where(t => t.Sobrenome.Contains(sobrenome));
         }
+
+        public IEnumerable<Visitante> BuscarComTodosOsFiltros(string nome, string sobrenome, string cpf, string rg, string docCivil)
+        {
+            return Db.Visitante.Where(t => t.Nome.Contains(nome)
+                                      ||   t.Sobrenome.Contains(sobrenome)
+                                      ||   t.CPF.Contains(cpf)
+                                      ||   t.RG.Contains(rg)
+                                      ||   t.DocCivil.Contains(docCivil));
+        }
     }
 }

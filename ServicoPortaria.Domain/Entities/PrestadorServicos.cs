@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ServicoPortaria.Domain.Entities
 {
-    public class PrestadorSevicos
+    public class PrestadorServicos
     {
         [Key]
         [DisplayName("Código do Prestador de Serviços")]

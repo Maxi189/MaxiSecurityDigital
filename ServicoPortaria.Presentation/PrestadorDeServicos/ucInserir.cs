@@ -21,7 +21,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         {
             try
             {
-                Domain.Entities.PrestadorSevicos prestador = new();
+                Domain.Entities.PrestadorServicos prestador = new();
                 prestador.Nome = txtNome.Text;
                 prestador.CNPJ = mtxCNPJ.Text;
                 prestador.CPF = mtxCPF.Text;

@@ -12,5 +12,6 @@ namespace ServicoPortaria.Domain.Interfaces
         IEnumerable<Sindico> ConsultarDocCivil(string docCivil);
         IEnumerable<Sindico> ConsultarPredio(int id);
         IEnumerable<Sindico> ConsultarCondominio(int id);
+        IEnumerable<Sindico> ConsultarComFiltros(string nome, string sobrenome, string cpf, string rg, string docCivil, int idPredio, int idCondominio);
     }
 }

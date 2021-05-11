@@ -10,5 +10,6 @@ namespace ServicoPortaria.Domain.Interfaces
         IEnumerable<Visitante> BuscarPorCPF(string cpf);
         IEnumerable<Visitante> BuscarPorRG(string rg);
         IEnumerable<Visitante> BuscarPorDocCivil(string docCivil);
+        IEnumerable<Visitante> BuscarComTodosOsFiltros(string nome, string sobrenome, string cpf, string rg, string docCivil);
     }
 }

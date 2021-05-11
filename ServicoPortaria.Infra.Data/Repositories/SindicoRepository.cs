@@ -41,5 +41,15 @@ namespace ServicoPortaria.Infra.Data.Repositories
         {
             return Db.Sindico.Where(t => t.Sobrenome.Contains(sobrenome));
         }
+        public IEnumerable<Sindico> ConsultarComFiltros(string nome, string sobrenome, string cpf, string rg, string docCivil, int idPredio, int idCondominio)
+        {
+            return Db.Sindico.Where(t => t.Nome.Contains(nome)
+                                    || t.Sobrenome.Contains(sobrenome)
+                                    || t.CPF.Contains(cpf)
+                                    || t.RG.Contains(rg)
+                                    || t.DocCivil.Contains(docCivil)
+                                    || t.IdPredio == idPredio
+                                    || t.IdCondominio == idCondominio);
+        }
     }
 }

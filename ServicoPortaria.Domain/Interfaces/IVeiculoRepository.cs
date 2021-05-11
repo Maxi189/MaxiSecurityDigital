@@ -10,5 +10,6 @@ namespace ServicoPortaria.Domain.Interfaces
         IEnumerable<Veiculo> ConsultarPorModelo(string modelo);
         IEnumerable<Veiculo> ConsultarPorMarca(string marca);
         IEnumerable<Veiculo> ConsultarPorPlaca(string placa);
+        IEnumerable<Veiculo> ConsultarComTodosOsFiltros(int idMorador, int idPredio, string modelo, string marca, string placa);
     }
 }
