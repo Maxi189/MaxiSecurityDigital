@@ -77,13 +77,11 @@ namespace ServicoPortaria.Presentation.Apartamento
             Condominio.Forms.frmInserir form = new Condominio.Forms.frmInserir();
             form.Show();
         }
-
         private void tsmPredio_Click(object sender, EventArgs e)
         {
             Predio.Forms.frmInserir form = new Predio.Forms.frmInserir();
             form.Show();
         }
-
         private void tsmMorador_Click(object sender, EventArgs e)
         {
             Morador.Forms.frmInserir form = new();

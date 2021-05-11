@@ -12,24 +12,33 @@ namespace ServicoPortaria.Infra.Data.Repositories
             return Db.Apartamento.Where(p => p.IdCondominio == id);
         }
 
-        public IEnumerable<Apartamento> BuscarPorMorador(int id)
+        public IEnumerable<Apartamento> BuscarPorPredio(int id)
         {
             return Db.Apartamento.Where(p => p.IdMorador == id);
         }
 
-        IEnumerable<Apartamento> IApartamentoRepository.BuscarPorBloco(string bloco)
+        public IEnumerable<Apartamento> BuscarPorBloco(string bloco)
         {
             return Db.Apartamento.Where(p => p.Bloco.Contains(bloco));
         }
 
-        IEnumerable<Apartamento> IApartamentoRepository.BuscarPorNumero(int numero)
+        public IEnumerable<Apartamento> BuscarPorNumero(int numero)
         {
             return Db.Apartamento.Where(p => p.Numero == numero);
         }
 
-        IEnumerable<Apartamento> IApartamentoRepository.BuscarPorRamal(string ramal)
+        public IEnumerable<Apartamento> BuscarPorRamal(string ramal)
         {
             return Db.Apartamento.Where(p => p.Ramal.Contains(ramal));
+        }
+
+        public IEnumerable<Apartamento> BuscarComTodosOsFiltros(int idCondominio, int idPredio, string bloco, string ramal, int numero)
+        {
+            return Db.Apartamento.Where(p => p.IdCondominio == idCondominio
+                                        ||   p.IdPredio == idPredio
+                                        ||   p.Bloco.Equals(bloco)
+                                        ||   p.Ramal.Equals(ramal)
+                                        ||   p.Numero == numero);
         }
     }
 }
