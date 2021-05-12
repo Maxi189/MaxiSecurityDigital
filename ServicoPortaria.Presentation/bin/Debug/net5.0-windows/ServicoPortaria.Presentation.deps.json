@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v5.0": {
       "ServicoPortaria.Presentation/1.0.0": {
         "dependencies": {
-          "AForge.Video.DirectShow": "2.2.5",
           "AutoMapper": "10.1.1",
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "5.0.5",
@@ -18,40 +17,10 @@
           "Pomelo.EntityFrameworkCore.MySql": "5.0.0",
           "ServicoPortaria.Domain": "1.0.0",
           "ServicoPortaria.Infra.Data": "1.0.0",
-          "VisioForge.DotNet.Core.TRIAL": "14.0.40"
+          "VisioForge.DotNet.Core.TRIAL": "14.0.42"
         },
         "runtime": {
           "ServicoPortaria.Presentation.dll": {}
-        }
-      },
-      "AForge/2.2.5": {
-        "runtime": {
-          "lib/AForge.dll": {
-            "assemblyVersion": "2.2.5.0",
-            "fileVersion": "2.2.5.0"
-          }
-        }
-      },
-      "AForge.Video/2.2.5": {
-        "dependencies": {
-          "AForge": "2.2.5"
-        },
-        "runtime": {
-          "lib/AForge.Video.dll": {
-            "assemblyVersion": "2.2.5.0",
-            "fileVersion": "2.2.5.0"
-          }
-        }
-      },
-      "AForge.Video.DirectShow/2.2.5": {
-        "dependencies": {
-          "AForge.Video": "2.2.5"
-        },
-        "runtime": {
-          "lib/AForge.Video.DirectShow.dll": {
-            "assemblyVersion": "2.2.5.0",
-            "fileVersion": "2.2.5.0"
-          }
         }
       },
       "AutoMapper/10.1.1": {
@@ -1305,7 +1274,7 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "VisioForge.DotNet.Core.TRIAL/14.0.40": {
+      "VisioForge.DotNet.Core.TRIAL/14.0.42": {
         "dependencies": {
           "System.ServiceModel.Http": "4.8.1",
           "System.ServiceModel.NetTcp": "4.8.1",
@@ -1314,32 +1283,32 @@
         },
         "runtime": {
           "lib/net5.0/VisioForge.Controls.UI.Dialogs.dll": {
-            "assemblyVersion": "14.0.40.0",
-            "fileVersion": "14.0.40.0"
+            "assemblyVersion": "14.0.42.0",
+            "fileVersion": "14.0.42.0"
           },
           "lib/net5.0/VisioForge.Controls.UI.dll": {
-            "assemblyVersion": "14.0.40.0",
-            "fileVersion": "14.0.40.0"
+            "assemblyVersion": "14.0.42.0",
+            "fileVersion": "14.0.42.0"
           },
           "lib/net5.0/VisioForge.Controls.dll": {
-            "assemblyVersion": "14.0.40.0",
-            "fileVersion": "14.0.40.0"
+            "assemblyVersion": "14.0.42.0",
+            "fileVersion": "14.0.42.0"
           },
           "lib/net5.0/VisioForge.MediaFramework.dll": {
-            "assemblyVersion": "14.0.40.0",
-            "fileVersion": "14.0.40.0"
+            "assemblyVersion": "14.0.42.0",
+            "fileVersion": "14.0.42.0"
           },
           "lib/net5.0/VisioForge.Shared.dll": {
-            "assemblyVersion": "14.0.40.0",
-            "fileVersion": "14.0.40.0"
+            "assemblyVersion": "14.0.42.0",
+            "fileVersion": "14.0.42.0"
           },
           "lib/net5.0/VisioForge.Tools.dll": {
-            "assemblyVersion": "14.0.40.0",
-            "fileVersion": "14.0.40.0"
+            "assemblyVersion": "14.0.42.0",
+            "fileVersion": "14.0.42.0"
           },
           "lib/net5.0/VisioForge.Types.dll": {
-            "assemblyVersion": "14.0.40.0",
-            "fileVersion": "14.0.40.0"
+            "assemblyVersion": "14.0.42.0",
+            "fileVersion": "14.0.42.0"
           }
         }
       },
@@ -1374,27 +1343,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "AForge/2.2.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
-      "path": "aforge/2.2.5",
-      "hashPath": "aforge.2.2.5.nupkg.sha512"
-    },
-    "AForge.Video/2.2.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XqzcOXtBUagEPRqg/00oayxlCPmxP4284SdM62mVotsNoD03fs19BrzdMBfhUOOYPyd0B/IXH7tEWnSDmc2gxA==",
-      "path": "aforge.video/2.2.5",
-      "hashPath": "aforge.video.2.2.5.nupkg.sha512"
-    },
-    "AForge.Video.DirectShow/2.2.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pEch6felU/RGAbl0A7yjaQjsGxwiRFU9R+qBqR92wQo++XhzPLeQaZHnAPIBYaG7MfoqtjgCDkK4z3Tra4VQ3w==",
-      "path": "aforge.video.directshow/2.2.5",
-      "hashPath": "aforge.video.directshow.2.2.5.nupkg.sha512"
     },
     "AutoMapper/10.1.1": {
       "type": "package",
@@ -2271,12 +2219,12 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "VisioForge.DotNet.Core.TRIAL/14.0.40": {
+    "VisioForge.DotNet.Core.TRIAL/14.0.42": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Ewv+TxNidnrC1o4P5gOJvaP50JXvk/OXPg+aoKkQK2KFov46sy6Wgl87uLeuZLWy17tVRlcQ4GqWi7nf40OqnQ==",
-      "path": "visioforge.dotnet.core.trial/14.0.40",
-      "hashPath": "visioforge.dotnet.core.trial.14.0.40.nupkg.sha512"
+      "sha512": "sha512-fL0sexlrL6qKFhExYp+kYpLQMPAES1xGqnY8TwNHKMHp/nU3oeHi9bVIFhCjcgEejKThvuCjYYcuwVRtSGI3Vw==",
+      "path": "visioforge.dotnet.core.trial/14.0.42",
+      "hashPath": "visioforge.dotnet.core.trial.14.0.42.nupkg.sha512"
     },
     "ServicoPortaria.Domain/1.0.0": {
       "type": "project",

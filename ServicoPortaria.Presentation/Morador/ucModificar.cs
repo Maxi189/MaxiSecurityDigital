@@ -47,7 +47,7 @@ namespace ServicoPortaria.Presentation.Morador
             lblCelular.Text = morador.Celular;
             lblFixo.Text = morador.Fixo;
             lblIdCondominio.Text = morador.IdCondominio.ToString();
-            imgWebCam.Image = Base64ToImage(morador.Foto);
+            // imgWebCam.Image = morador.Foto;
 
             btnCadastrar.Enabled = true;
         }

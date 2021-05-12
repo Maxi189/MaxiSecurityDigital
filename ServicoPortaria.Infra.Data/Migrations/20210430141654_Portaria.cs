@@ -59,7 +59,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     Celular = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
                     Fixo = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Foto = table.Column<string>(type: "image", nullable: true)
+                    Foto = table.Column<byte[]>(type: "image", nullable: true)
                 },
                 constraints: table =>
                 {

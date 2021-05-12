@@ -6,9 +6,6 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\ServicoPortaria.Presentation.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\ref\ServicoPortaria.Presentation.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\ServicoPortaria.Presentation.pdb
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\AForge.dll
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\AForge.Video.dll
-C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\AForge.Video.DirectShow.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\AutoMapper.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\bin\Debug\net5.0-windows\EntityFramework.SqlServer.dll

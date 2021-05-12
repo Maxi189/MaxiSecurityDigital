@@ -69,7 +69,7 @@ namespace ServicoPortaria.Domain.Entities
         [DisplayName("Código do Condomínio")]
         public int IdCondominio { get; set; }
         [DataType("image")]
-        public string Foto { get; set; }
+        public byte[] Foto { get; set; }
 
         public Condominio Condominio { get; set; }
     }

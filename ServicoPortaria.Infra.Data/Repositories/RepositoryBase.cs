@@ -3,6 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 using ServicoPortaria.Domain.Interfaces;
 using ServicoPortaria.Infra.Data.Contexto;
+using Microsoft.EntityFrameworkCore;
 
 namespace ServicoPortaria.Infra.Data.Repositories
 {
@@ -36,7 +37,7 @@ namespace ServicoPortaria.Infra.Data.Repositories
 
         public void Inserir(TEntity obj)
         {
-            Db.Set<TEntity>().Add(obj);
+            Db.Entry(obj).State = EntityState.Added;
 
             Db.SaveChanges();
         }

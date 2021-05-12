@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 using ServicoPortaria.Infra.Data.Contexto;
 
@@ -42,21 +43,21 @@ namespace ServicoPortaria.Presentation.Morador
                 morador.Sobrenome = txtSobrenome.Text;
                 morador.CPF = mtxCPF.Text;
                 morador.RG = mtxRG.Text;
-                morador.DocCivil = txtDocCivil.Text;
+                morador.DocCivil = "0";
                 morador.Sexo = cmbSexo.Text;
                 morador.CEP = mtxCEP.Text;
-                morador.CodigoPostal = txtCodPostal.Text;
+                morador.CodigoPostal = "0";
                 morador.Rua = txtRua.Text;
                 morador.Numero = Convert.ToInt32(nudNumero.Value);
                 morador.Cidade = txtCidade.Text;
                 morador.Estado = cmbEstado.Text;
-                morador.Provincia = txtProvincia.Text;
+                morador.Provincia = "0";
                 morador.Pais = txtPais.Text;
                 morador.Celular = txtCidade.Text;
                 morador.Fixo = txtFixo.Text;
                 morador.EMail = txtEMail.Text;
                 morador.IdCondominio = ConsultarId(txtCondominio.Text);
-                morador.Foto = imgWebCam.Image.ToString();
+                morador.Foto = ImageToByte(imgWebCam.Image);
 
                 Infra.Data.Repositories.MoradorRepository repository = new Infra.Data.Repositories.MoradorRepository();
                 repository.Inserir(morador);
@@ -81,6 +82,12 @@ namespace ServicoPortaria.Presentation.Morador
             Domain.Entities.Condominio condominio = Db.Condominio.FirstOrDefault(t => t.Nome.Equals(nome));
 
             return condominio.Id;
+        }
+        public byte[] ImageToByte(Image imageIn)
+        {
+            MemoryStream ms = new MemoryStream();
+            imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            return ms.ToArray();
         }
 
         private void lblClose_Click(object sender, EventArgs e)

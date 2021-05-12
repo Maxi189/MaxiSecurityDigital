@@ -1,1 +1,1 @@
-Select * From Apartamento
+Select * From Condominio;
