@@ -18,8 +18,29 @@ namespace ServicoPortaria.Presentation.Predio
         }
         private void btnModificar_Click(object sender, EventArgs e) 
         {
-            Domain.Entities.Predio predio = new();
-            predio.Id = Convert.ToInt32(lblIdPredio.Text);
+            try 
+            {
+                Domain.Entities.Predio predio = new();
+                predio.Id = Convert.ToInt32(lblIdPredio.Text);
+                predio.Nome = txtNome.Text;
+                predio.Numero = Convert.ToInt32(nudNumero.Value);
+                predio.IdCondominio = ConsultarIdCondominio(txtCondominio.Text);
+
+                Infra.Data.Repositories.PredioRepository repository = new();
+                repository.Update(predio);
+
+                MessageBox.Show("Cadastro de Prédio atualizado com Sucesso!",
+                    "Modificar Cadastro de Prédio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro",
+                    "Modificar Cadastro de Prédio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void btnConsultarPredio_Click(object sender, EventArgs e) 
         {
@@ -33,11 +54,19 @@ namespace ServicoPortaria.Presentation.Predio
             lblNumero.Text = Convert.ToString(predio.Numero);
             lblIdCondominio.Text = Convert.ToString(predio.IdCondominio);
 
-
+            btnCadastrar.Enabled = true;
         }
         private void ucModificar_Load(object sender, EventArgs e) 
         {
             btnCadastrar.Enabled = false;
+        }
+        static int ConsultarIdCondominio(string nome) 
+        {
+            Infra.Data.Contexto.PortariaContext Db = new();
+
+            Domain.Entities.Predio predio = Db.Predio.FirstOrDefault(t => t.Nome.Contains(nome));
+
+            return predio.Id;
         }
     }
 }
