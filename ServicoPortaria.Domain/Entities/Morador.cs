@@ -29,6 +29,8 @@ namespace ServicoPortaria.Domain.Entities
         [MinLength(1, ErrorMessage = "Sexo Inválido!")]
         [MaxLength(20, ErrorMessage = "Sexo Inválido!")]
         public string Sexo { get; set; }
+        [DisplayName("Data de Nascimento")]
+        public System.DateTime DataNascimento { get; set; }
         [MinLength(9, ErrorMessage = "CEP Inválido!")]
         [MaxLength(9, ErrorMessage = "CEP Inválido!")]
         public string CEP { get; set; }

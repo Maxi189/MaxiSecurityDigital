@@ -79,6 +79,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     DocCivil = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     Sexo = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     CEP = table.Column<string>(type: "nvarchar(9)", maxLength: 9, nullable: true),
+                    DataNascimento = table.Column<DateTime>(type: "date", nullable: false),
                     CodigoPostal = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: true),
                     Rua = table.Column<string>(type: "nvarchar(60)", maxLength: 60, nullable: true),
                     Numero = table.Column<int>(type: "int", nullable: false),
@@ -91,7 +92,6 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     EMail = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
                     IdCondominio = table.Column<int>(type: "int", nullable: false),
                     Foto = table.Column<string>(type: "image", nullable: true),
-                    DataNascimento = table.Column<DateTime>(type: "date", nullable: false),
                     CondominioId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
