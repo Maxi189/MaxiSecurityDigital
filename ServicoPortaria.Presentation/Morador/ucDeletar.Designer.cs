@@ -265,6 +265,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.btnDeletar.TabIndex = 75;
             this.btnDeletar.Text = "Deletar Dados";
             this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(btnDeletar_Click);
             // 
             // cmbSexo
             // 
@@ -445,6 +446,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 131;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(lblClose_Click);
             // 
             // ucDeletar
             // 

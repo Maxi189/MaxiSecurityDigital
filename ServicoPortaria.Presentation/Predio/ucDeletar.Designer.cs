@@ -47,7 +47,7 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblNome = new System.Windows.Forms.Label();
             this.lblIdCondominio = new System.Windows.Forms.Label();
             this.groupPredio = new System.Windows.Forms.GroupBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.nudNumero = new System.Windows.Forms.NumericUpDown();
             this.txtCondominio = new System.Windows.Forms.TextBox();
@@ -170,6 +170,7 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 133;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(lblClose_Click);
             // 
             // groupBox1
             // 
@@ -192,7 +193,6 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblNumero.Size = new System.Drawing.Size(51, 15);
             this.lblNumero.TabIndex = 51;
             this.lblNumero.Text = "Número";
-            this.lblNumero.Click += new System.EventHandler(this.lblNumero_Click);
             // 
             // lblNome
             // 
@@ -202,7 +202,6 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblNome.Size = new System.Drawing.Size(40, 15);
             this.lblNome.TabIndex = 50;
             this.lblNome.Text = "Nome";
-            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // lblIdCondominio
             // 
@@ -215,7 +214,7 @@ namespace ServicoPortaria.Presentation.Predio
             // 
             // groupPredio
             // 
-            this.groupPredio.Controls.Add(this.btnCadastrar);
+            this.groupPredio.Controls.Add(this.btnDeletar);
             this.groupPredio.Controls.Add(this.label1);
             this.groupPredio.Controls.Add(this.nudNumero);
             this.groupPredio.Controls.Add(this.txtCondominio);
@@ -229,19 +228,19 @@ namespace ServicoPortaria.Presentation.Predio
             this.groupPredio.TabIndex = 135;
             this.groupPredio.TabStop = false;
             this.groupPredio.Text = "Prédio";
-            this.groupPredio.Enter += new System.EventHandler(this.groupPredio_Enter);
             // 
-            // btnCadastrar
+            // btnDeletar
             // 
-            this.btnCadastrar.BackColor = System.Drawing.Color.Black;
-            this.btnCadastrar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(89, 258);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(259, 58);
-            this.btnCadastrar.TabIndex = 56;
-            this.btnCadastrar.Text = "Cadastrar Prédio";
-            this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnDeletar.BackColor = System.Drawing.Color.Black;
+            this.btnDeletar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeletar.ForeColor = System.Drawing.Color.White;
+            this.btnDeletar.Location = new System.Drawing.Point(89, 258);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(259, 58);
+            this.btnDeletar.TabIndex = 56;
+            this.btnDeletar.Text = "Cadastrar Prédio";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(btnDeletar_Click);
             // 
             // lblPredio
             // 
@@ -351,7 +350,7 @@ namespace ServicoPortaria.Presentation.Predio
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblIdCondominio;
         private System.Windows.Forms.GroupBox groupPredio;
-        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnDeletar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown nudNumero;
         private System.Windows.Forms.TextBox txtCondominio;
