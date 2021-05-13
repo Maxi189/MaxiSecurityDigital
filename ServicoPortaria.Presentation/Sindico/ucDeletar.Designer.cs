@@ -59,7 +59,7 @@ namespace ServicoPortaria.Presentation.Sindico
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.mnsCondominio.SuspendLayout();
             this.groupDocumentacao.SuspendLayout();
             this.SuspendLayout();
@@ -172,6 +172,7 @@ namespace ServicoPortaria.Presentation.Sindico
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 96;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(lblClose_Click);
             // 
             // lblCondominio
             // 
@@ -244,7 +245,6 @@ namespace ServicoPortaria.Presentation.Sindico
             this.lblCelular.Size = new System.Drawing.Size(44, 15);
             this.lblCelular.TabIndex = 104;
             this.lblCelular.Text = "Celular";
-            this.lblCelular.Click += new System.EventHandler(this.lblCelular_Click);
             // 
             // lblEMail
             // 
@@ -330,23 +330,24 @@ namespace ServicoPortaria.Presentation.Sindico
             this.label3.TabIndex = 61;
             this.label3.Text = "Documento Civil";
             // 
-            // button1
+            // btnDeletar
             // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(829, 217);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 118);
-            this.button1.TabIndex = 107;
-            this.button1.Text = "Deletar Dados";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDeletar.BackColor = System.Drawing.Color.Black;
+            this.btnDeletar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDeletar.ForeColor = System.Drawing.Color.White;
+            this.btnDeletar.Location = new System.Drawing.Point(829, 217);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(138, 118);
+            this.btnDeletar.TabIndex = 107;
+            this.btnDeletar.Text = "Deletar Dados";
+            this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(btnDeletar_Click);
             // 
             // ucDeletar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.groupDocumentacao);
             this.Controls.Add(this.lblEMail);
             this.Controls.Add(this.lblCelular);
@@ -402,6 +403,6 @@ namespace ServicoPortaria.Presentation.Sindico
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDeletar;
     }
 }

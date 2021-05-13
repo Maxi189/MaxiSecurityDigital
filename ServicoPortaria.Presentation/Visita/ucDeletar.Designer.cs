@@ -54,7 +54,7 @@ namespace ServicoPortaria.Presentation.Visita
             this.groupVisita = new System.Windows.Forms.GroupBox();
             this.mtxCPFMorador = new System.Windows.Forms.MaskedTextBox();
             this.lblMorador = new System.Windows.Forms.Label();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxCPFVisitante = new System.Windows.Forms.MaskedTextBox();
             this.lblCPFVisitante = new System.Windows.Forms.Label();
             this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
@@ -177,6 +177,7 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 97;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(lblClose_Click);
             // 
             // lblIdVisitante
             // 
@@ -263,7 +264,7 @@ namespace ServicoPortaria.Presentation.Visita
             // 
             this.groupVisita.Controls.Add(this.mtxCPFMorador);
             this.groupVisita.Controls.Add(this.lblMorador);
-            this.groupVisita.Controls.Add(this.maskedTextBox2);
+            this.groupVisita.Controls.Add(this.mtxCPFVisitante);
             this.groupVisita.Controls.Add(this.lblCPFVisitante);
             this.groupVisita.Controls.Add(this.dtpHoraSaida);
             this.groupVisita.Controls.Add(this.dtpDataSaida);
@@ -297,13 +298,13 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblMorador.TabIndex = 81;
             this.lblMorador.Text = "CPF do Morador";
             // 
-            // maskedTextBox2
+            // mtxCPFVisitante
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(230, 169);
-            this.maskedTextBox2.Mask = "000.000.000-00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(190, 23);
-            this.maskedTextBox2.TabIndex = 80;
+            this.mtxCPFVisitante.Location = new System.Drawing.Point(230, 169);
+            this.mtxCPFVisitante.Mask = "000.000.000-00";
+            this.mtxCPFVisitante.Name = "mtxCPFVisitante";
+            this.mtxCPFVisitante.Size = new System.Drawing.Size(190, 23);
+            this.mtxCPFVisitante.TabIndex = 80;
             // 
             // lblCPFVisitante
             // 
@@ -393,6 +394,7 @@ namespace ServicoPortaria.Presentation.Visita
             this.btnDeletarDados.TabIndex = 108;
             this.btnDeletarDados.Text = "Deletar Dados";
             this.btnDeletarDados.UseVisualStyleBackColor = false;
+            this.btnDeletarDados.Click += new System.EventHandler(btnDeletarDados_Click);
             // 
             // ucDeletar
             // 
@@ -455,7 +457,7 @@ namespace ServicoPortaria.Presentation.Visita
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox mtxCPFVisitante;
         private System.Windows.Forms.Label lblCPFVisitante;
         private System.Windows.Forms.MaskedTextBox mtxCPFMorador;
         private System.Windows.Forms.Label lblMorador;
