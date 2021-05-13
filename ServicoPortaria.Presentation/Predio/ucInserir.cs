@@ -130,5 +130,11 @@ namespace ServicoPortaria.Presentation.Predio
         {
             
         }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmConsultarTodos form = new();
+            form.Show();
+        }
     }
 }

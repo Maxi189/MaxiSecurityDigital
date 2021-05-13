@@ -16,5 +16,10 @@ namespace ServicoPortaria.Presentation.Morador.Forms
         {
             InitializeComponent();
         }
+
+        private void ListarTodos_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

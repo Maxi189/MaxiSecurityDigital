@@ -57,7 +57,7 @@ namespace ServicoPortaria.Presentation.Morador
                 morador.Fixo = txtFixo.Text;
                 morador.EMail = txtEMail.Text;
                 morador.IdCondominio = ConsultarId(txtCondominio.Text);
-                morador.Foto = ImageToByte(imgWebCam.Image);
+                morador.Foto = null;
 
                 Infra.Data.Repositories.MoradorRepository repository = new Infra.Data.Repositories.MoradorRepository();
                 repository.Inserir(morador);

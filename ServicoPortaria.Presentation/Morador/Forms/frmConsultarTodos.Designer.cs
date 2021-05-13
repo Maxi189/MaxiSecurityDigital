@@ -29,25 +29,29 @@ namespace ServicoPortaria.Presentation.Morador.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.ListarTodos = new Presentation.Morador.ucListarTodos();
+            this.ListarTodos = new ServicoPortaria.Presentation.Morador.ucListarTodos();
             this.SuspendLayout();
-            //
-            // ucListarTodos
-            //
+            // 
+            // ListarTodos
+            // 
             this.ListarTodos.BackColor = System.Drawing.Color.White;
             this.ListarTodos.Location = new System.Drawing.Point(0, 0);
             this.ListarTodos.Name = "ListarTodos";
             this.ListarTodos.Size = new System.Drawing.Size(1370, 800);
             this.ListarTodos.TabIndex = 0;
-            //
-            // frmListarTodos
-            //
-            this.components = new System.ComponentModel.Container();
+            this.ListarTodos.Load += new System.EventHandler(this.ListarTodos_Load);
+            // 
+            // frmConsultarTodos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1370, 788);
+            this.Controls.Add(this.ListarTodos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Controls.Add(ListarTodos);
-            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Name = "frmConsultarTodos";
             this.Text = "frmConsultarTodos";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
