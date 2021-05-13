@@ -44,21 +44,37 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         }
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Domain.Entities.PrestadorServicos prestador = new();
-            prestador.Id = Convert.ToInt32(lblCodPrestador.Text);
-            prestador.Nome = txtNome.Text;
-            prestador.CPF = mtxCPF.Text;
-            prestador.CNPJ = mtxCNPJ.Text;
-            prestador.DataChegada = dtpDataChegada.Value.Date;
-            prestador.DataSaida = dtpDataSaida.Value.Date;
-            prestador.HoraChegada = dtpHoraChegada.Value.TimeOfDay;
-            prestador.HoraSaida = dtpHoraSaida.Value.TimeOfDay;
+            try 
+            {
+                Domain.Entities.PrestadorServicos prestador = new();
+                prestador.Id = Convert.ToInt32(lblCodPrestador.Text);
+                prestador.Nome = txtNome.Text;
+                prestador.CPF = mtxCPF.Text;
+                prestador.CNPJ = mtxCNPJ.Text;
+                prestador.DataChegada = dtpDataChegada.Value.Date;
+                prestador.DataSaida = dtpDataSaida.Value.Date;
+                prestador.HoraChegada = dtpHoraChegada.Value.TimeOfDay;
+                prestador.HoraSaida = dtpHoraSaida.Value.TimeOfDay;
 
-            // Infra.Data.Repositories.
+                Infra.Data.Repositories.PrestadorServicosRepository repository = new();
+                repository.Update(prestador);
+
+                MessageBox.Show("Cadastro de Prestador Realizado com Sucesso!",
+                    "Modificar Cadastro de Prestador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Modificar Cadastro de Prestador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void lblClose_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
