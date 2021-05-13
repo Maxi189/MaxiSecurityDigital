@@ -268,7 +268,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblHoraDaSaida.Size = new System.Drawing.Size(80, 15);
             this.lblHoraDaSaida.TabIndex = 108;
             this.lblHoraDaSaida.Text = "Hora da Saída";
-            this.lblHoraDaSaida.Click += new System.EventHandler(this.lblHoraDaSaida_Click);
             // 
             // lblHoraChegada
             // 
@@ -278,7 +277,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblHoraChegada.Size = new System.Drawing.Size(99, 15);
             this.lblHoraChegada.TabIndex = 107;
             this.lblHoraChegada.Text = "Hora da Chegada";
-            this.lblHoraChegada.Click += new System.EventHandler(this.lblHoraChegada_Click);
             // 
             // lblDataSaida
             // 
@@ -288,7 +286,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.lblDataSaida.Size = new System.Drawing.Size(78, 15);
             this.lblDataSaida.TabIndex = 106;
             this.lblDataSaida.Text = "Data da Saída";
-            this.lblDataSaida.Click += new System.EventHandler(this.lblDataSaida_Click);
             // 
             // lblDataChegada
             // 
@@ -366,7 +363,6 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.label6.Size = new System.Drawing.Size(25, 15);
             this.label6.TabIndex = 116;
             this.label6.Text = "Até";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // groupConsultar
             // 
@@ -418,6 +414,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             this.btnDeletar.TabIndex = 119;
             this.btnDeletar.Text = "Deletar Dados";
             this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(btnDeletar_Click);
             // 
             // ucDeletar
             // 

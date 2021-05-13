@@ -171,6 +171,7 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 94;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(lblClose_Click);
             // 
             // mtxCPF
             // 
@@ -311,6 +312,7 @@ namespace ServicoPortaria.Presentation.Veiculo
             this.btnDeletar.TabIndex = 103;
             this.btnDeletar.Text = "Deletar Dados";
             this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(btnDeletar_Click);
             // 
             // groupConsultar
             // 

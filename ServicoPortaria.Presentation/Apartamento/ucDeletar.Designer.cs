@@ -172,6 +172,7 @@ namespace ServicoPortaria.Presentation.Apartamento
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 91;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(lblClose_Click);
             // 
             // groupRemove
             // 
@@ -206,7 +207,6 @@ namespace ServicoPortaria.Presentation.Apartamento
             this.lblIdMorador.Size = new System.Drawing.Size(98, 15);
             this.lblIdMorador.TabIndex = 67;
             this.lblIdMorador.Text = "Cod. do Morador";
-            this.lblIdMorador.Click += new System.EventHandler(this.lblIdMorador_Click);
             // 
             // lblIdPredio
             // 
@@ -216,7 +216,6 @@ namespace ServicoPortaria.Presentation.Apartamento
             this.lblIdPredio.Size = new System.Drawing.Size(86, 15);
             this.lblIdPredio.TabIndex = 66;
             this.lblIdPredio.Text = "Cod. do Prédio";
-            this.lblIdPredio.Click += new System.EventHandler(this.lblIdPredio_Click);
             // 
             // lblIdCondominio
             // 
@@ -281,6 +280,7 @@ namespace ServicoPortaria.Presentation.Apartamento
             this.btnDeletar.TabIndex = 56;
             this.btnDeletar.Text = "Deletar Dados";
             this.btnDeletar.UseVisualStyleBackColor = false;
+            this.btnDeletar.Click += new System.EventHandler(btnDeletar_Click);
             // 
             // txtRamal
             // 

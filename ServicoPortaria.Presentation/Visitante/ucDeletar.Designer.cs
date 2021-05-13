@@ -202,7 +202,6 @@ namespace ServicoPortaria.Presentation.Visitante
             this.lblSexo.Size = new System.Drawing.Size(32, 15);
             this.lblSexo.TabIndex = 98;
             this.lblSexo.Text = "Sexo";
-            this.lblSexo.Click += new System.EventHandler(this.lblSexo_Click);
             // 
             // lblDocCivil
             // 
@@ -239,7 +238,6 @@ namespace ServicoPortaria.Presentation.Visitante
             this.lblEMail.Size = new System.Drawing.Size(41, 15);
             this.lblEMail.TabIndex = 101;
             this.lblEMail.Text = "E-Mail";
-            this.lblEMail.Click += new System.EventHandler(this.lblEMail_Click);
             // 
             // lblFixo
             // 
@@ -258,7 +256,6 @@ namespace ServicoPortaria.Presentation.Visitante
             this.lblCelular.Size = new System.Drawing.Size(44, 15);
             this.lblCelular.TabIndex = 99;
             this.lblCelular.Text = "Celular";
-            this.lblCelular.Click += new System.EventHandler(this.lblCelular_Click);
             // 
             // groupDocCivil
             // 

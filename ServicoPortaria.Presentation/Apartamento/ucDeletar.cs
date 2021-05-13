@@ -16,15 +16,35 @@ namespace ServicoPortaria.Presentation.Apartamento
         {
             InitializeComponent();
         }
-
-        private void lblIdMorador_Click(object sender, EventArgs e)
+        private void btnDeletar_Click(object sender, EventArgs e) 
         {
+            try 
+            {
+                Infra.Data.Contexto.PortariaContext Db = new();
 
+                Domain.Entities.Apartamento apartamento = Db.Apartamento.FirstOrDefault(t => t.Bloco.Contains(txtBloco.Text)
+                                                                                        ||   t.Ramal.Contains(txtRamal.Text)
+                                                                                        ||   t.Numero == Convert.ToInt32(nudNumero.Value));
+
+                Infra.Data.Repositories.ApartamentoRepository repository = new();
+                repository.Remove(apartamento);
+
+                MessageBox.Show("Apartamento Excluído Com Sucesso!",
+                    "Deletar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Deletar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
-
-        private void lblIdPredio_Click(object sender, EventArgs e)
+        private void lblClose_Click(object sender, EventArgs e) 
         {
-
+            Application.Exit();
         }
     }
 }
