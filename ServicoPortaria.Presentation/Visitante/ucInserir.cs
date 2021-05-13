@@ -17,24 +17,24 @@ namespace ServicoPortaria.Presentation.Visitante
         {
             InitializeComponent();
 
-            const int VIDEODEVICE = 0;
+            /*const int VIDEODEVICE = 0;
             const int VIDEOWIDTH = 640;
             const int VIDEOHEIGHT = 480;
             const int VIDEOBITSPERPIXEL = 24;
 
-            _camera = new Capture(VIDEODEVICE, VIDEOWIDTH, VIDEOHEIGHT, VIDEOBITSPERPIXEL, imgWebCam);
+            _camera = new Capture(VIDEODEVICE, VIDEOWIDTH, VIDEOHEIGHT, VIDEOBITSPERPIXEL, imgWebCam);*/ 
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            var bitmap = new Bitmap(imgWebCam.Width, imgWebCam.Height);
+            /* var bitmap = new Bitmap(imgWebCam.Width, imgWebCam.Height);
 
             using (var graphics = Graphics.FromImage(bitmap))
             {
                 var webCamPoint = imgWebCam.PointToScreen(new Point(0, 0));
                 graphics.CopyFromScreen(webCamPoint.X, webCamPoint.Y, 0, 0, bitmap.Size);
             }
-            bitmap.Save("snapshot.png", System.Drawing.Imaging.ImageFormat.Png);            
+            bitmap.Save("snapshot.png", System.Drawing.Imaging.ImageFormat.Png);   */         
 
             try
             {
@@ -46,8 +46,10 @@ namespace ServicoPortaria.Presentation.Visitante
                 visitante.DocCivil = txtDocCivil.Text;
                 visitante.Sexo = txtSexo.Text;
                 visitante.Celular = txtCelular.Text;
+                visitante.DataNascimento = dtpDataDeNascimento.Value.Date;
                 visitante.Fixo = txtTelefoneFixo.Text;
                 visitante.EMail = txtEMail.Text;
+                visitante.Foto = null;
 
                 Infra.Data.Repositories.VisitanteRepository repository = new();
                 repository.Inserir(visitante);
@@ -115,6 +117,12 @@ namespace ServicoPortaria.Presentation.Visitante
         private void lblClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmListarTodos form = new();
+            form.Show();
         }
     }
 }

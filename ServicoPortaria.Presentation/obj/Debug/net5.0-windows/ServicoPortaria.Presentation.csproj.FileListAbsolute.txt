@@ -165,3 +165,5 @@ C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\D
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ref\ServicoPortaria.Presentation.dll
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.pdb
 C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.genruntimeconfig.cache
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Predio.Forms.frmConsultar.resources
+C:\Users\Maxi4\source\repos\CriacaoCondominio\ServicoPortaria.Presentation\obj\Debug\net5.0-windows\ServicoPortaria.Presentation.Visita.Forms.frmConsultarTodos.resources

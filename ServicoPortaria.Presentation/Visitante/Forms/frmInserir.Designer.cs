@@ -44,7 +44,7 @@ namespace ServicoPortaria.Presentation.Visitante.Forms
             //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1370, 800);
             this.Text = "frmInserir";
             this.Controls.Add(Inserir);
         }

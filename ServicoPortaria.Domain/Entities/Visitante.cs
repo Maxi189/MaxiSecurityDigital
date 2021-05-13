@@ -39,6 +39,7 @@ namespace ServicoPortaria.Domain.Entities
         [MaxLength(15, ErrorMessage = "Número Inválido!")]
         [DisplayName("Telefone Fixo")]
         public string Fixo { get; set; }
+        public System.DateTime DataNascimento { get; set; }
         [Required(ErrorMessage = "Por Favor, Preencha Este Campo.")]
         [MinLength(1, ErrorMessage = "E-Mail Inválido!")]
         [MaxLength(255, ErrorMessage = "E-Mail Inválido!")]
@@ -46,6 +47,6 @@ namespace ServicoPortaria.Domain.Entities
         [DisplayName("E-Mail")]
         public string EMail { get; set; }
         [DataType("image")]
-        public string Foto { get; set; }
+        public byte[] Foto { get; set; }
     }
 }

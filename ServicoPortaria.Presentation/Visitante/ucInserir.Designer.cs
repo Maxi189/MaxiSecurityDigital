@@ -43,6 +43,8 @@ namespace ServicoPortaria.Presentation.Visitante
             this.txtDocCivil = new System.Windows.Forms.TextBox();
             this.txtSexo = new System.Windows.Forms.TextBox();
             this.groupDocCivil = new System.Windows.Forms.GroupBox();
+            this.dtpDataDeNascimento = new System.Windows.Forms.DateTimePicker();
+            this.lblDataNascimento = new System.Windows.Forms.Label();
             this.lblCelular = new System.Windows.Forms.Label();
             this.lblFixo = new System.Windows.Forms.Label();
             this.lblEMail = new System.Windows.Forms.Label();
@@ -194,6 +196,8 @@ namespace ServicoPortaria.Presentation.Visitante
             // 
             // groupDocCivil
             // 
+            this.groupDocCivil.Controls.Add(this.dtpDataDeNascimento);
+            this.groupDocCivil.Controls.Add(this.lblDataNascimento);
             this.groupDocCivil.Controls.Add(this.txtSexo);
             this.groupDocCivil.Controls.Add(this.txtDocCivil);
             this.groupDocCivil.Controls.Add(this.mtxRG);
@@ -204,15 +208,32 @@ namespace ServicoPortaria.Presentation.Visitante
             this.groupDocCivil.Controls.Add(this.lblCPF);
             this.groupDocCivil.Location = new System.Drawing.Point(485, 244);
             this.groupDocCivil.Name = "groupDocCivil";
-            this.groupDocCivil.Size = new System.Drawing.Size(444, 188);
+            this.groupDocCivil.Size = new System.Drawing.Size(444, 234);
             this.groupDocCivil.TabIndex = 64;
             this.groupDocCivil.TabStop = false;
             this.groupDocCivil.Text = "Documentação Civil";
             // 
+            // dtpDataDeNascimento
+            // 
+            this.dtpDataDeNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataDeNascimento.Location = new System.Drawing.Point(190, 189);
+            this.dtpDataDeNascimento.Name = "dtpDataDeNascimento";
+            this.dtpDataDeNascimento.Size = new System.Drawing.Size(232, 23);
+            this.dtpDataDeNascimento.TabIndex = 65;
+            // 
+            // lblDataNascimento
+            // 
+            this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.Location = new System.Drawing.Point(12, 195);
+            this.lblDataNascimento.Name = "lblDataNascimento";
+            this.lblDataNascimento.Size = new System.Drawing.Size(114, 15);
+            this.lblDataNascimento.TabIndex = 64;
+            this.lblDataNascimento.Text = "Data de Nascimento";
+            // 
             // lblCelular
             // 
             this.lblCelular.AutoSize = true;
-            this.lblCelular.Location = new System.Drawing.Point(12, 15);
+            this.lblCelular.Location = new System.Drawing.Point(12, 23);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(44, 15);
             this.lblCelular.TabIndex = 65;
@@ -221,7 +242,7 @@ namespace ServicoPortaria.Presentation.Visitante
             // lblFixo
             // 
             this.lblFixo.AutoSize = true;
-            this.lblFixo.Location = new System.Drawing.Point(12, 63);
+            this.lblFixo.Location = new System.Drawing.Point(12, 65);
             this.lblFixo.Name = "lblFixo";
             this.lblFixo.Size = new System.Drawing.Size(76, 15);
             this.lblFixo.TabIndex = 66;
@@ -238,14 +259,14 @@ namespace ServicoPortaria.Presentation.Visitante
             // 
             // txtCelular
             // 
-            this.txtCelular.Location = new System.Drawing.Point(190, 12);
+            this.txtCelular.Location = new System.Drawing.Point(190, 20);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(232, 23);
             this.txtCelular.TabIndex = 68;
             // 
             // txtTelefoneFixo
             // 
-            this.txtTelefoneFixo.Location = new System.Drawing.Point(190, 60);
+            this.txtTelefoneFixo.Location = new System.Drawing.Point(190, 62);
             this.txtTelefoneFixo.Name = "txtTelefoneFixo";
             this.txtTelefoneFixo.Size = new System.Drawing.Size(232, 23);
             this.txtTelefoneFixo.TabIndex = 69;
@@ -260,7 +281,7 @@ namespace ServicoPortaria.Presentation.Visitante
             // groupInsert
             // 
             this.groupInsert.Controls.Add(this.btnCadastrar);
-            this.groupInsert.Location = new System.Drawing.Point(537, 585);
+            this.groupInsert.Location = new System.Drawing.Point(544, 632);
             this.groupInsert.Name = "groupInsert";
             this.groupInsert.Size = new System.Drawing.Size(300, 101);
             this.groupInsert.TabIndex = 71;
@@ -288,9 +309,9 @@ namespace ServicoPortaria.Presentation.Visitante
             this.groupContato.Controls.Add(this.lblEMail);
             this.groupContato.Controls.Add(this.lblFixo);
             this.groupContato.Controls.Add(this.lblCelular);
-            this.groupContato.Location = new System.Drawing.Point(485, 439);
+            this.groupContato.Location = new System.Drawing.Point(485, 484);
             this.groupContato.Name = "groupContato";
-            this.groupContato.Size = new System.Drawing.Size(444, 137);
+            this.groupContato.Size = new System.Drawing.Size(444, 142);
             this.groupContato.TabIndex = 72;
             this.groupContato.TabStop = false;
             this.groupContato.Text = "Contato";
@@ -457,6 +478,7 @@ namespace ServicoPortaria.Presentation.Visitante
             this.lllConsultarTodos.TabIndex = 2;
             this.lllConsultarTodos.TabStop = true;
             this.lllConsultarTodos.Text = "Consultar Todos";
+            this.lllConsultarTodos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultarTodos_LinkClicked);
             // 
             // lllConsultar
             // 
@@ -553,5 +575,7 @@ namespace ServicoPortaria.Presentation.Visitante
         private System.Windows.Forms.LinkLabel lllConsultarTodos;
         private System.Windows.Forms.LinkLabel lllConsultar;
         private System.Windows.Forms.LinkLabel lllModificar;
+        private System.Windows.Forms.DateTimePicker dtpDataDeNascimento;
+        private System.Windows.Forms.Label lblDataNascimento;
     }
 }

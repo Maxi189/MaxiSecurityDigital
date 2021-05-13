@@ -44,7 +44,7 @@ namespace ServicoPortaria.Presentation.Veiculo.Forms
             //
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1370, 800);
             this.Controls.Add(ListarTodos);
             this.Text = "frmListarTodos";
         }
