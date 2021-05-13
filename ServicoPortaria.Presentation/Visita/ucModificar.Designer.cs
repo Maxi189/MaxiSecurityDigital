@@ -29,23 +29,11 @@ namespace ServicoPortaria.Presentation.Visita
         /// </summary>
         private void InitializeComponent()
         {
-            this.mnsCondominio = new System.Windows.Forms.MenuStrip();
-            this.tsmCondomínio = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmPredio = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmMorador = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGaragem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmVeiculo = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmPrestadorDeServicos = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmSindico = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmHomePage = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmVisita = new System.Windows.Forms.ToolStripMenuItem();
             this.lblClose = new System.Windows.Forms.Label();
             this.groupCadastrar = new System.Windows.Forms.GroupBox();
             this.btnCadastrarVisita = new System.Windows.Forms.Button();
             this.groupInfo = new System.Windows.Forms.GroupBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxCPFVisitante = new System.Windows.Forms.MaskedTextBox();
             this.lblIdVisitante = new System.Windows.Forms.Label();
             this.lblIdPredio = new System.Windows.Forms.Label();
             this.lblIdMorador = new System.Windows.Forms.Label();
@@ -57,7 +45,7 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblCondominio = new System.Windows.Forms.Label();
             this.lblMorador = new System.Windows.Forms.Label();
             this.lblIdApartamento = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupDataVisita = new System.Windows.Forms.GroupBox();
             this.dtpHoraSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpDataSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpDataChegada = new System.Windows.Forms.DateTimePicker();
@@ -67,6 +55,14 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblDataSaida = new System.Windows.Forms.Label();
             this.lblDataChegada = new System.Windows.Forms.Label();
             this.groupConsultar = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.lblCodVisita = new System.Windows.Forms.Label();
+            this.mtxConsultarCPFVisitante = new System.Windows.Forms.MaskedTextBox();
+            this.lblConsultarCodigoVisitante = new System.Windows.Forms.Label();
+            this.lblConsultarCPFVisitante = new System.Windows.Forms.Label();
+            this.lblConsultarCodigoMorador = new System.Windows.Forms.Label();
+            this.mtxConsultarCPF = new System.Windows.Forms.MaskedTextBox();
+            this.lblConsultarCPF = new System.Windows.Forms.Label();
             this.dtpConsultarHoraSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpConsultarDataSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpConsultarDataChegada = new System.Windows.Forms.DateTimePicker();
@@ -75,120 +71,14 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblConsultarHoraChegada = new System.Windows.Forms.Label();
             this.lblConsultarDataSaida = new System.Windows.Forms.Label();
             this.lblConsultarDataChegada = new System.Windows.Forms.Label();
-            this.lblConsultarCodigoMorador = new System.Windows.Forms.Label();
-            this.mtxConsultarCPF = new System.Windows.Forms.MaskedTextBox();
-            this.lblConsultarCPF = new System.Windows.Forms.Label();
-            this.mtxConsultarCPFVisitante = new System.Windows.Forms.MaskedTextBox();
-            this.lblConsultarCodigoVisitante = new System.Windows.Forms.Label();
-            this.lblConsultarCPFVisitante = new System.Windows.Forms.Label();
-            this.lblCodVisita = new System.Windows.Forms.Label();
             this.groupModificar = new System.Windows.Forms.GroupBox();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.mnsCondominio.SuspendLayout();
             this.groupCadastrar.SuspendLayout();
             this.groupInfo.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.groupDataVisita.SuspendLayout();
             this.groupConsultar.SuspendLayout();
             this.groupModificar.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mnsCondominio
-            // 
-            this.mnsCondominio.BackColor = System.Drawing.Color.Black;
-            this.mnsCondominio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmCondomínio,
-            this.tsmPredio,
-            this.tsmMorador,
-            this.tsmApartamento,
-            this.tsmVisitante,
-            this.tsmGaragem,
-            this.tsmVeiculo,
-            this.tsmPrestadorDeServicos,
-            this.tsmSindico,
-            this.tsmHomePage,
-            this.tsmVisita});
-            this.mnsCondominio.Location = new System.Drawing.Point(0, 0);
-            this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(1370, 24);
-            this.mnsCondominio.TabIndex = 71;
-            this.mnsCondominio.Text = "Condomínio";
-            // 
-            // tsmCondomínio
-            // 
-            this.tsmCondomínio.ForeColor = System.Drawing.Color.White;
-            this.tsmCondomínio.Name = "tsmCondomínio";
-            this.tsmCondomínio.Size = new System.Drawing.Size(86, 20);
-            this.tsmCondomínio.Text = "Condomínio";
-            // 
-            // tsmPredio
-            // 
-            this.tsmPredio.ForeColor = System.Drawing.Color.White;
-            this.tsmPredio.Name = "tsmPredio";
-            this.tsmPredio.Size = new System.Drawing.Size(53, 20);
-            this.tsmPredio.Text = "Prédio";
-            // 
-            // tsmMorador
-            // 
-            this.tsmMorador.ForeColor = System.Drawing.Color.White;
-            this.tsmMorador.Name = "tsmMorador";
-            this.tsmMorador.Size = new System.Drawing.Size(65, 20);
-            this.tsmMorador.Text = "Morador";
-            // 
-            // tsmApartamento
-            // 
-            this.tsmApartamento.ForeColor = System.Drawing.Color.White;
-            this.tsmApartamento.Name = "tsmApartamento";
-            this.tsmApartamento.Size = new System.Drawing.Size(89, 20);
-            this.tsmApartamento.Text = "Apartamento";
-            // 
-            // tsmVisitante
-            // 
-            this.tsmVisitante.ForeColor = System.Drawing.Color.White;
-            this.tsmVisitante.Name = "tsmVisitante";
-            this.tsmVisitante.Size = new System.Drawing.Size(64, 20);
-            this.tsmVisitante.Text = "Visitante";
-            // 
-            // tsmGaragem
-            // 
-            this.tsmGaragem.ForeColor = System.Drawing.Color.White;
-            this.tsmGaragem.Name = "tsmGaragem";
-            this.tsmGaragem.Size = new System.Drawing.Size(67, 20);
-            this.tsmGaragem.Text = "Garagem";
-            // 
-            // tsmVeiculo
-            // 
-            this.tsmVeiculo.ForeColor = System.Drawing.Color.White;
-            this.tsmVeiculo.Name = "tsmVeiculo";
-            this.tsmVeiculo.Size = new System.Drawing.Size(57, 20);
-            this.tsmVeiculo.Text = "Veículo";
-            // 
-            // tsmPrestadorDeServicos
-            // 
-            this.tsmPrestadorDeServicos.ForeColor = System.Drawing.Color.White;
-            this.tsmPrestadorDeServicos.Name = "tsmPrestadorDeServicos";
-            this.tsmPrestadorDeServicos.Size = new System.Drawing.Size(131, 20);
-            this.tsmPrestadorDeServicos.Text = "Prestador de Serviços";
-            // 
-            // tsmSindico
-            // 
-            this.tsmSindico.ForeColor = System.Drawing.Color.White;
-            this.tsmSindico.Name = "tsmSindico";
-            this.tsmSindico.Size = new System.Drawing.Size(58, 20);
-            this.tsmSindico.Text = "Síndico";
-            // 
-            // tsmHomePage
-            // 
-            this.tsmHomePage.ForeColor = System.Drawing.Color.White;
-            this.tsmHomePage.Name = "tsmHomePage";
-            this.tsmHomePage.Size = new System.Drawing.Size(81, 20);
-            this.tsmHomePage.Text = "Home Page";
-            // 
-            // tsmVisita
-            // 
-            this.tsmVisita.ForeColor = System.Drawing.Color.White;
-            this.tsmVisita.Name = "tsmVisita";
-            this.tsmVisita.Size = new System.Drawing.Size(47, 20);
-            this.tsmVisita.Text = "Visita";
             // 
             // lblClose
             // 
@@ -200,6 +90,7 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 85;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // groupCadastrar
             // 
@@ -222,10 +113,11 @@ namespace ServicoPortaria.Presentation.Visita
             this.btnCadastrarVisita.TabIndex = 0;
             this.btnCadastrarVisita.Text = "Cadastrar Visita";
             this.btnCadastrarVisita.UseVisualStyleBackColor = false;
+            this.btnCadastrarVisita.Click += new System.EventHandler(this.btnCadastrarVisita_Click);
             // 
             // groupInfo
             // 
-            this.groupInfo.Controls.Add(this.maskedTextBox2);
+            this.groupInfo.Controls.Add(this.mtxCPFVisitante);
             this.groupInfo.Controls.Add(this.lblIdVisitante);
             this.groupInfo.Controls.Add(this.lblIdPredio);
             this.groupInfo.Controls.Add(this.lblIdMorador);
@@ -244,13 +136,13 @@ namespace ServicoPortaria.Presentation.Visita
             this.groupInfo.TabStop = false;
             this.groupInfo.Text = "Informações do Apartamento";
             // 
-            // maskedTextBox2
+            // mtxCPFVisitante
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(230, 195);
-            this.maskedTextBox2.Mask = "000.000.000-00";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(190, 23);
-            this.maskedTextBox2.TabIndex = 69;
+            this.mtxCPFVisitante.Location = new System.Drawing.Point(230, 195);
+            this.mtxCPFVisitante.Mask = "000.000.000-00";
+            this.mtxCPFVisitante.Name = "mtxCPFVisitante";
+            this.mtxCPFVisitante.Size = new System.Drawing.Size(190, 23);
+            this.mtxCPFVisitante.TabIndex = 69;
             // 
             // lblIdVisitante
             // 
@@ -346,22 +238,22 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblIdApartamento.TabIndex = 56;
             this.lblIdApartamento.Text = "Código do Apartamento";
             // 
-            // groupBox1
+            // groupDataVisita
             // 
-            this.groupBox1.Controls.Add(this.dtpHoraSaida);
-            this.groupBox1.Controls.Add(this.dtpDataSaida);
-            this.groupBox1.Controls.Add(this.dtpDataChegada);
-            this.groupBox1.Controls.Add(this.dtpHoraChegada);
-            this.groupBox1.Controls.Add(this.lblHoraSaida);
-            this.groupBox1.Controls.Add(this.lblHoraChegada);
-            this.groupBox1.Controls.Add(this.lblDataSaida);
-            this.groupBox1.Controls.Add(this.lblDataChegada);
-            this.groupBox1.Location = new System.Drawing.Point(11, 263);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(445, 182);
-            this.groupBox1.TabIndex = 87;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Data da Visita";
+            this.groupDataVisita.Controls.Add(this.dtpHoraSaida);
+            this.groupDataVisita.Controls.Add(this.dtpDataSaida);
+            this.groupDataVisita.Controls.Add(this.dtpDataChegada);
+            this.groupDataVisita.Controls.Add(this.dtpHoraChegada);
+            this.groupDataVisita.Controls.Add(this.lblHoraSaida);
+            this.groupDataVisita.Controls.Add(this.lblHoraChegada);
+            this.groupDataVisita.Controls.Add(this.lblDataSaida);
+            this.groupDataVisita.Controls.Add(this.lblDataChegada);
+            this.groupDataVisita.Location = new System.Drawing.Point(11, 263);
+            this.groupDataVisita.Name = "groupDataVisita";
+            this.groupDataVisita.Size = new System.Drawing.Size(445, 182);
+            this.groupDataVisita.TabIndex = 87;
+            this.groupDataVisita.TabStop = false;
+            this.groupDataVisita.Text = "Data da Visita";
             // 
             // dtpHoraSaida
             // 
@@ -456,6 +348,80 @@ namespace ServicoPortaria.Presentation.Visita
             this.groupConsultar.TabStop = false;
             this.groupConsultar.Text = "Consultar";
             // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.Black;
+            this.btnConsultar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultar.ForeColor = System.Drawing.Color.White;
+            this.btnConsultar.Location = new System.Drawing.Point(165, 451);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(272, 84);
+            this.btnConsultar.TabIndex = 94;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // lblCodVisita
+            // 
+            this.lblCodVisita.AutoSize = true;
+            this.lblCodVisita.Location = new System.Drawing.Point(307, 397);
+            this.lblCodVisita.Name = "lblCodVisita";
+            this.lblCodVisita.Size = new System.Drawing.Size(93, 15);
+            this.lblCodVisita.TabIndex = 93;
+            this.lblCodVisita.Text = "Código da Visita";
+            // 
+            // mtxConsultarCPFVisitante
+            // 
+            this.mtxConsultarCPFVisitante.Location = new System.Drawing.Point(307, 305);
+            this.mtxConsultarCPFVisitante.Mask = "000.000.000-00";
+            this.mtxConsultarCPFVisitante.Name = "mtxConsultarCPFVisitante";
+            this.mtxConsultarCPFVisitante.Size = new System.Drawing.Size(190, 23);
+            this.mtxConsultarCPFVisitante.TabIndex = 92;
+            // 
+            // lblConsultarCodigoVisitante
+            // 
+            this.lblConsultarCodigoVisitante.AutoSize = true;
+            this.lblConsultarCodigoVisitante.Location = new System.Drawing.Point(307, 357);
+            this.lblConsultarCodigoVisitante.Name = "lblConsultarCodigoVisitante";
+            this.lblConsultarCodigoVisitante.Size = new System.Drawing.Size(111, 15);
+            this.lblConsultarCodigoVisitante.TabIndex = 91;
+            this.lblConsultarCodigoVisitante.Text = "Código do Visitante";
+            // 
+            // lblConsultarCPFVisitante
+            // 
+            this.lblConsultarCPFVisitante.AutoSize = true;
+            this.lblConsultarCPFVisitante.Location = new System.Drawing.Point(77, 308);
+            this.lblConsultarCPFVisitante.Name = "lblConsultarCPFVisitante";
+            this.lblConsultarCPFVisitante.Size = new System.Drawing.Size(93, 15);
+            this.lblConsultarCPFVisitante.TabIndex = 90;
+            this.lblConsultarCPFVisitante.Text = "CPF do Visitante";
+            // 
+            // lblConsultarCodigoMorador
+            // 
+            this.lblConsultarCodigoMorador.AutoSize = true;
+            this.lblConsultarCodigoMorador.Location = new System.Drawing.Point(307, 269);
+            this.lblConsultarCodigoMorador.Name = "lblConsultarCodigoMorador";
+            this.lblConsultarCodigoMorador.Size = new System.Drawing.Size(112, 15);
+            this.lblConsultarCodigoMorador.TabIndex = 89;
+            this.lblConsultarCodigoMorador.Text = "Código do Morador";
+            // 
+            // mtxConsultarCPF
+            // 
+            this.mtxConsultarCPF.Location = new System.Drawing.Point(307, 216);
+            this.mtxConsultarCPF.Mask = "000.000.000-00";
+            this.mtxConsultarCPF.Name = "mtxConsultarCPF";
+            this.mtxConsultarCPF.Size = new System.Drawing.Size(190, 23);
+            this.mtxConsultarCPF.TabIndex = 88;
+            // 
+            // lblConsultarCPF
+            // 
+            this.lblConsultarCPF.AutoSize = true;
+            this.lblConsultarCPF.Location = new System.Drawing.Point(77, 219);
+            this.lblConsultarCPF.Name = "lblConsultarCPF";
+            this.lblConsultarCPF.Size = new System.Drawing.Size(94, 15);
+            this.lblConsultarCPF.TabIndex = 87;
+            this.lblConsultarCPF.Text = "CPF do Morador";
+            // 
             // dtpConsultarHoraSaida
             // 
             this.dtpConsultarHoraSaida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
@@ -524,93 +490,17 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblConsultarDataChegada.TabIndex = 79;
             this.lblConsultarDataChegada.Text = "Data De Chegada";
             // 
-            // lblConsultarCodigoMorador
-            // 
-            this.lblConsultarCodigoMorador.AutoSize = true;
-            this.lblConsultarCodigoMorador.Location = new System.Drawing.Point(307, 269);
-            this.lblConsultarCodigoMorador.Name = "lblConsultarCodigoMorador";
-            this.lblConsultarCodigoMorador.Size = new System.Drawing.Size(112, 15);
-            this.lblConsultarCodigoMorador.TabIndex = 89;
-            this.lblConsultarCodigoMorador.Text = "Código do Morador";
-            this.lblConsultarCodigoMorador.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // mtxConsultarCPF
-            // 
-            this.mtxConsultarCPF.Location = new System.Drawing.Point(307, 216);
-            this.mtxConsultarCPF.Mask = "000.000.000-00";
-            this.mtxConsultarCPF.Name = "mtxConsultarCPF";
-            this.mtxConsultarCPF.Size = new System.Drawing.Size(190, 23);
-            this.mtxConsultarCPF.TabIndex = 88;
-            this.mtxConsultarCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
-            // 
-            // lblConsultarCPF
-            // 
-            this.lblConsultarCPF.AutoSize = true;
-            this.lblConsultarCPF.Location = new System.Drawing.Point(77, 219);
-            this.lblConsultarCPF.Name = "lblConsultarCPF";
-            this.lblConsultarCPF.Size = new System.Drawing.Size(94, 15);
-            this.lblConsultarCPF.TabIndex = 87;
-            this.lblConsultarCPF.Text = "CPF do Morador";
-            this.lblConsultarCPF.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // mtxConsultarCPFVisitante
-            // 
-            this.mtxConsultarCPFVisitante.Location = new System.Drawing.Point(307, 305);
-            this.mtxConsultarCPFVisitante.Mask = "000.000.000-00";
-            this.mtxConsultarCPFVisitante.Name = "mtxConsultarCPFVisitante";
-            this.mtxConsultarCPFVisitante.Size = new System.Drawing.Size(190, 23);
-            this.mtxConsultarCPFVisitante.TabIndex = 92;
-            // 
-            // lblConsultarCodigoVisitante
-            // 
-            this.lblConsultarCodigoVisitante.AutoSize = true;
-            this.lblConsultarCodigoVisitante.Location = new System.Drawing.Point(307, 357);
-            this.lblConsultarCodigoVisitante.Name = "lblConsultarCodigoVisitante";
-            this.lblConsultarCodigoVisitante.Size = new System.Drawing.Size(111, 15);
-            this.lblConsultarCodigoVisitante.TabIndex = 91;
-            this.lblConsultarCodigoVisitante.Text = "Código do Visitante";
-            // 
-            // lblConsultarCPFVisitante
-            // 
-            this.lblConsultarCPFVisitante.AutoSize = true;
-            this.lblConsultarCPFVisitante.Location = new System.Drawing.Point(77, 308);
-            this.lblConsultarCPFVisitante.Name = "lblConsultarCPFVisitante";
-            this.lblConsultarCPFVisitante.Size = new System.Drawing.Size(93, 15);
-            this.lblConsultarCPFVisitante.TabIndex = 90;
-            this.lblConsultarCPFVisitante.Text = "CPF do Visitante";
-            // 
-            // lblCodVisita
-            // 
-            this.lblCodVisita.AutoSize = true;
-            this.lblCodVisita.Location = new System.Drawing.Point(307, 397);
-            this.lblCodVisita.Name = "lblCodVisita";
-            this.lblCodVisita.Size = new System.Drawing.Size(93, 15);
-            this.lblCodVisita.TabIndex = 93;
-            this.lblCodVisita.Text = "Código da Visita";
-            // 
             // groupModificar
             // 
             this.groupModificar.Controls.Add(this.groupCadastrar);
             this.groupModificar.Controls.Add(this.groupInfo);
-            this.groupModificar.Controls.Add(this.groupBox1);
+            this.groupModificar.Controls.Add(this.groupDataVisita);
             this.groupModificar.Location = new System.Drawing.Point(15, 120);
             this.groupModificar.Name = "groupModificar";
             this.groupModificar.Size = new System.Drawing.Size(701, 563);
             this.groupModificar.TabIndex = 90;
             this.groupModificar.TabStop = false;
             this.groupModificar.Text = "Modificar";
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.BackColor = System.Drawing.Color.Black;
-            this.btnConsultar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConsultar.ForeColor = System.Drawing.Color.White;
-            this.btnConsultar.Location = new System.Drawing.Point(165, 451);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(272, 84);
-            this.btnConsultar.TabIndex = 94;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = false;
             // 
             // ucModificar
             // 
@@ -622,13 +512,14 @@ namespace ServicoPortaria.Presentation.Visita
             this.Controls.Add(this.mnsCondominio);
             this.Name = "ucModificar";
             this.Size = new System.Drawing.Size(1370, 800);
+            this.Load += new System.EventHandler(this.ucModificar_Load);
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
             this.groupCadastrar.ResumeLayout(false);
             this.groupInfo.ResumeLayout(false);
             this.groupInfo.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupDataVisita.ResumeLayout(false);
+            this.groupDataVisita.PerformLayout();
             this.groupConsultar.ResumeLayout(false);
             this.groupConsultar.PerformLayout();
             this.groupModificar.ResumeLayout(false);
@@ -655,7 +546,7 @@ namespace ServicoPortaria.Presentation.Visita
         private System.Windows.Forms.GroupBox groupCadastrar;
         private System.Windows.Forms.Button btnCadastrarVisita;
         private System.Windows.Forms.GroupBox groupInfo;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox mtxCPFVisitante;
         private System.Windows.Forms.Label lblIdVisitante;
         private System.Windows.Forms.Label lblIdPredio;
         private System.Windows.Forms.Label lblIdMorador;
@@ -667,7 +558,7 @@ namespace ServicoPortaria.Presentation.Visita
         private System.Windows.Forms.Label lblCondominio;
         private System.Windows.Forms.Label lblMorador;
         private System.Windows.Forms.Label lblIdApartamento;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupDataVisita;
         private System.Windows.Forms.DateTimePicker dtpHoraSaida;
         private System.Windows.Forms.DateTimePicker dtpDataSaida;
         private System.Windows.Forms.DateTimePicker dtpDataChegada;

@@ -29,52 +29,6 @@ namespace ServicoPortaria.Presentation.Sindico
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucModificar));
-            this.mnsPresentation = new System.Windows.Forms.MenuStrip();
-            this.tmsCondominio = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmsPredio = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmsMorador = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGaragem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmVeículo = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmPrestadorServicos = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmSindico = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmInicio = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmVisita = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customizeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.indexToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsCondominio = new System.Windows.Forms.MenuStrip();
-            this.tsmCadastroMorador = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmConsultarMorador = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmModuloVisitante = new System.Windows.Forms.ToolStripMenuItem();
             this.lblClose = new System.Windows.Forms.Label();
             this.groupInserir = new System.Windows.Forms.GroupBox();
             this.btnInsert = new System.Windows.Forms.Button();
@@ -104,6 +58,10 @@ namespace ServicoPortaria.Presentation.Sindico
             this.lblCelular = new System.Windows.Forms.Label();
             this.groupModificar = new System.Windows.Forms.GroupBox();
             this.groupConsultar = new System.Windows.Forms.GroupBox();
+            this.groupBotaoConsultar = new System.Windows.Forms.GroupBox();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.groupCodigo = new System.Windows.Forms.GroupBox();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.txtConsultarDocCivil = new System.Windows.Forms.TextBox();
             this.mtxConsultarRG = new System.Windows.Forms.MaskedTextBox();
@@ -111,12 +69,6 @@ namespace ServicoPortaria.Presentation.Sindico
             this.lblConsultarCPF = new System.Windows.Forms.Label();
             this.lblConsultarRG = new System.Windows.Forms.Label();
             this.lblConsultarDocCivil = new System.Windows.Forms.Label();
-            this.groupCodigo = new System.Windows.Forms.GroupBox();
-            this.groupBotaoConsultar = new System.Windows.Forms.GroupBox();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.mnsPresentation.SuspendLayout();
-            this.mnsCondominio.SuspendLayout();
             this.groupInserir.SuspendLayout();
             this.groupLocal.SuspendLayout();
             this.groupDocumentacao.SuspendLayout();
@@ -124,369 +76,10 @@ namespace ServicoPortaria.Presentation.Sindico
             this.groupContato.SuspendLayout();
             this.groupModificar.SuspendLayout();
             this.groupConsultar.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupCodigo.SuspendLayout();
             this.groupBotaoConsultar.SuspendLayout();
+            this.groupCodigo.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // mnsPresentation
-            // 
-            this.mnsPresentation.BackColor = System.Drawing.Color.Black;
-            this.mnsPresentation.Dock = System.Windows.Forms.DockStyle.Left;
-            this.mnsPresentation.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tmsCondominio,
-            this.tmsPredio,
-            this.tmsMorador,
-            this.tsmApartamento,
-            this.tsmVisitante,
-            this.tsmGaragem,
-            this.tsmVeículo,
-            this.tsmPrestadorServicos,
-            this.tsmSindico,
-            this.tsmInicio,
-            this.tsmVisita,
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.toolsToolStripMenuItem,
-            this.helpToolStripMenuItem});
-            this.mnsPresentation.Location = new System.Drawing.Point(0, 0);
-            this.mnsPresentation.Name = "mnsPresentation";
-            this.mnsPresentation.Size = new System.Drawing.Size(137, 800);
-            this.mnsPresentation.TabIndex = 61;
-            // 
-            // tmsCondominio
-            // 
-            this.tmsCondominio.Enabled = false;
-            this.tmsCondominio.ForeColor = System.Drawing.Color.White;
-            this.tmsCondominio.Name = "tmsCondominio";
-            this.tmsCondominio.Size = new System.Drawing.Size(124, 19);
-            this.tmsCondominio.Text = "Condomínio";
-            // 
-            // tmsPredio
-            // 
-            this.tmsPredio.ForeColor = System.Drawing.Color.White;
-            this.tmsPredio.Name = "tmsPredio";
-            this.tmsPredio.Size = new System.Drawing.Size(124, 19);
-            this.tmsPredio.Text = "Prédio";
-            // 
-            // tmsMorador
-            // 
-            this.tmsMorador.ForeColor = System.Drawing.Color.White;
-            this.tmsMorador.Name = "tmsMorador";
-            this.tmsMorador.Size = new System.Drawing.Size(124, 19);
-            this.tmsMorador.Text = "Morador";
-            // 
-            // tsmApartamento
-            // 
-            this.tsmApartamento.ForeColor = System.Drawing.Color.White;
-            this.tsmApartamento.Name = "tsmApartamento";
-            this.tsmApartamento.Size = new System.Drawing.Size(124, 19);
-            this.tsmApartamento.Text = "Apartamento";
-            // 
-            // tsmVisitante
-            // 
-            this.tsmVisitante.ForeColor = System.Drawing.Color.White;
-            this.tsmVisitante.Name = "tsmVisitante";
-            this.tsmVisitante.Size = new System.Drawing.Size(124, 19);
-            this.tsmVisitante.Text = "Visitante";
-            // 
-            // tsmGaragem
-            // 
-            this.tsmGaragem.ForeColor = System.Drawing.Color.White;
-            this.tsmGaragem.Name = "tsmGaragem";
-            this.tsmGaragem.Size = new System.Drawing.Size(124, 19);
-            this.tsmGaragem.Text = "Garagem";
-            // 
-            // tsmVeículo
-            // 
-            this.tsmVeículo.ForeColor = System.Drawing.Color.White;
-            this.tsmVeículo.Name = "tsmVeículo";
-            this.tsmVeículo.Size = new System.Drawing.Size(124, 19);
-            this.tsmVeículo.Text = "Veículo";
-            // 
-            // tsmPrestadorServicos
-            // 
-            this.tsmPrestadorServicos.ForeColor = System.Drawing.Color.White;
-            this.tsmPrestadorServicos.Name = "tsmPrestadorServicos";
-            this.tsmPrestadorServicos.Size = new System.Drawing.Size(124, 19);
-            this.tsmPrestadorServicos.Text = "Prestador de Serviços";
-            // 
-            // tsmSindico
-            // 
-            this.tsmSindico.ForeColor = System.Drawing.Color.White;
-            this.tsmSindico.Name = "tsmSindico";
-            this.tsmSindico.Size = new System.Drawing.Size(124, 19);
-            this.tsmSindico.Text = "Síndico";
-            // 
-            // tsmHomePage
-            // 
-            this.tsmInicio.ForeColor = System.Drawing.Color.White;
-            this.tsmInicio.Name = "tsmHomePage";
-            this.tsmInicio.Size = new System.Drawing.Size(124, 19);
-            this.tsmInicio.Text = "Home Page";
-            // 
-            // tsmVisita
-            // 
-            this.tsmVisita.ForeColor = System.Drawing.Color.White;
-            this.tsmVisita.Name = "tsmVisita";
-            this.tsmVisita.Size = new System.Drawing.Size(124, 19);
-            this.tsmVisita.Text = "Visita";
-            // 
-            // fileToolStripMenuItem
-            // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.toolStripSeparator,
-            this.saveToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.printToolStripMenuItem,
-            this.printPreviewToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(124, 19);
-            this.fileToolStripMenuItem.Text = "&File";
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem.Image")));
-            this.newToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.newToolStripMenuItem.Text = "&New";
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
-            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.openToolStripMenuItem.Text = "&Open";
-            // 
-            // toolStripSeparator
-            // 
-            this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
-            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
-            // 
-            // saveAsToolStripMenuItem
-            // 
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.saveAsToolStripMenuItem.Text = "Save &As";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.printToolStripMenuItem.Text = "&Print";
-            // 
-            // printPreviewToolStripMenuItem
-            // 
-            this.printPreviewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem.Image")));
-            this.printPreviewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printPreviewToolStripMenuItem.Name = "printPreviewToolStripMenuItem";
-            this.printPreviewToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.printPreviewToolStripMenuItem.Text = "Print Pre&view";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
-            this.exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.selectAllToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(124, 19);
-            this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // undoToolStripMenuItem
-            // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
-            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.cutToolStripMenuItem.Text = "Cu&t";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
-            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.copyToolStripMenuItem.Text = "&Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
-            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.pasteToolStripMenuItem.Text = "&Paste";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.selectAllToolStripMenuItem.Text = "Select &All";
-            // 
-            // toolsToolStripMenuItem
-            // 
-            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.customizeToolStripMenuItem,
-            this.optionsToolStripMenuItem});
-            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(124, 19);
-            this.toolsToolStripMenuItem.Text = "&Tools";
-            // 
-            // customizeToolStripMenuItem
-            // 
-            this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.customizeToolStripMenuItem.Text = "&Customize";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
-            this.optionsToolStripMenuItem.Text = "&Options";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.contentsToolStripMenuItem,
-            this.indexToolStripMenuItem,
-            this.searchToolStripMenuItem,
-            this.toolStripSeparator5,
-            this.aboutToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(124, 19);
-            this.helpToolStripMenuItem.Text = "&Help";
-            // 
-            // contentsToolStripMenuItem
-            // 
-            this.contentsToolStripMenuItem.Name = "contentsToolStripMenuItem";
-            this.contentsToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.contentsToolStripMenuItem.Text = "&Contents";
-            // 
-            // indexToolStripMenuItem
-            // 
-            this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.indexToolStripMenuItem.Text = "&Index";
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.searchToolStripMenuItem.Text = "&Search";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(119, 6);
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.aboutToolStripMenuItem.Text = "&About...";
-            // 
-            // mnsCondominio
-            // 
-            this.mnsCondominio.BackColor = System.Drawing.Color.Black;
-            this.mnsCondominio.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmCadastroMorador,
-            this.tsmConsultarMorador,
-            this.tsmModuloVisitante});
-            this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
-            this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(1233, 24);
-            this.mnsCondominio.TabIndex = 69;
-            this.mnsCondominio.Text = "Condomínio";
-            // 
-            // tsmCadastroMorador
-            // 
-            this.tsmCadastroMorador.ForeColor = System.Drawing.Color.White;
-            this.tsmCadastroMorador.Name = "tsmCadastroMorador";
-            this.tsmCadastroMorador.Size = new System.Drawing.Size(131, 20);
-            this.tsmCadastroMorador.Text = "Cadastro de Morador";
-            // 
-            // tsmConsultarMorador
-            // 
-            this.tsmConsultarMorador.ForeColor = System.Drawing.Color.White;
-            this.tsmConsultarMorador.Name = "tsmConsultarMorador";
-            this.tsmConsultarMorador.Size = new System.Drawing.Size(133, 20);
-            this.tsmConsultarMorador.Text = "Bloco do Condomíno";
-            // 
-            // tsmModuloVisitante
-            // 
-            this.tsmModuloVisitante.ForeColor = System.Drawing.Color.White;
-            this.tsmModuloVisitante.Name = "tsmModuloVisitante";
-            this.tsmModuloVisitante.Size = new System.Drawing.Size(125, 20);
-            this.tsmModuloVisitante.Text = "Módulo de Visitante";
             // 
             // lblClose
             // 
@@ -498,6 +91,7 @@ namespace ServicoPortaria.Presentation.Sindico
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 83;
             this.lblClose.Text = "X";
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // groupInserir
             // 
@@ -520,6 +114,7 @@ namespace ServicoPortaria.Presentation.Sindico
             this.btnInsert.TabIndex = 0;
             this.btnInsert.Text = "Cadastrar Síndico";
             this.btnInsert.UseVisualStyleBackColor = false;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // groupLocal
             // 
@@ -766,6 +361,48 @@ namespace ServicoPortaria.Presentation.Sindico
             this.groupConsultar.TabStop = false;
             this.groupConsultar.Text = "Consultar";
             // 
+            // groupBotaoConsultar
+            // 
+            this.groupBotaoConsultar.Controls.Add(this.btnConsultar);
+            this.groupBotaoConsultar.Location = new System.Drawing.Point(20, 467);
+            this.groupBotaoConsultar.Name = "groupBotaoConsultar";
+            this.groupBotaoConsultar.Size = new System.Drawing.Size(422, 107);
+            this.groupBotaoConsultar.TabIndex = 90;
+            this.groupBotaoConsultar.TabStop = false;
+            this.groupBotaoConsultar.Text = "Consultar";
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.Black;
+            this.btnConsultar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnConsultar.ForeColor = System.Drawing.Color.White;
+            this.btnConsultar.Location = new System.Drawing.Point(88, 26);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(258, 66);
+            this.btnConsultar.TabIndex = 0;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // groupCodigo
+            // 
+            this.groupCodigo.Controls.Add(this.lblCodigo);
+            this.groupCodigo.Location = new System.Drawing.Point(20, 304);
+            this.groupCodigo.Name = "groupCodigo";
+            this.groupCodigo.Size = new System.Drawing.Size(422, 138);
+            this.groupCodigo.TabIndex = 89;
+            this.groupCodigo.TabStop = false;
+            this.groupCodigo.Text = "Código";
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Location = new System.Drawing.Point(150, 60);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(105, 15);
+            this.lblCodigo.TabIndex = 0;
+            this.lblCodigo.Text = "Código do Síndico";
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.txtConsultarDocCivil);
@@ -831,47 +468,6 @@ namespace ServicoPortaria.Presentation.Sindico
             this.lblConsultarDocCivil.TabIndex = 61;
             this.lblConsultarDocCivil.Text = "Documento Civil";
             // 
-            // groupCodigo
-            // 
-            this.groupCodigo.Controls.Add(this.lblCodigo);
-            this.groupCodigo.Location = new System.Drawing.Point(20, 304);
-            this.groupCodigo.Name = "groupCodigo";
-            this.groupCodigo.Size = new System.Drawing.Size(422, 138);
-            this.groupCodigo.TabIndex = 89;
-            this.groupCodigo.TabStop = false;
-            this.groupCodigo.Text = "Código";
-            // 
-            // groupBotaoConsultar
-            // 
-            this.groupBotaoConsultar.Controls.Add(this.btnConsultar);
-            this.groupBotaoConsultar.Location = new System.Drawing.Point(20, 467);
-            this.groupBotaoConsultar.Name = "groupBotaoConsultar";
-            this.groupBotaoConsultar.Size = new System.Drawing.Size(422, 107);
-            this.groupBotaoConsultar.TabIndex = 90;
-            this.groupBotaoConsultar.TabStop = false;
-            this.groupBotaoConsultar.Text = "Consultar";
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.BackColor = System.Drawing.Color.Black;
-            this.btnConsultar.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnConsultar.ForeColor = System.Drawing.Color.White;
-            this.btnConsultar.Location = new System.Drawing.Point(88, 26);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(258, 66);
-            this.btnConsultar.TabIndex = 0;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = false;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Location = new System.Drawing.Point(150, 60);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(116, 15);
-            this.lblCodigo.TabIndex = 0;
-            this.lblCodigo.Text = "Código do Prestador";
-            // 
             // ucModificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -879,15 +475,10 @@ namespace ServicoPortaria.Presentation.Sindico
             this.Controls.Add(this.groupConsultar);
             this.Controls.Add(this.groupInserir);
             this.Controls.Add(this.lblClose);
-            this.Controls.Add(this.mnsCondominio);
-            this.Controls.Add(this.mnsPresentation);
             this.Controls.Add(this.groupModificar);
             this.Name = "ucModificar";
             this.Size = new System.Drawing.Size(1370, 800);
-            this.mnsPresentation.ResumeLayout(false);
-            this.mnsPresentation.PerformLayout();
-            this.mnsCondominio.ResumeLayout(false);
-            this.mnsCondominio.PerformLayout();
+            this.Load += new System.EventHandler(this.ucModificar_Load);
             this.groupInserir.ResumeLayout(false);
             this.groupLocal.ResumeLayout(false);
             this.groupLocal.PerformLayout();
@@ -900,13 +491,12 @@ namespace ServicoPortaria.Presentation.Sindico
             this.groupModificar.ResumeLayout(false);
             this.groupModificar.PerformLayout();
             this.groupConsultar.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.groupBotaoConsultar.ResumeLayout(false);
             this.groupCodigo.ResumeLayout(false);
             this.groupCodigo.PerformLayout();
-            this.groupBotaoConsultar.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

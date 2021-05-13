@@ -120,5 +120,11 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
         {
 
         }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmListarTodos form = new();
+            form.Show();
+        }
     }
 }

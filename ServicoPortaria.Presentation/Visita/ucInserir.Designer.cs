@@ -68,11 +68,17 @@ namespace ServicoPortaria.Presentation.Visita
             this.tsmHomePage = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisita = new System.Windows.Forms.ToolStripMenuItem();
             this.lblClose = new System.Windows.Forms.Label();
+            this.groupOutrasFuncoes = new System.Windows.Forms.GroupBox();
+            this.lllDeletar = new System.Windows.Forms.LinkLabel();
+            this.lllConsultarTodos = new System.Windows.Forms.LinkLabel();
+            this.lllConsultar = new System.Windows.Forms.LinkLabel();
+            this.lllModificar = new System.Windows.Forms.LinkLabel();
             this.groupInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumeroApartamento)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupCadastrar.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
+            this.groupOutrasFuncoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblIdApartamento
@@ -445,10 +451,65 @@ namespace ServicoPortaria.Presentation.Visita
             this.lblClose.Text = "X";
             this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
+            // groupOutrasFuncoes
+            // 
+            this.groupOutrasFuncoes.Controls.Add(this.lllDeletar);
+            this.groupOutrasFuncoes.Controls.Add(this.lllConsultarTodos);
+            this.groupOutrasFuncoes.Controls.Add(this.lllConsultar);
+            this.groupOutrasFuncoes.Controls.Add(this.lllModificar);
+            this.groupOutrasFuncoes.Location = new System.Drawing.Point(977, 367);
+            this.groupOutrasFuncoes.Name = "groupOutrasFuncoes";
+            this.groupOutrasFuncoes.Size = new System.Drawing.Size(190, 182);
+            this.groupOutrasFuncoes.TabIndex = 96;
+            this.groupOutrasFuncoes.TabStop = false;
+            this.groupOutrasFuncoes.Text = "Outras Funções";
+            // 
+            // lllDeletar
+            // 
+            this.lllDeletar.AutoSize = true;
+            this.lllDeletar.Location = new System.Drawing.Point(53, 123);
+            this.lllDeletar.Name = "lllDeletar";
+            this.lllDeletar.Size = new System.Drawing.Size(44, 15);
+            this.lllDeletar.TabIndex = 3;
+            this.lllDeletar.TabStop = true;
+            this.lllDeletar.Text = "Deletar";
+            // 
+            // lllConsultarTodos
+            // 
+            this.lllConsultarTodos.AutoSize = true;
+            this.lllConsultarTodos.Location = new System.Drawing.Point(53, 59);
+            this.lllConsultarTodos.Name = "lllConsultarTodos";
+            this.lllConsultarTodos.Size = new System.Drawing.Size(92, 15);
+            this.lllConsultarTodos.TabIndex = 2;
+            this.lllConsultarTodos.TabStop = true;
+            this.lllConsultarTodos.Text = "Consultar Todos";
+            this.lllConsultarTodos.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultarTodos_LinkClicked);
+            // 
+            // lllConsultar
+            // 
+            this.lllConsultar.AutoSize = true;
+            this.lllConsultar.Location = new System.Drawing.Point(53, 37);
+            this.lllConsultar.Name = "lllConsultar";
+            this.lllConsultar.Size = new System.Drawing.Size(58, 15);
+            this.lllConsultar.TabIndex = 1;
+            this.lllConsultar.TabStop = true;
+            this.lllConsultar.Text = "Consultar";
+            // 
+            // lllModificar
+            // 
+            this.lllModificar.AutoSize = true;
+            this.lllModificar.Location = new System.Drawing.Point(53, 92);
+            this.lllModificar.Name = "lllModificar";
+            this.lllModificar.Size = new System.Drawing.Size(58, 15);
+            this.lllModificar.TabIndex = 0;
+            this.lllModificar.TabStop = true;
+            this.lllModificar.Text = "Modificar";
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupOutrasFuncoes);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.groupCadastrar);
@@ -465,6 +526,8 @@ namespace ServicoPortaria.Presentation.Visita
             this.groupCadastrar.ResumeLayout(false);
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
+            this.groupOutrasFuncoes.ResumeLayout(false);
+            this.groupOutrasFuncoes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,5 +573,10 @@ namespace ServicoPortaria.Presentation.Visita
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label lblNumeroApartamento;
         private System.Windows.Forms.NumericUpDown nudNumeroApartamento;
+        private System.Windows.Forms.GroupBox groupOutrasFuncoes;
+        private System.Windows.Forms.LinkLabel lllDeletar;
+        private System.Windows.Forms.LinkLabel lllConsultarTodos;
+        private System.Windows.Forms.LinkLabel lllConsultar;
+        private System.Windows.Forms.LinkLabel lllModificar;
     }
 }

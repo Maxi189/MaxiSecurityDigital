@@ -1,7 +1,7 @@
 ﻿
-namespace ServicoPortaria.Presentation.Condominio.Forms
+namespace ServicoPortaria.Presentation.Visita.Forms
 {
-    partial class frmConsultar
+    partial class frmConsultarTodos
     {
         /// <summary>
         /// Required designer variable.
@@ -29,28 +29,26 @@ namespace ServicoPortaria.Presentation.Condominio.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.Consultar = new Condominio.ucConsultar();
+            this.ListarTodos = new ucListarTodos();
             this.components = new System.ComponentModel.Container();
             //
-            // ucConsultar
+            // ucListarTodos
             //
-            this.Consultar.BackColor = System.Drawing.Color.White;
-            this.Consultar.Location = new System.Drawing.Point(1, 1);
-            this.Consultar.Name = "ListarTodos";
-            this.Consultar.Size = new System.Drawing.Size(1370, 800);
-            this.Consultar.TabIndex = 0;
+            this.ListarTodos.BackColor = System.Drawing.Color.White;
+            this.ListarTodos.Location = new System.Drawing.Point(0, 0);
+            this.ListarTodos.Name = "ListarTodos";
+            this.ListarTodos.Size = new System.Drawing.Size(1370, 800);
+            this.ListarTodos.TabIndex = 0;
             //
-            // frmConsultar
+            // frmConsultarTodos
             //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(Consultar);
             this.ClientSize = new System.Drawing.Size(1370, 800);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Text = "frmConsultar";
+            this.Text = "frmConsultarTodos";
         }
 
         #endregion
 
-        private Condominio.ucConsultar Consultar;
+        private Visita.ucListarTodos ListarTodos;
     }
 }

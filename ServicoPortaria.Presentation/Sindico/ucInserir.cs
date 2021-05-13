@@ -97,5 +97,11 @@ namespace ServicoPortaria.Presentation.Sindico
         {
             Application.Exit();
         }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmListarTodos form = new();
+            form.Show();
+        }
     }
 }

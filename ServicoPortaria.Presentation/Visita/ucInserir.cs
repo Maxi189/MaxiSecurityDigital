@@ -136,5 +136,10 @@ namespace ServicoPortaria.Presentation.Visita
 
             return apartamento.Id;
         }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+        }
     }
 }

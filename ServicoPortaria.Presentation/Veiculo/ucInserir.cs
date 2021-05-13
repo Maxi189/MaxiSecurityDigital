@@ -122,5 +122,11 @@ namespace ServicoPortaria.Presentation.Veiculo
 
             return condominio.Id;
         }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmListarTodos form = new();
+            form.Show();
+        }
     }
 }
