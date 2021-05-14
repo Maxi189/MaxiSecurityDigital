@@ -18,8 +18,8 @@ namespace ServicoPortaria.Presentation.Visita
         }
         private void btnCadastrarVisita_Click(object sender, EventArgs e)
         {
-            try
-            {
+            /*try
+            {*/
                 Domain.Entities.Visita visita = new();
                 visita.IdVisitante = ConsultarIdVisitante(mtxCPFVisitante.Text);
                 visita.IdMorador = ConsultarIdMorador(mtxCPFMorador.Text);
@@ -27,6 +27,7 @@ namespace ServicoPortaria.Presentation.Visita
                 visita.HoraChegada = dtpHoraChegada.Value.TimeOfDay;
                 visita.HoraSaida = dtpHoraSaida.Value.TimeOfDay;
                 visita.DataSaida = dtpDataSaida.Value.Date;
+                visita.IdApartamento = ConsultarIdApartamento(Convert.ToInt32(nudNumeroApartamento.Value));
                 visita.IdCondominio = ConsultarIdCondominio(txtCondominio.Text);
                 visita.IdPredio = ConsultarIdPredio(txtPredio.Text);
 
@@ -37,14 +38,14 @@ namespace ServicoPortaria.Presentation.Visita
                     "Cadastrar Visita",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-            }
+            /*}
             catch
             {
                 MessageBox.Show("Ocorreu um Erro!",
                     "Cadastrar Visita",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
-            }
+            }*/
         }
         private void tsmCondominio_Click(object sender, EventArgs e)
         {
@@ -136,7 +137,6 @@ namespace ServicoPortaria.Presentation.Visita
 
             return apartamento.Id;
         }
-
         private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             

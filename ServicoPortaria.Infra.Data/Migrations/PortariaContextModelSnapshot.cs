@@ -51,7 +51,7 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Ramal")
-                        .HasColumnType("string");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -348,15 +348,21 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("CPF")
-                        .IsRequired()
                         .HasMaxLength(14)
                         .HasColumnType("nvarchar(14)");
+
+                    b.Property<string>("Celular")
+                        .IsRequired()
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
                     b.Property<int?>("CondominioId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("DataNascimento")
+                        .HasColumnType("date");
+
                     b.Property<string>("DocCivil")
-                        .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
@@ -388,11 +394,6 @@ namespace ServicoPortaria.Infra.Data.Migrations
                         .IsRequired()
                         .HasMaxLength(60)
                         .HasColumnType("nvarchar(60)");
-
-                    b.Property<string>("Telefone")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
@@ -477,16 +478,21 @@ namespace ServicoPortaria.Infra.Data.Migrations
                     b.Property<int?>("ApartamentoId")
                         .HasColumnType("int");
 
-                    b.Property<TimeSpan>("Chegada")
-                        .IsConcurrencyToken()
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("time");
-
                     b.Property<DateTime>("DataChegada")
                         .HasColumnType("date");
 
                     b.Property<DateTime>("DataSaida")
                         .HasColumnType("date");
+
+                    b.Property<TimeSpan>("HoraChegada")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("HoraSaida")
+                        .IsConcurrencyToken()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("time");
 
                     b.Property<int>("IdApartamento")
                         .HasColumnType("int");

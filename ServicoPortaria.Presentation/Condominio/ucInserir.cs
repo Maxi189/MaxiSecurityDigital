@@ -11,12 +11,6 @@ namespace ServicoPortaria.Presentation.Condominio
         {
             InitializeComponent();
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnInserir_Click(object sender, EventArgs e)
         {
             try

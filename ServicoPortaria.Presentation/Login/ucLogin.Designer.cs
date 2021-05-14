@@ -55,6 +55,7 @@ namespace ServicoPortaria.Presentation.Login
             // lblUser
             // 
             this.lblUser.AutoSize = true;
+            this.lblUser.ForeColor = System.Drawing.Color.Black;
             this.lblUser.Location = new System.Drawing.Point(286, 155);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(47, 15);
@@ -64,6 +65,7 @@ namespace ServicoPortaria.Presentation.Login
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
+            this.lblSenha.ForeColor = System.Drawing.Color.Black;
             this.lblSenha.Location = new System.Drawing.Point(286, 188);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(39, 15);
@@ -75,9 +77,9 @@ namespace ServicoPortaria.Presentation.Login
             this.btnLogin.BackColor = System.Drawing.Color.Black;
             this.btnLogin.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(403, 241);
+            this.btnLogin.Location = new System.Drawing.Point(353, 241);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(120, 56);
+            this.btnLogin.Size = new System.Drawing.Size(170, 49);
             this.btnLogin.TabIndex = 7;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -98,14 +100,14 @@ namespace ServicoPortaria.Presentation.Login
             this.txtUser.Size = new System.Drawing.Size(148, 23);
             this.txtUser.TabIndex = 5;
             // 
-            // lblPredio
+            // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Red;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(495, -43);
-            this.label1.Name = "lblPredio";
+            this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(24, 25);
             this.label1.TabIndex = 39;
             this.label1.Text = "X";

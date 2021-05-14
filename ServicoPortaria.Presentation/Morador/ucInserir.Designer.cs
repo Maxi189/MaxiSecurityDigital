@@ -92,6 +92,8 @@ namespace ServicoPortaria.Presentation.Morador
             this.lllModificarDados = new System.Windows.Forms.LinkLabel();
             this.lllConsultarTodos = new System.Windows.Forms.LinkLabel();
             this.lllConsultar = new System.Windows.Forms.LinkLabel();
+            this.lblDataNascimento = new System.Windows.Forms.Label();
+            this.dtpDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.groupNome.SuspendLayout();
             this.groupDocCivil.SuspendLayout();
             this.groupEndereco.SuspendLayout();
@@ -323,6 +325,8 @@ namespace ServicoPortaria.Presentation.Morador
             // 
             // groupDocCivil
             // 
+            this.groupDocCivil.Controls.Add(this.dtpDataNascimento);
+            this.groupDocCivil.Controls.Add(this.lblDataNascimento);
             this.groupDocCivil.Controls.Add(this.cmbSexo);
             this.groupDocCivil.Controls.Add(this.txtDocCivil);
             this.groupDocCivil.Controls.Add(this.mtxRG);
@@ -333,7 +337,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupDocCivil.Controls.Add(this.lblRG);
             this.groupDocCivil.Location = new System.Drawing.Point(180, 171);
             this.groupDocCivil.Name = "groupDocCivil";
-            this.groupDocCivil.Size = new System.Drawing.Size(479, 164);
+            this.groupDocCivil.Size = new System.Drawing.Size(479, 210);
             this.groupDocCivil.TabIndex = 75;
             this.groupDocCivil.TabStop = false;
             this.groupDocCivil.Text = "Documento Civil";
@@ -435,7 +439,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupEndereco.Controls.Add(this.lblCodPostal);
             this.groupEndereco.Controls.Add(this.lblRua);
             this.groupEndereco.Controls.Add(this.lblNumero);
-            this.groupEndereco.Location = new System.Drawing.Point(180, 348);
+            this.groupEndereco.Location = new System.Drawing.Point(180, 392);
             this.groupEndereco.Name = "groupEndereco";
             this.groupEndereco.Size = new System.Drawing.Size(479, 339);
             this.groupEndereco.TabIndex = 84;
@@ -732,6 +736,22 @@ namespace ServicoPortaria.Presentation.Morador
             this.lllConsultar.Text = "Consultar";
             this.lllConsultar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultar_LinkClicked);
             // 
+            // lblDataNascimento
+            // 
+            this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.Location = new System.Drawing.Point(0, 174);
+            this.lblDataNascimento.Name = "lblDataNascimento";
+            this.lblDataNascimento.Size = new System.Drawing.Size(114, 15);
+            this.lblDataNascimento.TabIndex = 75;
+            this.lblDataNascimento.Text = "Data de Nascimento";
+            // 
+            // dtpDataNascimento
+            // 
+            this.dtpDataNascimento.Location = new System.Drawing.Point(205, 168);
+            this.dtpDataNascimento.Name = "dtpDataNascimento";
+            this.dtpDataNascimento.Size = new System.Drawing.Size(230, 23);
+            this.dtpDataNascimento.TabIndex = 76;
+            // 
             // ucInserir
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -837,5 +857,7 @@ namespace ServicoPortaria.Presentation.Morador
         private System.Windows.Forms.LinkLabel lllModificarDados;
         private System.Windows.Forms.LinkLabel lllConsultarTodos;
         private System.Windows.Forms.LinkLabel lllConsultar;
+        private System.Windows.Forms.DateTimePicker dtpDataNascimento;
+        private System.Windows.Forms.Label lblDataNascimento;
     }
 }

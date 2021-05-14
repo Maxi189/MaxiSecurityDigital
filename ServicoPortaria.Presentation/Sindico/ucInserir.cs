@@ -19,8 +19,8 @@ namespace ServicoPortaria.Presentation.Sindico
 
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            try
-            {
+            /*try
+            {*/
                 Domain.Entities.Sindico sindico = new();
                 sindico.Nome = txtNome.Text;
                 sindico.Sobrenome = txtSobrenome.Text;
@@ -38,14 +38,14 @@ namespace ServicoPortaria.Presentation.Sindico
                     "Cadastrar Síndico",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-            }
+            /* }
             catch
             {
                 MessageBox.Show("Ocorreu um Erro!",
                     "Cadastrar Síndico",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
-            }
+            }*/
         }
         private void tsmCondominio_Click(object sender, EventArgs e)
         {

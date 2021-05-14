@@ -14,12 +14,12 @@ namespace ServicoPortaria.Presentation.Morador
         {
             InitializeComponent();
 
-            const int VIDEODEVICE = 0;
+            /*const int VIDEODEVICE = 0;
             const int VIDEOWIDTH = 640;
             const int VIDEOHEIGHT = 480;
             const int VIDEOBITSPERPIXEL = 24;
 
-            _camera = new Capture(VIDEODEVICE, VIDEOWIDTH, VIDEOHEIGHT, VIDEOBITSPERPIXEL, imgWebCam);
+            _camera = new Capture(VIDEODEVICE, VIDEOWIDTH, VIDEOHEIGHT, VIDEOBITSPERPIXEL, imgWebCam);*/
         }
         private void cmbSexo_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -27,14 +27,14 @@ namespace ServicoPortaria.Presentation.Morador
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            var bitmap = new Bitmap(imgWebCam.Width, imgWebCam.Height);
+            /*var bitmap = new Bitmap(imgWebCam.Width, imgWebCam.Height);
 
             using (var graphics = Graphics.FromImage(bitmap))
             {
                 var webCamPoint = imgWebCam.PointToScreen(new Point(0, 0));
                 graphics.CopyFromScreen(webCamPoint.X, webCamPoint.Y, 0, 0, bitmap.Size);
             }
-            bitmap.Save("snapshot.png", System.Drawing.Imaging.ImageFormat.Png);
+            bitmap.Save("snapshot.png", System.Drawing.Imaging.ImageFormat.Png);*/
 
             try
             {
@@ -43,15 +43,15 @@ namespace ServicoPortaria.Presentation.Morador
                 morador.Sobrenome = txtSobrenome.Text;
                 morador.CPF = mtxCPF.Text;
                 morador.RG = mtxRG.Text;
-                morador.DocCivil = "0";
+                morador.DocCivil = txtDocCivil.Text;
                 morador.Sexo = cmbSexo.Text;
                 morador.CEP = mtxCEP.Text;
-                morador.CodigoPostal = "0";
+                morador.CodigoPostal = txtCodPostal.Text;
                 morador.Rua = txtRua.Text;
                 morador.Numero = Convert.ToInt32(nudNumero.Value);
                 morador.Cidade = txtCidade.Text;
                 morador.Estado = cmbEstado.Text;
-                morador.Provincia = "0";
+                morador.Provincia = txtProvincia.Text;
                 morador.Pais = txtPais.Text;
                 morador.Celular = txtCidade.Text;
                 morador.Fixo = txtFixo.Text;

@@ -29,12 +29,28 @@ namespace ServicoPortaria.Presentation.Visita.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.Inserir = new ucInserir();
             this.components = new System.ComponentModel.Container();
+            //
+            // ucInserir
+            //
+            this.Inserir.BackColor = System.Drawing.Color.White;
+            this.Inserir.Location = new System.Drawing.Point(0, 0);
+            this.Inserir.Name = "Inserir";
+            this.Inserir.Size = new System.Drawing.Size(1370, 800);
+            this.Inserir.TabIndex = 0;
+            //
+            // frmInserir
+            //
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "frmInserir";
+            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Text = "Inserir";
+            this.Controls.Add(Inserir);
         }
 
         #endregion
+
+        private ucInserir Inserir;
     }
 }
