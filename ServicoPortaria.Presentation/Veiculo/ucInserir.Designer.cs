@@ -195,7 +195,7 @@ namespace ServicoPortaria.Presentation.Veiculo
             // mtxCPF
             // 
             this.mtxCPF.Location = new System.Drawing.Point(263, 35);
-            this.mtxCPF.Mask = "000.000.000-00";
+            this.mtxCPF.Mask = "000,000,000-00";
             this.mtxCPF.Name = "mtxCPF";
             this.mtxCPF.Size = new System.Drawing.Size(251, 23);
             this.mtxCPF.TabIndex = 70;

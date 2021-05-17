@@ -180,7 +180,7 @@ namespace ServicoPortaria.Presentation.Apartamento
             // mtxCPF
             // 
             this.mtxCPF.Location = new System.Drawing.Point(139, 133);
-            this.mtxCPF.Mask = "000.000.000-00";
+            this.mtxCPF.Mask = "000,000,000-00";
             this.mtxCPF.Name = "mtxCPF";
             this.mtxCPF.Size = new System.Drawing.Size(283, 23);
             this.mtxCPF.TabIndex = 61;

@@ -5,18 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\**" />
-    <EmbeddedResource Remove="Migrations\**" />
-    <None Remove="Migrations\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Migrations\20210430141654_Portaria.cs" />
-    <Compile Include="Migrations\20210430141654_Portaria.Designer.cs" />
-    <Compile Include="Migrations\PortariaContextModelSnapshot.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="EntityConfig\" />
   </ItemGroup>
 

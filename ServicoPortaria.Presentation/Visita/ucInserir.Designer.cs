@@ -129,7 +129,7 @@ namespace ServicoPortaria.Presentation.Visita
             // mtxCPFMorador
             // 
             this.mtxCPFMorador.Location = new System.Drawing.Point(230, 63);
-            this.mtxCPFMorador.Mask = "000.000.000-00";
+            this.mtxCPFMorador.Mask = "000,000,000-00";
             this.mtxCPFMorador.Name = "mtxCPFMorador";
             this.mtxCPFMorador.Size = new System.Drawing.Size(190, 23);
             this.mtxCPFMorador.TabIndex = 61;
@@ -187,7 +187,7 @@ namespace ServicoPortaria.Presentation.Visita
             // mtxCPFVisitante
             // 
             this.mtxCPFVisitante.Location = new System.Drawing.Point(230, 195);
-            this.mtxCPFVisitante.Mask = "000.000.000-00";
+            this.mtxCPFVisitante.Mask = "000,000,000-00";
             this.mtxCPFVisitante.Name = "mtxCPFVisitante";
             this.mtxCPFVisitante.Size = new System.Drawing.Size(190, 23);
             this.mtxCPFVisitante.TabIndex = 69;

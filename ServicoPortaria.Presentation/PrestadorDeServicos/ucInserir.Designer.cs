@@ -133,7 +133,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // mtxCNPJ
             // 
             this.mtxCNPJ.Location = new System.Drawing.Point(132, 57);
-            this.mtxCNPJ.Mask = "00.000.000/0000-00";
+            this.mtxCNPJ.Mask = "00,000,000/0000-00";
             this.mtxCNPJ.Name = "mtxCNPJ";
             this.mtxCNPJ.Size = new System.Drawing.Size(218, 23);
             this.mtxCNPJ.TabIndex = 61;
@@ -141,7 +141,7 @@ namespace ServicoPortaria.Presentation.PrestadorDeServicos
             // mtxCPF
             // 
             this.mtxCPF.Location = new System.Drawing.Point(132, 97);
-            this.mtxCPF.Mask = "000.000.000-00";
+            this.mtxCPF.Mask = "000,000,000-00";
             this.mtxCPF.Name = "mtxCPF";
             this.mtxCPF.Size = new System.Drawing.Size(218, 23);
             this.mtxCPF.TabIndex = 62;

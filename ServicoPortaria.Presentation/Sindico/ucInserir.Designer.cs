@@ -185,7 +185,7 @@ namespace ServicoPortaria.Presentation.Sindico
             // mtxCPF
             // 
             this.mtxCPF.Location = new System.Drawing.Point(139, 18);
-            this.mtxCPF.Mask = "000.000.000-00";
+            this.mtxCPF.Mask = "000,000,000-00";
             this.mtxCPF.Name = "mtxCPF";
             this.mtxCPF.Size = new System.Drawing.Size(277, 23);
             this.mtxCPF.TabIndex = 68;
@@ -193,7 +193,7 @@ namespace ServicoPortaria.Presentation.Sindico
             // mtxRG
             // 
             this.mtxRG.Location = new System.Drawing.Point(139, 63);
-            this.mtxRG.Mask = "00.000.000-0";
+            this.mtxRG.Mask = "00,000,000-0";
             this.mtxRG.Name = "mtxRG";
             this.mtxRG.Size = new System.Drawing.Size(277, 23);
             this.mtxRG.TabIndex = 69;

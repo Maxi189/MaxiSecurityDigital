@@ -14,9 +14,7 @@ namespace ServicoPortaria.Domain.Entities
         [DisplayName("Código do Morador")]
         public int IdMorador { get; set; }
         public DateTime DataChegada { get; set; }
-        [Timestamp]
         public TimeSpan HoraChegada { get; set; }
-        [Timestamp]
         public TimeSpan HoraSaida { get; set; }
         public DateTime DataSaida { get; set; }
         [DisplayName("Código do Condomínio")]
