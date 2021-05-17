@@ -85,5 +85,17 @@ namespace ServicoPortaria.Presentation.Condominio
         {
 
         }
+
+        private void lllInserir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmInserir form = new();
+            form.Show();
+        }
+
+        private void lllConsultar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmConsultar form = new();
+            form.Show();
+        }
     }
 }

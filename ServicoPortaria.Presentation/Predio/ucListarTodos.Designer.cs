@@ -42,9 +42,14 @@ namespace ServicoPortaria.Presentation.Predio
             this.tsmHomePage = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisita = new System.Windows.Forms.ToolStripMenuItem();
             this.lblClose = new System.Windows.Forms.Label();
+            this.groupFunções = new System.Windows.Forms.GroupBox();
+            this.lllDeletarDados = new System.Windows.Forms.LinkLabel();
+            this.lllModificarDados = new System.Windows.Forms.LinkLabel();
             this.lllInserir = new System.Windows.Forms.LinkLabel();
+            this.lllConsultar = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.mnsCondominio.SuspendLayout();
+            this.groupFunções.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvData
@@ -172,22 +177,66 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblClose.TabIndex = 88;
             this.lblClose.Text = "X";
             // 
+            // groupFunções
+            // 
+            this.groupFunções.Controls.Add(this.lllDeletarDados);
+            this.groupFunções.Controls.Add(this.lllModificarDados);
+            this.groupFunções.Controls.Add(this.lllInserir);
+            this.groupFunções.Controls.Add(this.lllConsultar);
+            this.groupFunções.Location = new System.Drawing.Point(1016, 258);
+            this.groupFunções.Name = "groupFunções";
+            this.groupFunções.Size = new System.Drawing.Size(252, 174);
+            this.groupFunções.TabIndex = 89;
+            this.groupFunções.TabStop = false;
+            this.groupFunções.Text = "Funções";
+            // 
+            // lllDeletarDados
+            // 
+            this.lllDeletarDados.AutoSize = true;
+            this.lllDeletarDados.Location = new System.Drawing.Point(61, 139);
+            this.lllDeletarDados.Name = "lllDeletarDados";
+            this.lllDeletarDados.Size = new System.Drawing.Size(80, 15);
+            this.lllDeletarDados.TabIndex = 3;
+            this.lllDeletarDados.TabStop = true;
+            this.lllDeletarDados.Text = "Deletar Dados";
+            // 
+            // lllModificarDados
+            // 
+            this.lllModificarDados.AutoSize = true;
+            this.lllModificarDados.Location = new System.Drawing.Point(61, 104);
+            this.lllModificarDados.Name = "lllModificarDados";
+            this.lllModificarDados.Size = new System.Drawing.Size(94, 15);
+            this.lllModificarDados.TabIndex = 2;
+            this.lllModificarDados.TabStop = true;
+            this.lllModificarDados.Text = "Modificar Dados";
+            // 
             // lllInserir
             // 
             this.lllInserir.AutoSize = true;
-            this.lllInserir.Location = new System.Drawing.Point(1100, 291);
+            this.lllInserir.Location = new System.Drawing.Point(61, 40);
             this.lllInserir.Name = "lllInserir";
-            this.lllInserir.Size = new System.Drawing.Size(75, 15);
-            this.lllInserir.TabIndex = 89;
+            this.lllInserir.Size = new System.Drawing.Size(39, 15);
+            this.lllInserir.TabIndex = 1;
             this.lllInserir.TabStop = true;
-            this.lllInserir.Text = "Inserir Dados";
+            this.lllInserir.Text = "Inserir";
             this.lllInserir.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllInserir_LinkClicked);
+            // 
+            // lllConsultar
+            // 
+            this.lllConsultar.AutoSize = true;
+            this.lllConsultar.Location = new System.Drawing.Point(61, 74);
+            this.lllConsultar.Name = "lllConsultar";
+            this.lllConsultar.Size = new System.Drawing.Size(58, 15);
+            this.lllConsultar.TabIndex = 0;
+            this.lllConsultar.TabStop = true;
+            this.lllConsultar.Text = "Consultar";
+            this.lllConsultar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultar_LinkClicked);
             // 
             // ucListarTodos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lllInserir);
+            this.Controls.Add(this.groupFunções);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
             this.Controls.Add(this.dgvData);
@@ -197,6 +246,8 @@ namespace ServicoPortaria.Presentation.Predio
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
+            this.groupFunções.ResumeLayout(false);
+            this.groupFunções.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,6 +267,10 @@ namespace ServicoPortaria.Presentation.Predio
         private System.Windows.Forms.ToolStripMenuItem tsmHomePage;
         private System.Windows.Forms.ToolStripMenuItem tsmVisita;
         private System.Windows.Forms.Label lblClose;
+        private System.Windows.Forms.GroupBox groupFunções;
+        private System.Windows.Forms.LinkLabel lllDeletarDados;
+        private System.Windows.Forms.LinkLabel lllModificarDados;
         private System.Windows.Forms.LinkLabel lllInserir;
+        private System.Windows.Forms.LinkLabel lllConsultar;
     }
 }

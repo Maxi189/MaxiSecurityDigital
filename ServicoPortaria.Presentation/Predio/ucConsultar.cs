@@ -19,32 +19,72 @@ namespace ServicoPortaria.Presentation.Predio
         }
         private void txtNome_TextChanged(object sender, EventArgs e) 
         {
-            Infra.Data.Repositories.PredioRepository repository = new();
+            try
+            {
+                Infra.Data.Repositories.PredioRepository repository = new();
 
-            dgvData.DataSource = repository.BuscarPorNome(txtNome.Text);
+                dgvData.DataSource = repository.BuscarPorNome(txtNome.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro",
+                    "Consultar Prédio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void txtCondominio_TextChanged(object sender, EventArgs e) 
         {
-            int idCondominio = BuscarIdCondominio(txtCondominio.Text);
+            try
+            {
+                int idCondominio = BuscarIdCondominio(txtCondominio.Text);
 
-            Infra.Data.Repositories.PredioRepository repository = new();
+                Infra.Data.Repositories.PredioRepository repository = new();
 
-            dgvData.DataSource = repository.BuscarPorCondominio(idCondominio);
+                dgvData.DataSource = repository.BuscarPorCondominio(idCondominio).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro",
+                    "Consultar Prédio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void nudNumero_ValueChanged(object sender, EventArgs e) 
         {
-            Infra.Data.Repositories.PredioRepository repository = new();
+            try
+            {
+                Infra.Data.Repositories.PredioRepository repository = new();
 
-            dgvData.DataSource = repository.BuscarPorNumero(Convert.ToInt32(nudNumero.Value));
+                dgvData.DataSource = repository.BuscarPorNumero(Convert.ToInt32(nudNumero.Value));
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro",
+                    "Consultar Prédio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            Infra.Data.Contexto.PortariaContext Db = new();
-            int idCondominio = BuscarIdCondominio(txtCondominio.Text);
+            try
+            {
+                Infra.Data.Contexto.PortariaContext Db = new();
+                int idCondominio = BuscarIdCondominio(txtCondominio.Text);
 
-            dgvData.DataSource = Db.Predio.Where(t => t.Nome.Contains(txtNome.Text)
-                                                 ||   t.IdCondominio == idCondominio
-                                                 ||   t.Numero == nudNumero.Value);
+                dgvData.DataSource = Db.Predio.Where(t => t.Nome.Contains(txtNome.Text)
+                                                     || t.IdCondominio == idCondominio
+                                                     || t.Numero == nudNumero.Value).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro",
+                    "Consultar Prédio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void lblClose_Click(object sender, EventArgs e)
         {
@@ -109,6 +149,18 @@ namespace ServicoPortaria.Presentation.Predio
             Domain.Entities.Condominio condominio = Db.Condominio.FirstOrDefault(t => t.Nome.Contains(nome));
 
             return condominio.Id;
+        }
+
+        private void lllInserir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmInserir form = new();
+            form.Show();
+        }
+
+        private void lllConsultar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmConsultar form = new();
+            form.Show();
         }
     }
 }

@@ -18,59 +18,250 @@ namespace ServicoPortaria.Presentation.Morador
         }
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorNome(txtNome.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void txtSobrenome_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorSobrenome(txtNome.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+        private void mtxCPF_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            try
+            {
+                MessageBox.Show("Formato de CPF Inválido!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void mtxCPF_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorCPF(mtxCPF.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
         }        
         private void mtxRG_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorRG(mtxRG.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+        private void mtxRG_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            try
+            {
+                MessageBox.Show("RG Inválido!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void txtDocCivil_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorDocCivil(txtDocCivil.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void mtxCEP_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorCPF(mtxCEP.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
-        private void mtxDocCivil_TextChanged(object sender, EventArgs e)
+        private void mtxCEP_MaskInputRejected(object sender, EventArgs e)
         {
-
+            try
+            {
+                
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+        private void txtCodPostal_TextChanged(object sender, EventArgs e) 
+        {
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorCodPostal(txtCodPostal.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void txtRua_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorRua(txtRua.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void nudNumero_ValueChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorNumero(Convert.ToInt32(nudNumero.Value)).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void txtCelular_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorCelular(txtCelular.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void txtFoneFixo_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorFoneFixo(txtFoneFixo.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void txtEMail_TextChanged(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorEMail(txtEMail.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Infra.Data.Repositories.MoradorRepository repository = new();
+                dgvData.DataSource = repository.BuscarPorTodosOsFiltros(txtNome.Text, txtSobrenome.Text, mtxCPF.Text, mtxRG.Text, txtDocCivil.Text, mtxCEP.Text, txtDocCivil.Text, txtRua.Text, Convert.ToInt32(nudNumero.Value), txtCelular.Text, txtFoneFixo.Text, txtEMail.Text).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Morador",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void lblClose_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
         private void tsmCondominio_Click(object sender, EventArgs e)
         {

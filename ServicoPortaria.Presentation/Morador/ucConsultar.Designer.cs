@@ -29,8 +29,6 @@ namespace ServicoPortaria.Presentation.Morador
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucConsultar));
-            this.Consultar = new ServicoPortaria.Presentation.Morador.ucConsultar();
             this.tsmCondominio = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmApartamento = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmVisitante = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,14 +83,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupContato.SuspendLayout();
             this.groupConsultar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // Consultar
-            // 
-            this.Consultar.Location = new System.Drawing.Point(0, 0);
-            this.Consultar.Name = "Consultar";
-            this.Consultar.Size = new System.Drawing.Size(150, 150);
-            this.Consultar.TabIndex = 0;        
+            this.SuspendLayout();   
             // 
             // mnsCondominio
             // 
@@ -287,6 +278,8 @@ namespace ServicoPortaria.Presentation.Morador
             this.mtxCPF.Name = "mtxDocCivil";
             this.mtxCPF.Size = new System.Drawing.Size(170, 23);
             this.mtxCPF.TabIndex = 72;
+            this.mtxCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(mtxCPF_MaskInputRejected);
+            this.mtxCPF.TextChanged += new System.EventHandler(mtxCPF_TextChanged);
             // 
             // mtxRG
             // 
@@ -295,6 +288,8 @@ namespace ServicoPortaria.Presentation.Morador
             this.mtxRG.Name = "mtxRG";
             this.mtxRG.Size = new System.Drawing.Size(170, 23);
             this.mtxRG.TabIndex = 73;
+            this.mtxRG.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(mtxRG_MaskInputRejected);
+            this.mtxRG.TextChanged += new System.EventHandler(mtxRG_TextChanged);
             // 
             // txtDocCivil
             // 
@@ -302,6 +297,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.txtDocCivil.Name = "txtDocCivil";
             this.txtDocCivil.Size = new System.Drawing.Size(170, 23);
             this.txtDocCivil.TabIndex = 68;
+            this.txtDocCivil.TextChanged += new System.EventHandler(txtDocCivil_TextChanged);
             // 
             // groupDocCivil
             // 
@@ -361,6 +357,8 @@ namespace ServicoPortaria.Presentation.Morador
             this.mtxCEP.Name = "mtsCEP";
             this.mtxCEP.Size = new System.Drawing.Size(161, 23);
             this.mtxCEP.TabIndex = 79;
+            this.mtxCEP.TextChanged += new System.EventHandler(mtxCEP_TextChanged);
+            this.mtxCEP.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(mtxCEP_MaskInputRejected);
             // 
             // txtCodPostal
             // 
@@ -368,6 +366,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.txtCodPostal.Name = "txtCodPostal";
             this.txtCodPostal.Size = new System.Drawing.Size(161, 23);
             this.txtCodPostal.TabIndex = 80;
+            this.txtCodPostal.TextChanged += new System.EventHandler(txtCodPostal_TextChanged);
             // 
             // txtRua
             // 
@@ -375,6 +374,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(161, 23);
             this.txtRua.TabIndex = 81;
+            this.txtRua.TextChanged += new System.EventHandler(txtRua_TextChanged);
             // 
             // nudNumero
             // 
@@ -382,6 +382,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.nudNumero.Name = "nudNumero";
             this.nudNumero.Size = new System.Drawing.Size(161, 23);
             this.nudNumero.TabIndex = 82;
+            this.nudNumero.ValueChanged += new System.EventHandler(nudNumero_ValueChanged);
             // 
             // groupEndereco
             // 
@@ -433,6 +434,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(142, 23);
             this.txtCelular.TabIndex = 87;
+            this.txtCelular.TextChanged += new System.EventHandler(txtCelular_TextChanged);
             // 
             // txtFoneFixo
             // 
@@ -440,6 +442,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.txtFoneFixo.Name = "txtFoneFixo";
             this.txtFoneFixo.Size = new System.Drawing.Size(142, 23);
             this.txtFoneFixo.TabIndex = 88;
+            this.txtFoneFixo.TextChanged += new System.EventHandler(txtFoneFixo_TextChanged);
             // 
             // txtEMail
             // 
@@ -447,6 +450,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.txtEMail.Name = "txtEMail";
             this.txtEMail.Size = new System.Drawing.Size(142, 23);
             this.txtEMail.TabIndex = 89;
+            this.txtEMail.TextChanged += new System.EventHandler(txtEMail_TextChanged);
             // 
             // groupContato
             // 
@@ -484,6 +488,7 @@ namespace ServicoPortaria.Presentation.Morador
             this.btnConsultar.TabIndex = 0;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(btnConsultar_Click);
             // 
             // dgvData
             // 

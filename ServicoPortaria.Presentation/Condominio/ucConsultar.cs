@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,59 +21,120 @@ namespace ServicoPortaria.Presentation.Condominio
         }
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
+            try
+            {
+                string nome = txtNome.Text;
 
-            CondominioRepository repository = new CondominioRepository();
-            dgvData.DataSource = repository.BuscarPorNome(nome); 
+                CondominioRepository repository = new CondominioRepository();
+                dgvData.DataSource = repository.BuscarPorNome(nome).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Condomínio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void mskCEP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            string cep = mskCEP.Text;
+            Debug.WriteLine("CEP Inválido!");
+        }
 
-            CondominioRepository repository = new CondominioRepository();
-            dgvData.DataSource = repository.BuscarPorCEP(cep);
+        private void mskCEP_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string cep = mskCEP.Text;
+
+                CondominioRepository repository = new CondominioRepository();
+                dgvData.DataSource = repository.BuscarPorCEP(cep).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Condomínio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void txtCodPostal_TextChanged(object sender, EventArgs e)
         {
-            string codPostal = txtCodPostal.Text;
+            try
+            {
+                string codPostal = txtCodPostal.Text;
 
-            CondominioRepository repository = new CondominioRepository();
-            dgvData.DataSource = repository.BuscarPorCodPostal(codPostal);
+                CondominioRepository repository = new CondominioRepository();
+                dgvData.DataSource = repository.BuscarPorCodPostal(codPostal).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Condomínio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void nudNumero_ValueChanged(object sender, EventArgs e)
         {
-            int numero = Convert.ToInt32(nudNumero.Value);
+            try
+            {
+                int numero = Convert.ToInt32(nudNumero.Value);
 
-            CondominioRepository repository = new CondominioRepository();
-            dgvData.DataSource = repository.BuscarPorNumero(numero);
+                CondominioRepository repository = new CondominioRepository();
+                dgvData.DataSource = repository.BuscarPorNumero(numero).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Condomínio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+
         }
 
         private void txtCidade_TextChanged(object sender, EventArgs e)
         {
-            string cidade = txtCidade.Text;
+            try
+            {
+                string cidade = txtCidade.Text;
 
-            CondominioRepository repository = new CondominioRepository();
-            dgvData.DataSource = repository.BuscarPorCidade(cidade);
+                CondominioRepository repository = new CondominioRepository();
+                dgvData.DataSource = repository.BuscarPorCidade(cidade).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Condomínio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
-            string cep = mskCEP.Text;
-            string codPostal = txtCodPostal.Text;
-            int numero = Convert.ToInt32(nudNumero.Value);
-            string cidade = txtCidade.Text;
+            try
+            {
+                string nome = txtNome.Text;
+                string cep = mskCEP.Text;
+                string codPostal = txtCodPostal.Text;
+                int numero = Convert.ToInt32(nudNumero.Value);
+                string cidade = txtCidade.Text;
 
-            CondominioRepository repository = new CondominioRepository();
-            dgvData.DataSource = repository.BuscarComTodosOsFiltros(nome, cep, codPostal, numero, cidade);
-        }
-
-        private void mnsCondominio_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-            Application.Exit();
+                CondominioRepository repository = new CondominioRepository();
+                dgvData.DataSource = repository.BuscarComTodosOsFiltros(nome, cep, codPostal, numero, cidade).ToList();
+            }
+            catch
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Condomínio",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
         private void tsmPredio_Click(object sender, EventArgs e)
         {
@@ -123,6 +185,23 @@ namespace ServicoPortaria.Presentation.Condominio
         private void tsmVisita_Click(object sender, EventArgs e)
         {
             Visita.Forms.frmInserir form = new Visita.Forms.frmInserir();
+            form.Show();
+        }
+
+        private void lblClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lllInserir_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmInserir form = new();
+            form.Show();
+        }
+
+        private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmConsultarTodos form = new();
             form.Show();
         }
     }

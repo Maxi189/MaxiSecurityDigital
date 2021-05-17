@@ -29,9 +29,6 @@ namespace ServicoPortaria.Presentation.Predio
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucConsultar));
-            this.Consultar = new ServicoPortaria.Presentation.Predio.ucConsultar();
-            this.mnsPresentation = new System.Windows.Forms.MenuStrip();
             this.tsmCondominio = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmPredio = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmMorador = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,21 +53,97 @@ namespace ServicoPortaria.Presentation.Predio
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.groupInformacoesCarregadas = new System.Windows.Forms.GroupBox();
             this.lblCodigoCondominio = new System.Windows.Forms.Label();
-            this.mnsPresentation.SuspendLayout();
+            this.groupFunções = new System.Windows.Forms.GroupBox();
+            this.lllDeletarDados = new System.Windows.Forms.LinkLabel();
+            this.lllModificarDados = new System.Windows.Forms.LinkLabel();
+            this.lllConsultar = new System.Windows.Forms.LinkLabel();
+            this.lllInserir = new System.Windows.Forms.LinkLabel();
             this.mnsCondominio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
             this.groupInformacao.SuspendLayout();
             this.groupConsulta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.groupInformacoesCarregadas.SuspendLayout();
+            this.groupFunções.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Consultar
+            // tsmCondominio
             // 
-            this.Consultar.Location = new System.Drawing.Point(0, 0);
-            this.Consultar.Name = "Consultar";
-            this.Consultar.Size = new System.Drawing.Size(150, 150);
-            this.Consultar.TabIndex = 0;
+            this.tsmCondominio.ForeColor = System.Drawing.Color.White;
+            this.tsmCondominio.Name = "tsmCondominio";
+            this.tsmCondominio.Size = new System.Drawing.Size(86, 20);
+            this.tsmCondominio.Text = "Condomínio";
+            this.tsmCondominio.Click += new System.EventHandler(this.tsmCondominio_Click);
+            // 
+            // tsmPredio
+            // 
+            this.tsmPredio.Enabled = false;
+            this.tsmPredio.ForeColor = System.Drawing.Color.White;
+            this.tsmPredio.Name = "tsmPredio";
+            this.tsmPredio.Size = new System.Drawing.Size(53, 20);
+            this.tsmPredio.Text = "Prédio";
+            // 
+            // tsmMorador
+            // 
+            this.tsmMorador.ForeColor = System.Drawing.Color.White;
+            this.tsmMorador.Name = "tsmMorador";
+            this.tsmMorador.Size = new System.Drawing.Size(65, 20);
+            this.tsmMorador.Text = "Morador";
+            this.tsmMorador.Click += new System.EventHandler(this.tsmMorador_Click);
+            // 
+            // tsmApartamento
+            // 
+            this.tsmApartamento.ForeColor = System.Drawing.Color.White;
+            this.tsmApartamento.Name = "tsmApartamento";
+            this.tsmApartamento.Size = new System.Drawing.Size(89, 20);
+            this.tsmApartamento.Text = "Apartamento";
+            this.tsmApartamento.Click += new System.EventHandler(this.tsmApartamento_Click);
+            // 
+            // tsmVisitante
+            // 
+            this.tsmVisitante.ForeColor = System.Drawing.Color.White;
+            this.tsmVisitante.Name = "tsmVisitante";
+            this.tsmVisitante.Size = new System.Drawing.Size(64, 20);
+            this.tsmVisitante.Text = "Visitante";
+            this.tsmVisitante.Click += new System.EventHandler(this.tsmVisitante_Click);
+            // 
+            // tsmVeiculo
+            // 
+            this.tsmVeiculo.ForeColor = System.Drawing.Color.White;
+            this.tsmVeiculo.Name = "tsmVeiculo";
+            this.tsmVeiculo.Size = new System.Drawing.Size(57, 20);
+            this.tsmVeiculo.Text = "Veículo";
+            // 
+            // tsmPrestadorServicos
+            // 
+            this.tsmPrestadorServicos.ForeColor = System.Drawing.Color.White;
+            this.tsmPrestadorServicos.Name = "tsmPrestadorServicos";
+            this.tsmPrestadorServicos.Size = new System.Drawing.Size(131, 20);
+            this.tsmPrestadorServicos.Text = "Prestador de Serviços";
+            this.tsmPrestadorServicos.Click += new System.EventHandler(this.tsmPrestadorServicos_Click);
+            // 
+            // tsmSindico
+            // 
+            this.tsmSindico.ForeColor = System.Drawing.Color.White;
+            this.tsmSindico.Name = "tsmSindico";
+            this.tsmSindico.Size = new System.Drawing.Size(58, 20);
+            this.tsmSindico.Text = "Síndico";
+            this.tsmSindico.Click += new System.EventHandler(this.tsmSindico_Click);
+            // 
+            // tsmHomePage
+            // 
+            this.tsmHomePage.ForeColor = System.Drawing.Color.White;
+            this.tsmHomePage.Name = "tsmHomePage";
+            this.tsmHomePage.Size = new System.Drawing.Size(81, 20);
+            this.tsmHomePage.Text = "Home Page";
+            // 
+            // tsmVisita
+            // 
+            this.tsmVisita.ForeColor = System.Drawing.Color.White;
+            this.tsmVisita.Name = "tsmVisita";
+            this.tsmVisita.Size = new System.Drawing.Size(47, 20);
+            this.tsmVisita.Text = "Visita";
+            this.tsmVisita.Click += new System.EventHandler(this.tsmVisita_Click);
             // 
             // mnsCondominio
             // 
@@ -86,83 +159,11 @@ namespace ServicoPortaria.Presentation.Predio
             this.tsmSindico,
             this.tsmHomePage,
             this.tsmVisita});
-            this.mnsCondominio.Location = new System.Drawing.Point(137, 0);
+            this.mnsCondominio.Location = new System.Drawing.Point(0, 0);
             this.mnsCondominio.Name = "mnsCondominio";
-            this.mnsCondominio.Size = new System.Drawing.Size(1233, 24);
+            this.mnsCondominio.Size = new System.Drawing.Size(1370, 24);
             this.mnsCondominio.TabIndex = 53;
             this.mnsCondominio.Text = "Condomínio";
-            // 
-            // tsmCondomínio
-            // 
-            this.tsmCondominio.ForeColor = System.Drawing.Color.White;
-            this.tsmCondominio.Name = "tsmCondominio";
-            this.tsmCondominio.Size = new System.Drawing.Size(131, 20);
-            this.tsmCondominio.Text = "Condomínio";
-            this.tsmCondominio.Click += new System.EventHandler(tsmCondominio_Click);
-            // 
-            // tsmPredio
-            // 
-            this.tsmPredio.Enabled = false;
-            this.tsmPredio.ForeColor = System.Drawing.Color.White;
-            this.tsmPredio.Name = "tsmPredio";
-            this.tsmPredio.Size = new System.Drawing.Size(133, 20);
-            this.tsmPredio.Text = "Prédio";
-            // 
-            // tsmMorador
-            // 
-            this.tsmMorador.ForeColor = System.Drawing.Color.White;
-            this.tsmMorador.Name = "tsmMorador";
-            this.tsmMorador.Size = new System.Drawing.Size(125, 20);
-            this.tsmMorador.Text = "Morador";
-            this.tsmMorador.Click += new System.EventHandler(tsmMorador_Click);
-            // 
-            // tsmApartamento
-            // 
-            this.tsmApartamento.ForeColor = System.Drawing.Color.White;
-            this.tsmApartamento.Name = "tsmApartamento";
-            this.tsmApartamento.Size = new System.Drawing.Size(125, 20);
-            this.tsmApartamento.Text = "Apartamento";
-            this.tsmApartamento.Click += new System.EventHandler(tsmApartamento_Click);
-            // 
-            // tsmVisitante
-            // 
-            this.tsmVisitante.ForeColor = System.Drawing.Color.White;
-            this.tsmVisitante.Name = "tsmVisitante";
-            this.tsmVisitante.Size = new System.Drawing.Size(125, 20);
-            this.tsmVisitante.Text = "Visitante";
-            this.tsmVisitante.Click += new System.EventHandler(tsmVisitante_Click);
-            // 
-            // tsmVeiculo
-            // 
-            this.tsmVeiculo.ForeColor = System.Drawing.Color.White;
-            this.tsmVeiculo.Name = "tsmVeiculo";
-            this.tsmVisitante.Size = new System.Drawing.Size(125, 20);
-            this.tsmVisitante.Text = "Veículo";
-            this.tsmVisitante.Click += new System.EventHandler(tsmVisitante_Click);
-            // 
-            // tsmPrestadorServicos
-            // 
-            this.tsmPrestadorServicos.ForeColor = System.Drawing.Color.White;
-            this.tsmPrestadorServicos.Name = "tsmPrestadorServicos";
-            this.tsmPrestadorServicos.Size = new System.Drawing.Size(125, 20);
-            this.tsmPrestadorServicos.Text = "Prestador de Serviços";
-            this.tsmPrestadorServicos.Click += new System.EventHandler(tsmPrestadorServicos_Click);
-            // 
-            // tsmSindico
-            // 
-            this.tsmSindico.ForeColor = System.Drawing.Color.White;
-            this.tsmSindico.Name = "tsmSindico";
-            this.tsmSindico.Size = new System.Drawing.Size(125, 20);
-            this.tsmSindico.Text = "Síndico";
-            this.tsmSindico.Click += new System.EventHandler(tsmSindico_Click);
-            // 
-            // tsmVisita
-            // 
-            this.tsmVisita.ForeColor = System.Drawing.Color.White;
-            this.tsmVisita.Name = "tsmSindico";
-            this.tsmVisita.Size = new System.Drawing.Size(125, 20);
-            this.tsmVisita.Text = "Síndico";
-            this.tsmVisita.Click += new System.EventHandler(tsmVisita_Click);
             // 
             // lblClose
             // 
@@ -174,7 +175,7 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblClose.Size = new System.Drawing.Size(25, 25);
             this.lblClose.TabIndex = 62;
             this.lblClose.Text = "X";
-            this.lblClose.Click += new System.EventHandler(lblClose_Click);
+            this.lblClose.Click += new System.EventHandler(this.lblClose_Click);
             // 
             // lblPredio
             // 
@@ -262,7 +263,7 @@ namespace ServicoPortaria.Presentation.Predio
             this.btnConsulta.TabIndex = 0;
             this.btnConsulta.Text = "Consultar";
             this.btnConsulta.UseVisualStyleBackColor = false;
-            this.btnConsulta.Click += new System.EventHandler(btnConsulta_Click);
+            this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // dgvData
             // 
@@ -295,19 +296,72 @@ namespace ServicoPortaria.Presentation.Predio
             this.lblCodigoCondominio.TabIndex = 0;
             this.lblCodigoCondominio.Text = "Código do Condomínio";
             // 
+            // groupFunções
+            // 
+            this.groupFunções.Controls.Add(this.lllDeletarDados);
+            this.groupFunções.Controls.Add(this.lllModificarDados);
+            this.groupFunções.Controls.Add(this.lllConsultar);
+            this.groupFunções.Controls.Add(this.lllInserir);
+            this.groupFunções.Location = new System.Drawing.Point(264, 415);
+            this.groupFunções.Name = "groupFunções";
+            this.groupFunções.Size = new System.Drawing.Size(233, 174);
+            this.groupFunções.TabIndex = 85;
+            this.groupFunções.TabStop = false;
+            this.groupFunções.Text = "Funções";
+            // 
+            // lllDeletarDados
+            // 
+            this.lllDeletarDados.AutoSize = true;
+            this.lllDeletarDados.Location = new System.Drawing.Point(61, 139);
+            this.lllDeletarDados.Name = "lllDeletarDados";
+            this.lllDeletarDados.Size = new System.Drawing.Size(80, 15);
+            this.lllDeletarDados.TabIndex = 3;
+            this.lllDeletarDados.TabStop = true;
+            this.lllDeletarDados.Text = "Deletar Dados";
+            // 
+            // lllModificarDados
+            // 
+            this.lllModificarDados.AutoSize = true;
+            this.lllModificarDados.Location = new System.Drawing.Point(61, 104);
+            this.lllModificarDados.Name = "lllModificarDados";
+            this.lllModificarDados.Size = new System.Drawing.Size(94, 15);
+            this.lllModificarDados.TabIndex = 2;
+            this.lllModificarDados.TabStop = true;
+            this.lllModificarDados.Text = "Modificar Dados";
+            // 
+            // lllConsultar
+            // 
+            this.lllConsultar.AutoSize = true;
+            this.lllConsultar.Location = new System.Drawing.Point(61, 71);
+            this.lllConsultar.Name = "lllConsultar";
+            this.lllConsultar.Size = new System.Drawing.Size(58, 15);
+            this.lllConsultar.TabIndex = 1;
+            this.lllConsultar.TabStop = true;
+            this.lllConsultar.Text = "Consultar";
+            this.lllConsultar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllConsultar_LinkClicked);
+            // 
+            // lllInserir
+            // 
+            this.lllInserir.AutoSize = true;
+            this.lllInserir.Location = new System.Drawing.Point(61, 41);
+            this.lllInserir.Name = "lllInserir";
+            this.lllInserir.Size = new System.Drawing.Size(57, 15);
+            this.lllInserir.TabIndex = 0;
+            this.lllInserir.TabStop = true;
+            this.lllInserir.Text = "Cadastrar";
+            this.lllInserir.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lllInserir_LinkClicked);
+            // 
             // ucConsultar
             // 
+            this.Controls.Add(this.groupFunções);
             this.Controls.Add(this.groupInformacoesCarregadas);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.groupConsulta);
             this.Controls.Add(this.groupInformacao);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.mnsCondominio);
-            this.Controls.Add(this.mnsPresentation);
             this.Name = "ucConsultar";
             this.Size = new System.Drawing.Size(1370, 800);
-            this.mnsPresentation.ResumeLayout(false);
-            this.mnsPresentation.PerformLayout();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).EndInit();
@@ -317,15 +371,14 @@ namespace ServicoPortaria.Presentation.Predio
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.groupInformacoesCarregadas.ResumeLayout(false);
             this.groupInformacoesCarregadas.PerformLayout();
+            this.groupFunções.ResumeLayout(false);
+            this.groupFunções.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private ucConsultar Consultar;
-        private System.Windows.Forms.MenuStrip mnsPresentation;
         private System.Windows.Forms.ToolStripMenuItem tsmCondominio;
         private System.Windows.Forms.ToolStripMenuItem tsmPredio;
         private System.Windows.Forms.ToolStripMenuItem tsmMorador;
@@ -351,5 +404,10 @@ namespace ServicoPortaria.Presentation.Predio
         private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.GroupBox groupInformacoesCarregadas;
         private System.Windows.Forms.Label lblCodigoCondominio;
+        private System.Windows.Forms.GroupBox groupFunções;
+        private System.Windows.Forms.LinkLabel lllDeletarDados;
+        private System.Windows.Forms.LinkLabel lllModificarDados;
+        private System.Windows.Forms.LinkLabel lllConsultar;
+        private System.Windows.Forms.LinkLabel lllInserir;
     }
 }

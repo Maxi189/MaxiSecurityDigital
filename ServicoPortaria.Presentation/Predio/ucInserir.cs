@@ -128,7 +128,8 @@ namespace ServicoPortaria.Presentation.Predio
 
         private void lllConsultar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            Forms.frmConsultar form = new();
+            form.Show();
         }
 
         private void lllConsultarTodos_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

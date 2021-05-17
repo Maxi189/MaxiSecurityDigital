@@ -87,5 +87,11 @@ namespace ServicoPortaria.Presentation.Predio
             Forms.frmInserir form = new();
             form.Show();
         }
+
+        private void lllConsultar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Forms.frmConsultar form = new();
+            form.Show();
+        }
     }
 }

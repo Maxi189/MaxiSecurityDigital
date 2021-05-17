@@ -66,5 +66,21 @@ namespace ServicoPortaria.Infra.Data.Repositories
         {
             return Db.Morador.Where(t => t.Sobrenome.Contains(sobrenome));
         }
+
+        public IEnumerable<Morador> BuscarPorTodosOsFiltros(string nome, string sobrenome, string cpf, string rg, string docCivil, string cep, string codPostal, string rua, int numero, string celular, string fixo, string email)
+        {
+            return Db.Morador.Where(t => t.Nome.Contains(nome)
+                                    ||   t.Sobrenome.Contains(sobrenome)
+                                    ||   t.CPF.Contains(cpf)
+                                    ||   t.RG.Contains(rg)
+                                    ||   t.DocCivil.Contains(docCivil)
+                                    ||   t.CEP.Contains(cep)
+                                    ||   t.CodigoPostal.Contains(codPostal)
+                                    ||   t.Rua.Contains(rua)
+                                    ||   t.Numero == numero
+                                    ||   t.Celular.Contains(celular)
+                                    ||   t.Fixo.Contains(fixo)
+                                    ||   t.EMail.Contains(email));
+        }
     }
 }
