@@ -18,9 +18,17 @@ namespace ServicoPortaria.Presentation.Visitante
         }
         private void txtNome_TextChanged(object sender, EventArgs e) 
         {
-            Infra.Data.Repositories.VisitanteRepository repository = new();
+            try 
+            {
+                Infra.Data.Repositories.VisitanteRepository repository = new();
 
-            dgvData.DataSource = repository.BuscarPorNome(txtNome.Text);
+                dgvData.DataSource = repository.BuscarPorNome(txtNome.Text);
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "");
+            }
         }
         private void txtSobrenome_TextChanged(object sender, EventArgs e) 
         {

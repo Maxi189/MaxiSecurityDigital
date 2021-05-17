@@ -29,12 +29,28 @@ namespace ServicoPortaria.Presentation.Morador.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.Consultar = new Morador.ucConsultar();
             this.components = new System.ComponentModel.Container();
+            //
+            // ucConsultar
+            //
+            this.Consultar.BackColor = System.Drawing.Color.White;
+            this.Consultar.Location = new System.Drawing.Point(0, 0);
+            this.Consultar.Name = "Consultar";
+            this.Consultar.Size = new System.Drawing.Size(1370, 800);
+            this.Consultar.TabIndex = 0;
+            //
+            // frmConsultar
+            //
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1370, 800);
+            this.Controls.Add(Consultar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Text = "frmConsultar";
         }
 
         #endregion
+
+        private Morador.ucConsultar Consultar;
     }
 }

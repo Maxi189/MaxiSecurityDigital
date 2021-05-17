@@ -18,50 +18,110 @@ namespace ServicoPortaria.Presentation.Apartamento
         }
         private void txtCondominio_TextChanged(object sender, EventArgs e)
         {
-            Infra.Data.Repositories.ApartamentoRepository repository = new Infra.Data.Repositories.ApartamentoRepository();
+            try 
+            {
+                Infra.Data.Repositories.ApartamentoRepository repository = new Infra.Data.Repositories.ApartamentoRepository();
 
-            int idCondominio = BuscarIdCondominio(txtCondominio.Text);
+                int idCondominio = BuscarIdCondominio(txtCondominio.Text);
 
-            dgvData.DataSource = repository.BuscarPorCondominio(idCondominio).ToList();            
+                dgvData.DataSource = repository.BuscarPorCondominio(idCondominio).ToList(); 
+            }       
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }    
         }        
 
         private void txtPredio_TextChanged(object sender, EventArgs e)
         {
-            Infra.Data.Repositories.ApartamentoRepository repository = new Infra.Data.Repositories.ApartamentoRepository();
+            try 
+            {
+                Infra.Data.Repositories.ApartamentoRepository repository = new Infra.Data.Repositories.ApartamentoRepository();
 
-            int idPredio = BuscarIdPredio(txtPredio.Text);
+                int idPredio = BuscarIdPredio(txtPredio.Text);
 
-            dgvData.DataSource = repository.BuscarPorCondominio(idPredio).ToList();
+                dgvData.DataSource = repository.BuscarPorCondominio(idPredio).ToList();
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }        
 
         private void txtBloco_TextChanged(object sender, EventArgs e)
         {
-            Infra.Data.Repositories.ApartamentoRepository repository = new();
+            try 
+            {
+                Infra.Data.Repositories.ApartamentoRepository repository = new();
 
-            dgvData.DataSource = repository.BuscarPorBloco(txtBloco.Text);
+                dgvData.DataSource = repository.BuscarPorBloco(txtBloco.Text);
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
         
         private void txtRamal_TextChanged(object sender, EventArgs e)
         {
-            Infra.Data.Repositories.ApartamentoRepository repository = new();
+            try 
+            {
+                Infra.Data.Repositories.ApartamentoRepository repository = new();
 
-            dgvData.DataSource = repository.BuscarPorRamal(txtRamal.Text);
+                dgvData.DataSource = repository.BuscarPorRamal(txtRamal.Text);
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
         
         private void nudNumero_ValueChanged(object sender, EventArgs e)
         {
-            Infra.Data.Repositories.ApartamentoRepository repository = new();
+            try 
+            {
+                Infra.Data.Repositories.ApartamentoRepository repository = new();
 
-            dgvData.DataSource = repository.BuscarPorNumero(Convert.ToInt32(nudNumero.Value));
+                dgvData.DataSource = repository.BuscarPorNumero(Convert.ToInt32(nudNumero.Value));
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
         
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            int idCondominio = BuscarIdCondominio(txtCondominio.Text);
-            int idPredio = BuscarIdPredio(txtPredio.Text);
+            try 
+            {
+                int idCondominio = BuscarIdCondominio(txtCondominio.Text);
+                int idPredio = BuscarIdPredio(txtPredio.Text);
 
-            Infra.Data.Repositories.ApartamentoRepository repository = new();
-            dgvData.DataSource = repository.BuscarComTodosOsFiltros(idCondominio, idPredio, txtBloco.Text, txtRamal.Text, Convert.ToInt32(nudNumero.Value));
+                Infra.Data.Repositories.ApartamentoRepository repository = new();
+                dgvData.DataSource = repository.BuscarComTodosOsFiltros(idCondominio, idPredio, txtBloco.Text, txtRamal.Text, Convert.ToInt32(nudNumero.Value));
+            }
+            catch 
+            {
+                MessageBox.Show("Ocorreu um Erro!",
+                    "Consultar Apartamento",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
         }
         
         private void lblClose_Click(object sender, EventArgs e)

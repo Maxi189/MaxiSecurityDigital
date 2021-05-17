@@ -74,7 +74,6 @@ namespace ServicoPortaria.Presentation.Morador
             this.groupConsultar = new System.Windows.Forms.GroupBox();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.dgvData = new System.Windows.Forms.DataGridView();
-            this.mnsPresentation.SuspendLayout();
             this.mnsCondominio.SuspendLayout();
             this.groupNome.SuspendLayout();
             this.groupDocCivil.SuspendLayout();
@@ -517,8 +516,6 @@ namespace ServicoPortaria.Presentation.Morador
             this.Controls.Add(this.mnsPresentation);
             this.Name = "ucConsultar";
             this.Size = new System.Drawing.Size(1370, 800);
-            this.mnsPresentation.ResumeLayout(false);
-            this.mnsPresentation.PerformLayout();
             this.mnsCondominio.ResumeLayout(false);
             this.mnsCondominio.PerformLayout();
             this.groupNome.ResumeLayout(false);
